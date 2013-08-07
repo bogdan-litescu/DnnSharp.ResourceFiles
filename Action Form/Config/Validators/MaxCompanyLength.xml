@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Validations>
+        
+    <Validation>
+        <Title>My Company MaxLen</Title>
+		<Type>avt.ActionForm.Core.Validation.ValidatorRegex, avt.ActionForm.Core</Type>
+		<Params>
+			<Regex>^.{0,10}$</Regex>
+		</Params>
+        <ErrorMessage>
+			<default>Company Name must be less than 10 characters!</default>
+		</ErrorMessage>
+    </Validation>
+    
+</Validations>
