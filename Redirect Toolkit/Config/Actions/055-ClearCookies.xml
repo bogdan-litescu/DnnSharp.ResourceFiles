@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>DELCOOKIES</code>
+    <title>Clear List of Cookies by Name</title>
+    <desc>Clears the specified browser cookies before doing the redirect.</desc>
+    <execute>avt.RedirectToolkit.Action.ClearCookies,avt.RedirectToolkit</execute>
+    <settings-ctrl>ClearCookiesSettings.ascx</settings-ctrl>
+    <validate-fn>validateClearCookiesSettings</validate-fn>
+</action>

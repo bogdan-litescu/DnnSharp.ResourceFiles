@@ -1,0 +1,234 @@
+﻿
+
+----------------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Settings](
+	[ControlId] [int] NOT NULL,
+	[SettingName] [nvarchar](50) NOT NULL,
+	[SettingValue] [ntext] NULL,
+ CONSTRAINT [PK_{objectQualifier}avtRedirectToolkit_InstanceSettings] PRIMARY KEY CLUSTERED 
+(
+	[ControlId] ASC,
+	[SettingName] ASC
+)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+CREATE NONCLUSTERED INDEX [IX_{objectQualifier}avtRedirectToolkit_InstanceSettings] ON {databaseOwner}[{objectQualifier}avtRedirectToolkit_Settings] 
+(
+	[ControlId] ASC
+)
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD ControlId nvarchar(50) NULL
+GO
+
+UPDATE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] SET ControlId = ModuleID
+GO
+
+CREATE NONCLUSTERED INDEX [IX_{objectQualifier}avtRedirectToolkit_Rules_ModuleId] ON {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] 
+(
+	[ModuleId] ASC
+) ON [PRIMARY]
+GO
+
+CREATE NONCLUSTERED INDEX [IX_{objectQualifier}avtRedirectToolkit_Rules_ControlId] ON {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] 
+(
+	[ControlId] ASC
+) ON [PRIMARY]
+GO
+
+   
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+-- create new actions table
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_RuleActions](
+	[ActionCode] [nvarchar](10) NOT NULL,
+	[RuleId] [int] NOT NULL,
+	[ActionData] [ntext] NULL,
+ CONSTRAINT [PK_{objectQualifier}avtRedirectToolkit_RuleActions] PRIMARY KEY CLUSTERED 
+(
+	[ActionCode] ASC,
+	[RuleId] ASC
+)
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_RuleActions]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}avtRedirectToolkit_RuleActions_{objectQualifier}avtRedirectToolkit_Rules] FOREIGN KEY([RuleId])
+REFERENCES {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ([RuleId])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_RuleActions] CHECK CONSTRAINT [FK_{objectQualifier}avtRedirectToolkit_RuleActions_{objectQualifier}avtRedirectToolkit_Rules]
+GO
+
+
+CREATE NONCLUSTERED INDEX [IX_{objectQualifier}avtRedirectToolkit_RuleActions] ON {databaseOwner}[{objectQualifier}avtRedirectToolkit_RuleActions] 
+(
+	[RuleId] ASC
+) ON [PRIMARY]
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+-- Migrate actions to new format
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_RuleActions] 
+    SELECT 'LOGOUT', RuleId, NULL FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] Where LogoutUser=1
+GO
+    
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_RuleActions] 
+    SELECT 'COUNT', RuleId, NULL FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] Where CountRedirects=1
+GO
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_RuleActions] 
+    SELECT 'DB-LOGGER', RuleId, NULL FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] Where LogRedirects=1
+GO
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_RuleActions] 
+    SELECT 'SAVE-REF', RuleId, SaveRefLocation+'|'+SaveRefKey+'|'+cast(SaveRefCookieExpire as nvarchar(30)) FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] Where LEN(SaveRefLocation)>0
+GO
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_RuleActions] 
+    SELECT 'SAVE-VAL1', RuleId, SaveVal1Location+'|'+SaveVal1Key+'|'+cast(SaveVal1CookieExpire as nvarchar(30))+'|'+SaveVal1Text FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] Where LEN(SaveVal1Location)>0
+GO
+    
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+-- remove all constraints
+
+DECLARE @cname nvarchar(255)
+DECLARE @sql nvarchar(255)
+DECLARE My_Cursor Cursor FOR 
+	SELECT name from sys.default_constraints where parent_object_id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules]')
+Open My_Cursor
+Fetch NEXT FROM MY_Cursor INTO @cname
+While (@@FETCH_STATUS <> -1)
+BEGIN
+	IF (@@FETCH_STATUS <> -2)
+	BEGIN
+		SET @sql = 'ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP CONSTRAINT ' + @cname 
+		exec    sp_executesql @sql
+	END
+	FETCH NEXT FROM My_Cursor INTO @cname
+END
+CLOSE My_Cursor
+DEALLOCATE My_Cursor
+GO
+
+
+-- remove unused columns
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN LogoutUser
+GO
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN CountRedirects
+GO
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN LogRedirects
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN SaveRefLocation
+GO
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN SaveRefKey
+GO
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN SaveRefCookieExpire
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN SaveVal1Location
+GO
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN SaveVal1Key
+GO
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN SaveVal1CookieExpire
+GO
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] DROP COLUMN SaveVal1Text
+GO
+
+-- readd good constraints
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD  CONSTRAINT [DF_{objectQualifier}avtRedirectToolkit_Rules_RedirectPriority]  DEFAULT ((0)) FOR [RulePriority]
+GO
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD  CONSTRAINT [DF_{objectQualifier}avtRedirectToolkit_Rules_DelaySeconds]  DEFAULT ((0)) FOR [DelaySeconds]
+GO
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD  CONSTRAINT [DF_{objectQualifier}avtRedirectToolkit_Rules_RedirectCount]  DEFAULT ((0)) FOR [RedirectCount]
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+-- DROP STORED PROCEDURES, sql is now built by internal component
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_AddCondition]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_AddCondition]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_AddRule]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_AddRule]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_DeleteRule]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_DeleteRule]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_GetConditions]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_GetConditions]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_GetRuleById]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_GetRuleById]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_GetRules]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_GetRules]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_RemoveCondition]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_RemoveCondition]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_UpdateCondition]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_UpdateCondition]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_UpdateRule]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_UpdateRule]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_LogRedirect]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_LogRedirect]
+GO
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_GetLogEntries]') AND OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}[{objectQualifier}avtRedirectToolkit_GetLogEntries]
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+-- DROP activations table, now licenses are in lic file
+IF  EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'{databaseOwner}[{objectQualifier}avtRedirectToolkit_Activations]') AND OBJECTPROPERTY(id, N'IsUserTable') = 1)
+DROP TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Activations]
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] DROP DF_{objectQualifier}avtRedirectToolkit_Log_UserId
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] ALTER COLUMN UserId nvarchar(100) NULL
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------

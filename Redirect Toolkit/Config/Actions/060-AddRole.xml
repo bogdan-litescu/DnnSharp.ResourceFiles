@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>ADD-ROLE</code>
+    <title>Add Roles</title>
+    <desc>If this redirect matches, use this action to grant user additional roles (user must be logged in).</desc>
+    <execute>avt.RedirectToolkit.Action.DnnAddRole,avt.RedirectToolkit.DotNetNuke</execute>
+    <settings-ctrl>RoleList.ascx</settings-ctrl>
+</action>

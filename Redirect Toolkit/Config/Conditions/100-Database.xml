@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>db</code>
+    <title>Redirect using DB data</title>
+    <properties>
+        <prop>
+            <title>SQL Query</title>
+            <code>sqlQuery</code>
+            <operators>__opTextOrNumber</operators>
+            <key>
+                <name>SQL Query</name>
+                <help>Make sure your query is valid and return expected results. The result is saved in token [Condition:SqlResult] which can be used in the URL field or other actions.</help>
+                <type>textarea</type>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectUsingDB,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+</condition>

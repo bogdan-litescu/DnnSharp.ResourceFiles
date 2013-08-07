@@ -1,0 +1,73 @@
+﻿
+
+----------------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions] ALTER COLUMN PropertyData ntext NULL
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_AddCondition]
+
+	@RuleId			int,
+	@Caption		nvarchar(50),
+	@EntityType		nvarchar(20),
+	@PropertyName	nvarchar(20),
+	@PropertyData	ntext,
+	@Operation		nvarchar(20),
+	@Value          nvarchar(255)
+	
+
+as
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions] (RuleId, Caption, EntityType, PropertyName, PropertyData, Operation, Value)
+	VALUES (@RuleId, @Caption, @EntityType, @PropertyName, @PropertyData, @Operation, @Value)
+
+
+SELECT SCOPE_IDENTITY()
+
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_UpdateCondition]
+
+	@ConditionId	int,
+	@RuleId			int,
+	@Caption		nvarchar(50),
+	@EntityType		nvarchar(20),
+	@PropertyName	nvarchar(20),
+	@PropertyData	ntext,
+	@Operation		nvarchar(20),
+	@Value          nvarchar(255)
+	
+
+as
+
+UPDATE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions] 
+SET RuleId = @RuleId, 
+	Caption = @Caption, 
+	EntityType = @EntityType, 
+	PropertyName = @PropertyName, 
+	PropertyData = @PropertyData,
+	Operation = @Operation, 
+	Value = @Value
+Where ConditionId = @ConditionId
+
+GO
+
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------

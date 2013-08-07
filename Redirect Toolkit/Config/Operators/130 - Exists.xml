@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operator>
+    <title>Exists</title>
+    <flags></flags>
+    <unary>true</unary>
+    <compares>
+        <type>__opText</type>
+        <type>__opTextOrNumber</type>
+    </compares>  
+    <comparer>avt.RedirectToolkit.Operators.Exists, avt.RedirectToolkit</comparer>
+</operator>
+    

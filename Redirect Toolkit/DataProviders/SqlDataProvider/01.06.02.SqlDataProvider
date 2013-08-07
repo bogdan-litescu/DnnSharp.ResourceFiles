@@ -1,0 +1,226 @@
+﻿
+
+----------------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD SaveVal1Text nvarchar(1024) NULL
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD SaveVal1Location nvarchar(50) NULL
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD SaveVal1Key nvarchar(50) NULL
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD SaveVal1CookieExpire int Default -1
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD LogRedirects int Default 0
+GO
+
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log](
+	[RedirectLogId] [int] IDENTITY(1,1) NOT NULL,
+	[ModuleId] [int] NOT NULL,
+	[RuleId] [int] NOT NULL,
+	[ReferrerInfo] [nvarchar](1024) NOT NULL,
+	[UserId] [int] NOT NULL,
+	[RemoteAddress] [nvarchar](50) NOT NULL,
+	[BrowserInfo] [nvarchar](1024) NOT NULL,
+	[RedirectedDateTime] [datetime] NOT NULL,
+ CONSTRAINT [PK_{objectQualifier}avtRedirectToolkit_Log] PRIMARY KEY CLUSTERED 
+(
+	[RedirectLogId] ASC
+)
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}avtRedirectToolkit_Log_{objectQualifier}avtRedirectToolkit_Rules] FOREIGN KEY([RuleId])
+REFERENCES {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ([RuleId])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] CHECK CONSTRAINT [FK_{objectQualifier}avtRedirectToolkit_Log_{objectQualifier}avtRedirectToolkit_Rules]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] ADD  CONSTRAINT [DF_{objectQualifier}avtRedirectToolkit_Log_UserId]  DEFAULT ((-1)) FOR [UserId]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] ADD  CONSTRAINT [DF_{objectQualifier}avtRedirectToolkit_Log_RedirectedDateTime]  DEFAULT (getdate()) FOR [RedirectedDateTime]
+GO
+
+
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_AddRule]
+
+	@Caption			nvarchar(100),
+	@ModuleId			int,
+	@LogoutUser			int,
+	@RedirectAction		nvarchar(20),
+	@RedirectTabId		int,
+	@RedirectUrl		nvarchar(1024),
+	@DelaySeconds		int,
+	@DisplayTimer		int,
+	@RulePriority		int,
+	@CountRedirects		int,
+	@SaveRefLocation	nvarchar(50),
+	@SaveRefKey			nvarchar(50),
+	@RefCookieExpire	int,
+	@SaveVal1Text		nvarchar(1024),
+	@SaveVal1Location	nvarchar(50),
+	@SaveVal1Key		nvarchar(50),
+	@Val1CookieExpire	int,
+	@LogRedirects		int
+
+as
+
+--IF @RulePriority < 0 OR @RulePriority IS NULL
+--	SELECT @RulePriority = MAX(RulePriority) + 1 
+--	FROM {databaseOwner}{objectQualifier}avtRedirectToolkit_Rules 
+--	where ModuleId = @ModuleId
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] (Caption, ModuleId, LogoutUser, RedirectAction, RedirectTabId, RedirectUrl, DelaySeconds, DisplayTimer, RulePriority, CountRedirects, SaveRefLocation, SaveRefKey, SaveRefCookieExpire, SaveVal1Text, SaveVal1Location, SaveVal1Key, SaveVal1CookieExpire, LogRedirects)
+	VALUES (@Caption, @ModuleId, @LogoutUser, @RedirectAction, @RedirectTabId, @RedirectUrl, @DelaySeconds, @DisplayTimer, @RulePriority, @CountRedirects, @SaveRefLocation, @SaveRefKey, @RefCookieExpire, @SaveVal1Text, @SaveVal1Location, @SaveVal1Key, @Val1CookieExpire, @LogRedirects)
+
+
+SELECT SCOPE_IDENTITY()
+
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_UpdateRule]
+
+	@Caption			nvarchar(100),
+	@RuleId				int,
+	@ModuleId			int,
+	@LogoutUser			int,
+	@RedirectAction		nvarchar(20),
+	@RedirectTabId		int,
+	@RedirectUrl		nvarchar(1024),
+	@DelaySeconds		int,
+	@DisplayTimer		int,
+	@RulePriority		int,
+	@CountRedirects		int,
+	@SaveRefLocation	nvarchar(50),
+	@SaveRefKey			nvarchar(50),
+	@RefCookieExpire	int,
+	@SaveVal1Text		nvarchar(1024),
+	@SaveVal1Location	nvarchar(50),
+	@SaveVal1Key		nvarchar(50),
+	@Val1CookieExpire	int,
+	@RedirectCount		int,
+	@LogRedirects		int
+as
+
+
+UPDATE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules]
+SET  
+	Caption = @Caption,
+	ModuleId = @ModuleId,
+	LogoutUser = @LogoutUser,
+	RedirectAction = @RedirectAction,
+	RedirectTabId = @RedirectTabId,
+	RedirectUrl = @RedirectUrl,
+	DelaySeconds = @DelaySeconds,
+	DisplayTimer = @DisplayTimer,
+	RulePriority = @RulePriority,
+	CountRedirects = @CountRedirects,
+	SaveRefLocation = @SaveRefLocation,
+	SaveRefKey = @SaveRefKey,
+	SaveRefCookieExpire = @RefCookieExpire,
+	RedirectCount = @RedirectCount,
+	SaveVal1Text = @SaveVal1Text,
+	SaveVal1Location = @SaveVal1Location,
+	SaveVal1Key = @SaveVal1Key,
+	SaveVal1CookieExpire = @Val1CookieExpire,
+	LogRedirects = @LogRedirects
+		
+WHERE RuleId = @RuleId
+
+
+
+
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_LogRedirect]
+
+	@ModuleId			int,
+	@RuleId				int,
+	@ReferrerInfo		nvarchar(1024),
+	@UserId				int,
+	@RemoteAddress		nvarchar(50),
+	@BrowserInfo		nvarchar(1024)
+
+as
+
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] (ModuleId, RuleId, ReferrerInfo, UserId, RemoteAddress, BrowserInfo)
+	VALUES (@ModuleId, @RuleId, @ReferrerInfo, @UserId, @RemoteAddress, @BrowserInfo)
+
+
+SELECT SCOPE_IDENTITY()
+
+
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_GetLogEntries]
+
+	@ruleId		int,
+	@startDate	DateTime,
+	@endDate	DateTime
+as
+
+SELECT * from {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log]
+Where 
+	RuleId = @ruleId 
+	AND 
+	(@startDate IS NULL OR RedirectedDateTime >= @startDate)
+	AND 
+	(@endDate IS NULL OR RedirectedDateTime <= @endDate)
+
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operator>
+    <title>Contains (Ignore Case)</title>
+    <flags>ignorecase</flags>
+    <unary>false</unary>
+    <compares>
+        <type>__opText</type>
+		<type>__opTextCI</type>
+        <type>__opTextOrNumber</type>
+    </compares>  
+    <comparer>avt.RedirectToolkit.Operators.Contains, avt.RedirectToolkit</comparer>
+</operator>

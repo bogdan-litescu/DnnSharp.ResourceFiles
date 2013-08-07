@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>AUTOLOGIN</code>
+    <title>Login User</title>
+    <desc>Logins the user with given username and password.</desc>
+    <execute>avt.RedirectToolkit.Action.DnnLogin,avt.RedirectToolkit.DotNetNuke</execute>
+    <settings-ctrl>LoginSettings.ascx</settings-ctrl>
+    <validate-fn>validateLoginSettings</validate-fn>
+</action>

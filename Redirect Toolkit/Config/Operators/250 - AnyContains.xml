@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operator>
+    <title>Any Contains</title>
+    <flags></flags>
+    <unary>false</unary>
+    <compares>
+        <type>__opTextList</type>
+    </compares>  
+    <comparer>avt.RedirectToolkit.Operators.StringListContains, avt.RedirectToolkit</comparer>
+</operator>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<reports>
+	<report>
+		<title>All Redirects</title>
+		<sql>
+		<![CDATA[
+			SELECT * FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] 
+			WHERE {reportFilters}
+		]]>
+		</sql>
+	</report>
+	
+	<report>
+		<title>Referrer Counts</title>
+		<sql>
+		<![CDATA[
+			SELECT DISTINCT ReferrerInfo, COUNT(ReferrerInfo) as RedirectCount
+			FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] 
+			WHERE {reportFilters}
+			GROUP BY ReferrerInfo
+		]]>
+		</sql>
+	</report>
+	
+	
+</reports>

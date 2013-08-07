@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>datetime</code>
+    <title>Redirect by Date and Time</title>
+    <help>
+        Build redirects that apply to specific date and time intervals.
+    </help>
+    <properties>
+		<prop>
+            <title>Date and Time</title>
+            <code>datetime</code>
+            <operators>__opNumbers</operators>
+			<settings>DateTime_DateTime.ascx</settings>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByDateTime,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+		<prop>
+            <title>Time of Day</title>
+            <code>daytime</code>
+            <operators>__opNumbers</operators>
+			<settings>DateTime_Time.ascx</settings>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByDateTime,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Day of Week</title>
+            <code>dayofweek</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByDateTime,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+</condition>

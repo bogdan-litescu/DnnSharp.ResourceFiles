@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>tokenurl</code>
+    <title>Redirect by My Tokens</title>
+    <help>
+		This will replace tokens in the URL specified under Action section, and always redirect to that URL.
+        Except if the URL after tokenization is empty, then no redirection occurs.
+    </help>
+    <properties>
+        <prop>
+            <title>Redirect Based on Token</title>
+            <code>token</code>
+            <operators>__opText</operators>
+            <key>
+                <name>Parameter</name>
+                <help>Specify the token to evaluate.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByTokenUrl,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+		<prop>
+            <title>Tokenize Action URL</title>
+            <code>tokenurl</code>
+            <operators>__opNone</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByTokenUrl,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+</condition>

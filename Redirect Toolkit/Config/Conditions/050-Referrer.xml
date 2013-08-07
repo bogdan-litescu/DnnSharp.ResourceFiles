@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>referrer</code>
+    <title>Redirect by Referrer</title>
+    <properties>
+        <prop>
+            <title>Referrer Domain Name</title>
+            <code>domain</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByReferrer,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Referrer Full Url</title>
+            <code>fullUrl</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByReferrer,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Referrer Query String Parameter</title>
+            <code>param</code>
+            <operators>__opTextOrNumber</operators>
+            <key>
+                <name>Parameter</name>
+                <help>Specify the name of the Query String parameter to use from referrer.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByReferrer,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+    
+</condition>

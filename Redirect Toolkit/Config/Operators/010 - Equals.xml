@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operator>
+    <title>Equals</title>
+    <flags></flags>
+    <unary>false</unary>
+    <compares>
+        <type>__opText</type>
+        <type>__opNumbers</type>
+        <type>__opTextOrNumber</type>
+        <type>__opNumberSimple</type>
+    </compares>  
+    <comparer>avt.RedirectToolkit.Operators.Equals, avt.RedirectToolkit</comparer>
+</operator>

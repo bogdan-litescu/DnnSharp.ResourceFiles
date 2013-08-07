@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>role</code>
+    <title>Redirect by Role Info</title>
+    <properties>
+        <prop>
+            <title>Role (as object)</title>
+            <code>role</code>
+            <operators>__opRole</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByRole,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Role Name (as text)</title>
+            <code>roleName</code>
+            <operators>__opTextList</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByRole,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+    
+</condition>

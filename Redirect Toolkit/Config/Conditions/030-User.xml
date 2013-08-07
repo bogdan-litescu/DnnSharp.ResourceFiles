@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>user</code>
+    <title>Redirect by User Info</title>
+    <properties>
+        <prop>
+            <title>Username</title>
+            <code>username</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByUser,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>User ID</title>
+            <code>userid</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByUser,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>First Name</title>
+            <code>firstname</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByUser,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Last Name</title>
+            <code>lastname</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByUser,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Email</title>
+            <code>email</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByUser,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Profile Property</title>
+            <code>profile</code>
+            <operators>__opTextOrNumber</operators>
+            <key>
+                <name>Profile Property</name>
+                <help>Specify the name of the profile property to use</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByUser,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+		<prop>
+            <title>IP Address</title>
+            <code>ipaddr</code>
+            <operators>__opTextCI</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByUser,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+    
+</condition>

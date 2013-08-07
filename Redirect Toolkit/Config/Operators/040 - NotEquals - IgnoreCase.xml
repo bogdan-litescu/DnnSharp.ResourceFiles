@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operator>
+    <title>Not Equals (Ignore Case)</title>
+    <flags>not|ignorecase</flags>
+    <unary>false</unary>
+    <compares>
+        <type>__opText</type>
+		<type>__opTextCI</type>
+        <type>__opTextOrNumber</type>
+    </compares>  
+    <comparer>avt.RedirectToolkit.Operators.Equals, avt.RedirectToolkit</comparer>
+</operator>

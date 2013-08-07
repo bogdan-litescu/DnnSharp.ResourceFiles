@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>COUNT</code>
+    <title>Count Redirects</title>
+    <desc>If this option is set, Redirect Toolkit will count how many users are redirected by this rule.</desc>
+    <execute>avt.RedirectToolkit.Action.CountRedirects,avt.RedirectToolkit</execute>
+    <settings-html></settings-html>
+</action>

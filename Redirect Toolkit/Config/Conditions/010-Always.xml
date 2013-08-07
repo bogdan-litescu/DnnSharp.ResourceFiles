@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>always</code>
+    <title>Redirect Always</title>
+    <properties>
+        <prop>
+            <title>Redirect Always</title>
+            <code></code>
+            <operators>__opNone</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectAlways,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+    
+</condition>

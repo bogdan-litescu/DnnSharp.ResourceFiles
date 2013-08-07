@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>EMAIL</code>
+    <title>Send Email Notifications</title>
+    <desc>Configure a list of role and/or email addresses that will receive email notifications when this redirect executes.</desc>
+    <execute>avt.RedirectToolkit.Action.SendEmailNotifications,avt.RedirectToolkit.DotNetNuke</execute>
+    <settings-ctrl>SendEmailSettings.ascx</settings-ctrl>
+    <validate-fn>validateSendEmailSettings</validate-fn>
+</action>

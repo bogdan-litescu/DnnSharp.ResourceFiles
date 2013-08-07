@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>viewcount</code>
+    <title>Redirect by View Count</title>
+    <properties>
+        <prop>
+            <title>Page View Count</title>
+            <code>pageViews</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByViewCount,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>View Count per User</title>
+            <code>pageViewsPerUser</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByViewCount,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>View Count per Server Session</title>
+            <code>pageViewsPerSession</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByViewCount,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>View Count per Browser Cookie</title>
+            <code>pageViewsPerCookie</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.DnnRedirectByViewCount,avt.RedirectToolkit.DotNetNuke</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+    
+</condition>

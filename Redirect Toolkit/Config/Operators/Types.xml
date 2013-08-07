@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operators>
+    <type>__opNone</type>
+    <type>__opText</type>
+	<type>__opTextCI</type>
+    <type>__opNumbers</type>
+    <type>__opNumberSimple</type>
+    <type>__opTextOrNumber</type>
+    <type>__opBool</type>
+    <type>__opRole</type>
+    <type>__opTextList</type>
+    <type>__opPickOneFromList</type>
+</operators>

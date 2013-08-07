@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>random</code>
+    <title>Redirect Random</title>
+    <properties>
+        <prop>
+            <title>Percentage of Users</title>
+            <code>percentage</code>
+            <operators>__opNumberSimple</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectRandom,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+</condition>

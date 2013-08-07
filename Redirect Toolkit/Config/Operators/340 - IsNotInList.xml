@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operator>
+    <title>Is Not</title>
+    <flags>not</flags>
+    <unary>false</unary>
+    <compares>
+        <type>__opPickOneFromList</type>
+    </compares>  
+    <comparer>avt.RedirectToolkit.Operators.IsInList, avt.RedirectToolkit</comparer>
+</operator>

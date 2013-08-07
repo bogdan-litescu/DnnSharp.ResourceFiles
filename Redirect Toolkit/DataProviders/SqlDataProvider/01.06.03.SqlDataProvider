@@ -1,0 +1,42 @@
+﻿
+
+----------------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] ADD SourceUrl nvarchar(1024) NULL
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] ADD TargetUrl nvarchar(1024) NULL
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+AlTER procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_LogRedirect]
+
+	@ModuleId			int,
+	@RuleId				int,
+	@ReferrerInfo		nvarchar(1024),
+	@UserId				int,
+	@RemoteAddress		nvarchar(50),
+	@BrowserInfo		nvarchar(1024),
+    @SourceUrl          nvarchar(1024),
+    @TargetUrl          nvarchar(1024)
+
+as
+
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_Log] (ModuleId, RuleId, ReferrerInfo, UserId, RemoteAddress, BrowserInfo, SourceUrl, TargetUrl)
+	VALUES (@ModuleId, @RuleId, @ReferrerInfo, @UserId, @RemoteAddress, @BrowserInfo, @SourceUrl, @TargetUrl)
+
+
+SELECT SCOPE_IDENTITY()
+
+
+GO

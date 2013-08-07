@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operator>
+    <title>Is Not In Role</title>
+    <flags>not</flags>
+    <unary>false</unary>
+    <compares>
+        <type>__opRole</type>
+    </compares>  
+    <comparer>avt.RedirectToolkit.Operators.DnnIsInRole, avt.RedirectToolkit.DotNetNuke</comparer>
+</operator>

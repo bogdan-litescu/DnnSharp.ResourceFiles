@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>OPENLINK</code>
+    <title>Open Link In new Window</title>
+    <desc>Provide a second link to open in new window. Note that when this action is set the main redirect (if any) is made from javascript.</desc>
+    <execute>avt.RedirectToolkit.Action.OpenLinkInWindow,avt.RedirectToolkit</execute>
+    <settings-ctrl>OpenLinkSettings.ascx</settings-ctrl>
+    <validate-fn>validateOpenLinkSettings</validate-fn>
+</action>

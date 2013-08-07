@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>SAVE-REF</code>
+    <title>Save Referrer</title>
+    <desc>After the redirect happens, referrer can no longer be retrieved from application state. Check this option to have Redirect Toolkit save the referrer into Session or Browser Cookies before doing the redirect. Redirect Toolkit assumes a referrer exists when the referrer host is different than current host.</desc>
+    <execute>avt.RedirectToolkit.Action.DnnSaveRef,avt.RedirectToolkit.DotNetNuke</execute>
+    <settings-ctrl>SaveRefSettings.ascx</settings-ctrl>
+    <validate-fn>validateSaveRefSettings</validate-fn>
+</action>

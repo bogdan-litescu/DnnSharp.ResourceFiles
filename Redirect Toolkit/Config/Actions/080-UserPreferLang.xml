@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>PREF-LANG</code>
+    <title>Enforce User Preferred Language (as set in browser)</title>
+    <desc>This action reads the language passed in by user browser and if there's a portal localization that matches then it appends the appropriate language parameter to the URL being redirected to. Note this only works with redirects to portal pages.</desc>
+    <execute>avt.RedirectToolkit.Action.DnnUserPreferedLocale,avt.RedirectToolkit.DotNetNuke</execute>
+</action>

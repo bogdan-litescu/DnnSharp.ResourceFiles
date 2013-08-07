@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<core>
+    <providers>
+        <!-- <conf>avt.RedirectToolkit.Data.DnnDataProvider,avt.RedirectToolkit.DotNetNuke</conf> -->
+        <tokenizer>avt.RedirectToolkit.Services.MyTokensReplacer,avt.RedirectToolkit.DotNetNuke</tokenizer>
+        <navigation>avt.RedirectToolkit.Services.DnnResourceProvider,avt.RedirectToolkit.DotNetNuke</navigation>
+    </providers>
+    <notify>
+        <before-eval>
+            <handler>
+                <type>avt.RedirectToolkit.Services.SavePageViewCount,avt.RedirectToolkit.DotNetNuke</type>
+            </handler>
+        </before-eval>
+        <on-redirect>
+        </on-redirect>
+    </notify>
+</core>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>SAVE-VAL1</code>
+    <title>Save Arbitrary Value</title>
+    <desc>If this redirect matches, use this function to save an arbitrary value to Sessions/Cookies/User Profile. The value can contain My Tokens which gives you great flexibility of what can be saved.</desc>
+    <execute>avt.RedirectToolkit.Action.DnnSaveVal,avt.RedirectToolkit.DotNetNuke</execute>
+    <settings-ctrl>SaveValSettings.ascx</settings-ctrl>
+    <validate-fn>validateSaveValSettings</validate-fn>
+</action>

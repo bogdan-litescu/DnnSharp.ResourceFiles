@@ -1,0 +1,323 @@
+﻿
+
+----------------------------------------------------------------------------------------------------
+--- Create Tables
+----------------------------------------------------------------------------------------------------
+
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules](
+	[RuleId] [int] IDENTITY(1,1) NOT NULL,
+	[Caption] [nvarchar](100) NULL,
+	[ModuleId] [int] NOT NULL,
+	[MatchCondition] [nvarchar](100) NULL,
+	[LogoutUser] [int] NOT NULL,
+	[RedirectAction] [nvarchar](20) NOT NULL,
+	[RedirectTabId] [int] NULL,
+	[RedirectUrl] [nvarchar](1024) NULL,
+	[DelaySeconds] [int] NOT NULL,
+	[DisplayTimer] [int] NOT NULL,
+	[RulePriority] [int] NOT NULL,
+	[CountRedirects] [int] NOT NULL,
+	[RedirectCount] [int] NOT NULL,
+	[SaveRefLocation] [nvarchar](50) NULL,
+	[SaveRefKey] [nvarchar](50) NULL,
+ CONSTRAINT [PK_{objectQualifier}avtDnnRedirect] PRIMARY KEY CLUSTERED 
+(
+	[RuleId] ASC
+)
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}avtRedirectToolkit_Rules_{objectQualifier}Modules] FOREIGN KEY([ModuleId])
+REFERENCES {databaseOwner}[{objectQualifier}Modules] ([ModuleID])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] CHECK CONSTRAINT [FK_{objectQualifier}avtRedirectToolkit_Rules_{objectQualifier}Modules]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD  CONSTRAINT [DF_{objectQualifier}avtDnnRedirect_LogoutUser]  DEFAULT ((0)) FOR [LogoutUser]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD  CONSTRAINT [DF_{objectQualifier}avtRedirectToolkit_DelaySeconds]  DEFAULT ((0)) FOR [DelaySeconds]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD  CONSTRAINT [DF_{objectQualifier}avtDnnRedirect_RedirectPriority]  DEFAULT ((0)) FOR [RulePriority]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD  CONSTRAINT [DF_{objectQualifier}avtRedirectToolkit_Rules_AllowCount]  DEFAULT ((0)) FOR [CountRedirects]
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD  CONSTRAINT [DF_{objectQualifier}avtRedirectToolkit_Rules_RedirectCount]  DEFAULT ((0)) FOR [RedirectCount]
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions](
+	[ConditionId] [int] IDENTITY(1,1) NOT NULL,
+	[RuleId] [int] NOT NULL,
+	[Caption] [nvarchar](50) NULL,
+	[EntityType] [nvarchar](20) NOT NULL,
+	[PropertyName] [nvarchar](20) NULL,
+	[PropertyData] [nvarchar](50) NULL,
+	[Operation] [nvarchar](20) NOT NULL,
+	[Value] [nvarchar](255) NULL,
+ CONSTRAINT [PK_{objectQualifier}avtRedirectToolkit_Cond] PRIMARY KEY CLUSTERED 
+(
+	[ConditionId] ASC
+)
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions]  WITH CHECK ADD  CONSTRAINT [FK_{objectQualifier}avtRedirectToolkit_Cond_{objectQualifier}avtRedirectToolkit_Rules] FOREIGN KEY([RuleId])
+REFERENCES {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ([RuleId])
+ON DELETE CASCADE
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions] CHECK CONSTRAINT [FK_{objectQualifier}avtRedirectToolkit_Cond_{objectQualifier}avtRedirectToolkit_Rules]
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+CREATE TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Activations](
+	[RegistrationCode] [nvarchar](100) NOT NULL,
+	[Host] [nvarchar](255) NOT NULL,
+	[ActivationCode] [nvarchar](1024) NOT NULL,
+	[ProductKey] [nvarchar](1024) NOT NULL,
+	[BaseProductCode] [nvarchar](50) NOT NULL,
+	[BaseProductVersion] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_{objectQualifier}avtRedirectToolkit_Activations] PRIMARY KEY CLUSTERED 
+(
+	[RegistrationCode] ASC,
+	[Host] ASC
+)
+) ON [PRIMARY]
+
+GO
+
+----------------------------------------------------------------------------------------------------
+--- Create Stored Procedures
+----------------------------------------------------------------------------------------------------
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_AddCondition]
+
+	@RuleId			int,
+	@Caption		nvarchar(50),
+	@EntityType		nvarchar(20),
+	@PropertyName	nvarchar(20),
+	@PropertyData	nvarchar(50),
+	@Operation		nvarchar(20),
+	@Value          nvarchar(255)
+	
+
+as
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions] (RuleId, Caption, EntityType, PropertyName, PropertyData, Operation, Value)
+	VALUES (@RuleId, @Caption, @EntityType, @PropertyName, @PropertyData, @Operation, @Value)
+
+
+SELECT SCOPE_IDENTITY()
+
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_AddRule]
+
+	@Caption			nvarchar(100),
+	@ModuleId			int,
+	@LogoutUser			int,
+	@RedirectAction		nvarchar(20),
+	@RedirectTabId		int,
+	@RedirectUrl		nvarchar(1024),
+	@DelaySeconds		int,
+	@DisplayTimer		int,
+	@RulePriority		int,
+	@CountRedirects		int,
+	@SaveRefLocation	nvarchar(50),
+	@SaveRefKey			nvarchar(50)
+
+as
+
+--IF @RulePriority < 0 OR @RulePriority IS NULL
+--	SELECT @RulePriority = MAX(RulePriority) + 1 
+--	FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules 
+--	where ModuleId = @ModuleId
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] (Caption, ModuleId, LogoutUser, RedirectAction, RedirectTabId, RedirectUrl, DelaySeconds, DisplayTimer, RulePriority, CountRedirects, SaveRefLocation, SaveRefKey)
+	VALUES (@Caption, @ModuleId, @LogoutUser, @RedirectAction, @RedirectTabId, @RedirectUrl, @DelaySeconds, @DisplayTimer, @RulePriority, @CountRedirects, @SaveRefLocation, @SaveRefKey)
+
+
+SELECT SCOPE_IDENTITY()
+
+
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_DeleteRule]
+
+	@RuleId		int
+
+as
+
+	DELETE FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] WHERE RuleId = @RuleId
+	
+
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_GetConditions]
+
+	@ruleId		int
+as
+
+SELECT * from {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions]
+Where RuleId = @ruleId
+
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_GetRuleById]
+
+	@RuleId			int
+
+as
+
+SELECT * FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] 
+WHERE RuleId = @RuleId
+
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_GetRules]
+
+	@moduleId int
+
+as
+
+-- upgrade code
+--UPDATE {databaseOwner}[{objectQualifier}avtRedirect Set ModuleId = @moduleId where ModuleId IS NULL
+
+	SELECT *
+	FROM {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules]
+	WHERE ModuleId = @moduleId
+	Order By RulePriority, RuleId
+
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_RemoveCondition]
+
+	@conditionId		int
+as
+
+DELETE from {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions]
+Where ConditionId = @conditionId
+
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_UpdateCondition]
+
+	@ConditionId	int,
+	@RuleId			int,
+	@Caption		nvarchar(50),
+	@EntityType		nvarchar(20),
+	@PropertyName	nvarchar(20),
+	@PropertyData	nvarchar(50),
+	@Operation		nvarchar(20),
+	@Value          nvarchar(255)
+	
+
+as
+
+UPDATE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Conditions] 
+SET RuleId = @RuleId, 
+	Caption = @Caption, 
+	EntityType = @EntityType, 
+	PropertyName = @PropertyName, 
+	PropertyData = @PropertyData,
+	Operation = @Operation, 
+	Value = @Value
+Where ConditionId = @ConditionId
+
+
+GO
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+CREATE procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_UpdateRule]
+
+	@Caption			nvarchar(100),
+	@RuleId				int,
+	@ModuleId			int,
+	@LogoutUser			int,
+	@RedirectAction		nvarchar(20),
+	@RedirectTabId		int,
+	@RedirectUrl		nvarchar(1024),
+	@DelaySeconds		int,
+	@DisplayTimer		int,
+	@RulePriority		int,
+	@CountRedirects		int,
+	@SaveRefLocation	nvarchar(50),
+	@SaveRefKey			nvarchar(50),
+	@RedirectCount		int
+as
+
+
+UPDATE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules]
+SET  
+	Caption = @Caption,
+	ModuleId = @ModuleId,
+	LogoutUser = @LogoutUser,
+	RedirectAction = @RedirectAction,
+	RedirectTabId = @RedirectTabId,
+	RedirectUrl = @RedirectUrl,
+	DelaySeconds = @DelaySeconds,
+	DisplayTimer = @DisplayTimer,
+	RulePriority = @RulePriority,
+	CountRedirects = @CountRedirects,
+	SaveRefLocation = @SaveRefLocation,
+	SaveRefKey = @SaveRefKey,
+	RedirectCount = @RedirectCount
+		
+WHERE RuleId = @RuleId
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+

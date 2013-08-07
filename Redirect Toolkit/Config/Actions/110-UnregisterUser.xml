@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>UNREGISTER</code>
+    <title>Unregister Current User</title>
+    <desc>If current user is logged in, this action will delete the associated user account.</desc>
+    <execute>avt.RedirectToolkit.Action.DnnUnregister,avt.RedirectToolkit.DotNetNuke</execute>
+</action>

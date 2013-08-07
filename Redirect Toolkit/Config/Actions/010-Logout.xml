@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>LOGOUT</code>
+    <title>Logout user before redirect</title>
+    <desc>If this option is set, user will be logged out of current portal before being redirected</desc>
+    <execute>avt.RedirectToolkit.Action.DnnLogout,avt.RedirectToolkit.DotNetNuke</execute>
+    <settings-html></settings-html>
+</action>

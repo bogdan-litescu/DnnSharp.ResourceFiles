@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>browser</code>
+    <title>Redirect by Browser Information</title>
+    <properties>
+        <prop>
+            <title>Browser Name &amp; Version</title>
+            <code>browser</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Browser Name</title>
+            <code>browserName</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Browser Version</title>
+            <code>version</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Browser String</title>
+            <code>fullStr</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>OS Platform</title>
+            <code>platform</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Mobile Device Model</title>
+            <code>mobileDeviceModel</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Mobile Device Manufacturer</title>
+            <code>mobileDeviceManufacturer</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is Mobile Device</title>
+            <code>isMobile</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is Tablet</title>
+            <code>isTablet</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is TV</title>
+            <code>isTv</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is Search Engine  Web Crawler</title>
+            <code>isCrawler</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Are Cookies Supported</title>
+            <code>supportsCookies</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is JavaScript Supported</title>
+            <code>supportsJs</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Are HTML Frames Supported</title>
+            <code>supportsFrames</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is Any IE</title>
+            <code>isIE</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>.. Is IE6</title>
+            <code>isIE6</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>.. Is IE7</title>
+            <code>isIE7</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>.. Is IE8</title>
+            <code>isIE8</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is Firefox</title>
+            <code>isFirefox</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is Safari</title>
+            <code>isSafari</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is Opera</title>
+            <code>isOpera</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Is Chrome</title>
+            <code>isChrome</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Language</title>
+            <code>lang</code>
+            <operators>__opNumberSimple</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Language (English Name)</title>
+            <code>langNameEn</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Language (Locale Code)</title>
+            <code>langCode</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Are Ads Blocked (works on 2nd visit)</title>
+            <code>adsBlocked</code>
+            <operators>__opBool</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByBrowser,avt.RedirectToolkit</type>
+                <params></params>
+                <clientScript>
+                <![CDATA[
+                    // Script based on http://omninoggin.com/web-development/how-to-discourage-visitors-from-using-adblock/
+                    if (typeof(jQuery) != "undefined") {
+                    
+                        jQuery(document).ready(function() {
+                            if(adbm_get_cookie("avtRedirectToolkit.AdsBlocked") == ""){
+                            
+                                // set cookie to make sure the message doesnt show up again.
+                                var ads = jQuery("iframe[src*='googleads.']");
+
+                                if (ads.size() > 0) {
+                                    var adsBlocked = true;
+                                    ads.each(function() {
+                                        if (adsBlocked && jQuery(this).css("display") == "block"){
+                                            adsBlocked = false;
+                                        }
+                                    });
+                                    
+                                    adbm_set_cookie("avtRedirectToolkit.AdsBlocked", adsBlocked ? 'true' : false, 1);
+                                }
+                            }
+                        });
+                    }
+                    
+                    function adbm_get_cookie(c_name) {
+                      if (document.cookie.length>0) {
+                        c_start=document.cookie.indexOf(c_name + "=");
+                        if (c_start!=-1) {
+                          c_start=c_start + c_name.length+1;
+                          c_end=document.cookie.indexOf(";",c_start);
+                          if (c_end==-1) c_end=document.cookie.length;
+                          return unescape(document.cookie.substring(c_start,c_end));
+                        }
+                      }
+                      return "";
+                    }
+
+                    function adbm_set_cookie(c_name,value,expiredays) {
+                      var exdate = new Date();
+                      exdate.setDate(exdate.getDate()+expiredays);
+                      document.cookie=c_name+ "=" +escape(value)+";path="+"/"+
+                      ((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+                    }
+                ]]>                  
+                </clientScript>
+            </evaluator>
+        </prop>
+    </properties>
+    
+</condition>

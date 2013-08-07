@@ -1,0 +1,127 @@
+﻿
+
+----------------------------------------------------------------------------------------------------
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD HttpMethod nvarchar(10) NULL
+GO
+
+ALTER TABLE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] ADD PostParams ntext NULL
+GO
+
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_AddRule]
+
+	@Caption			nvarchar(100),
+	@ModuleId			int,
+	@LogoutUser			int,
+	@RedirectAction		nvarchar(20),
+	@RedirectTabId		int,
+	@RedirectUrl		nvarchar(1024),
+	@DelaySeconds		int,
+	@DisplayTimer		int,
+	@RulePriority		int,
+	@CountRedirects		int,
+	@SaveRefLocation	nvarchar(50),
+	@SaveRefKey			nvarchar(50),
+	@RefCookieExpire	int,
+	@SaveVal1Text		nvarchar(1024),
+	@SaveVal1Location	nvarchar(50),
+	@SaveVal1Key		nvarchar(50),
+	@Val1CookieExpire	int,
+	@LogRedirects		int,
+	@HttpMethod			nvarchar(10), 
+	@PostParams			ntext
+
+as
+
+--IF @RulePriority < 0 OR @RulePriority IS NULL
+--	SELECT @RulePriority = MAX(RulePriority) + 1 
+--	FROM {databaseOwner}{objectQualifier}avtRedirectToolkit_Rules 
+--	where ModuleId = @ModuleId
+
+INSERT INTO {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules] (Caption, ModuleId, LogoutUser, RedirectAction, RedirectTabId, RedirectUrl, DelaySeconds, DisplayTimer, RulePriority, CountRedirects, SaveRefLocation, SaveRefKey, SaveRefCookieExpire, SaveVal1Text, SaveVal1Location, SaveVal1Key, SaveVal1CookieExpire, LogRedirects, HttpMethod, PostParams)
+	VALUES (@Caption, @ModuleId, @LogoutUser, @RedirectAction, @RedirectTabId, @RedirectUrl, @DelaySeconds, @DisplayTimer, @RulePriority, @CountRedirects, @SaveRefLocation, @SaveRefKey, @RefCookieExpire, @SaveVal1Text, @SaveVal1Location, @SaveVal1Key, @Val1CookieExpire, @LogRedirects, @HttpMethod, @PostParams)
+
+
+SELECT SCOPE_IDENTITY()
+
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+
+ALTER procedure {databaseOwner}[{objectQualifier}avtRedirectToolkit_UpdateRule]
+
+	@Caption			nvarchar(100),
+	@RuleId				int,
+	@ModuleId			int,
+	@LogoutUser			int,
+	@RedirectAction		nvarchar(20),
+	@RedirectTabId		int,
+	@RedirectUrl		nvarchar(1024),
+	@DelaySeconds		int,
+	@DisplayTimer		int,
+	@RulePriority		int,
+	@CountRedirects		int,
+	@SaveRefLocation	nvarchar(50),
+	@SaveRefKey			nvarchar(50),
+	@RefCookieExpire	int,
+	@SaveVal1Text		nvarchar(1024),
+	@SaveVal1Location	nvarchar(50),
+	@SaveVal1Key		nvarchar(50),
+	@Val1CookieExpire	int,
+	@RedirectCount		int,
+	@LogRedirects		int,
+	@HttpMethod			nvarchar(10), 
+	@PostParams			ntext
+as
+
+
+UPDATE {databaseOwner}[{objectQualifier}avtRedirectToolkit_Rules]
+SET  
+	Caption = @Caption,
+	ModuleId = @ModuleId,
+	LogoutUser = @LogoutUser,
+	RedirectAction = @RedirectAction,
+	RedirectTabId = @RedirectTabId,
+	RedirectUrl = @RedirectUrl,
+	DelaySeconds = @DelaySeconds,
+	DisplayTimer = @DisplayTimer,
+	RulePriority = @RulePriority,
+	CountRedirects = @CountRedirects,
+	SaveRefLocation = @SaveRefLocation,
+	SaveRefKey = @SaveRefKey,
+	SaveRefCookieExpire = @RefCookieExpire,
+	RedirectCount = @RedirectCount,
+	SaveVal1Text = @SaveVal1Text,
+	SaveVal1Location = @SaveVal1Location,
+	SaveVal1Key = @SaveVal1Key,
+	SaveVal1CookieExpire = @Val1CookieExpire,
+	LogRedirects = @LogRedirects,
+    HttpMethod = @HttpMethod,
+	PostParams = @PostParams
+		
+WHERE RuleId = @RuleId
+
+
+
+
+GO
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>server</code>
+    <title>Redirect by Server Data</title>
+    <properties>
+        <prop>
+            <title>Server Session</title>
+            <code>session</code>
+            <operators>__opText</operators>
+            <key>
+                <name>Key</name>
+                <help>Specify the key of the obejct to extract from the session.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByServerData,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>HttpContext Items</title>
+            <code>context</code>
+            <operators>__opText</operators>
+            <key>
+                <name>Key</name>
+                <help>Specify the key of the obejct to extract from HttpContext.Items collection.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByServerData,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Server Variables</title>
+            <code>servervars</code>
+            <operators>__opText</operators>
+            <key>
+                <name>Key</name>
+                <help>Specify the key of the obejct to extract from ServerVars collection.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByServerData,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Application State</title>
+            <code>appstate</code>
+            <operators>__opText</operators>
+            <key>
+                <name>Key</name>
+                <help>Specify the key of the obejct to extract from Application State collection.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByServerData,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+    
+</condition>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>host</code>
+    <title>Redirect by Host Address</title>
+    <properties>
+        <prop>
+            <title>Domain Name</title>
+            <code>domain</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByHost,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Full Url</title>
+            <code>fullUrl</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByHost,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+    
+</condition>

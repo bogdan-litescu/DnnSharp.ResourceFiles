@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<operator>
+    <title>Is False</title>
+    <flags>not</flags>
+    <unary>true</unary>
+    <compares>
+        <type>__opBool</type>
+    </compares>  
+    <comparer>avt.RedirectToolkit.Operators.BoolEval, avt.RedirectToolkit</comparer>
+</operator>
+    

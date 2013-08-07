@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>DEL-ROLE</code>
+    <title>Remove Roles</title>
+    <desc>If this redirect matches, use this action to remove user from selected roles (user must be logged in).</desc>
+    <execute>avt.RedirectToolkit.Action.DnnRemoveRole,avt.RedirectToolkit.DotNetNuke</execute>
+    <settings-ctrl>RoleList.ascx</settings-ctrl>
+</action>

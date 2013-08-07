@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action>
+    <code>DELSESSION</code>
+    <title>Clear Session Variables</title>
+    <desc>Clears the specified session variablee before doing the redirect.</desc>
+    <execute>avt.RedirectToolkit.Action.ClearSessionVars,avt.RedirectToolkit</execute>
+    <settings-ctrl>ClearSessionSettings.ascx</settings-ctrl>
+    <validate-fn>validateClearSessionSettings</validate-fn>
+</action>

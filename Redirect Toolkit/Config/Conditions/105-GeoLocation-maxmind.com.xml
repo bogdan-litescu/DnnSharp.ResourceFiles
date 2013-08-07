@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>geomaxmind</code>
+    <title>Redirect based on IP Location - maxmind.com</title>
+    <help>
+        Obtains Geo Location information from <a href="http://www.maxmind.com/app/web_services?rId=dnnsharpdotcom">maxmind.com</a>. Make sure you provide a license key in the Global Settings screen.
+    </help>
+    <params>
+        <param>
+            <name>LicenseKey</name>
+            <type>text</type>
+            <help></help>
+            <required>true</required>
+        </param>
+    </params>
+    <properties>
+		<prop>
+            <title>Continent</title>
+            <code>continentname</code>
+            <operators>__opPickOneFromList</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocationMaxMind,avt.RedirectToolkit</type>
+                <params>
+					<NA>AG,AI,AN,AW,BB,BL,BM,BS,BZ,CA,CR,CU,DM,DO,GD,GL,GP,GT,HN,HT,JM,KN,KY,LC,MF,MQ,MS,MX,NI,PA,PM,PR,SV,TC,TT,US,VC,VG,VI</NA>
+					<SA>AR,BO,BR,CL,CO,EC,FK,GF,GY,PE,PY,SR,UY,VE</SA>
+					<EU>AD,AL,AT,AX,BA,BE,BG,BY,CH,CZ,DE,DK,EE,ES,EU,FI,FO,FR,FX,GB,GG,GI,GR,HR,HU,IE,IM,IS,IT,JE,LI,LT,LU,LV,MC,MD,ME,MK,MT,NL,NO,PL,PT,RO,RS,RU,SE,SI,SJ,SK,SM,TR,UA,VA</EU>
+					<OC>AS,AU,CK,FJ,FM,GU,KI,MH,MP,NC,NF,NR,NU,NZ,PF,PG,PN,PW,SB,TK,TO,TV,UM,VU,WF,WS</OC>
+					<AS>AE,AF,AM,AP,AZ,BD,BH,BN,BT,CC,CN,CX,CY,GE,HK,ID,IL,IN,IO,IQ,IR,JO,JP,KG,KH,KP,KR,KW,KZ,LA,LB,LK,MM,MN,MO,MV,MY,NP,OM,PH,PK,PS,QA,SA,SG,SY,TH,TJ,TL,TM,TW,UZ,VN,YE</AS>
+					<AF>AO,BF,BI,BJ,BW,CD,CF,CG,CI,CM,CV,DJ,DZ,EG,EH,ER,ET,GA,GH,GM,GN,GQ,GW,KE,KM,LR,LS,LY,MA,MG,ML,MR,MU,MW,MZ,NA,NE,NG,RE,RW,SC,SD,SH,SL,SN,SO,ST,SZ,TD,TG,TN,TZ,UG,YT,ZA,ZM,ZW</AF>
+					<AN>AQ,BV,GS,HM,TF</AN>
+				</params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Country Name</title>
+            <code>countryname</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocationMaxMind,avt.RedirectToolkit</type>
+                <params>
+				</params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Country Code</title>
+            <code>countrycode</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocationMaxMind,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Region Name</title>
+            <code>regionname</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocationMaxMind,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Region Code</title>
+            <code>regioncode</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocationMaxMind,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>City Name</title>
+            <code>cityname</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocationMaxMind,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        
+        <prop>
+            <title>Timezone</title>
+            <code>timezone</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocationMaxMind,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        
+        <prop>
+            <title>Latitude</title>
+            <code>latitude</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocationMaxMind,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Longitude</title>
+            <code>longitude</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocationMaxMind,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+</condition>

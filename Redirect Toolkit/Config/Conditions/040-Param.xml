@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>param</code>
+    <title>Redirect by Request Parameters</title>
+    <properties>
+        <prop>
+            <title>Any (Query String/POST/Cookies)</title>
+            <code>any</code>
+            <operators>__opTextOrNumber</operators>
+            <key>
+                <name>Parameter</name>
+                <help>Specify the name of the Get/Post/Cookie parameter to use.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByParam,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>GET Query String</title>
+            <code>get</code>
+            <operators>__opTextOrNumber</operators>
+            <key>
+                <name>Parameter</name>
+                <help>Specify the name of the Get/Post/Cookie parameter to use.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByParam,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>POST Data</title>
+            <code>post</code>
+            <operators>__opTextOrNumber</operators>
+            <key>
+                <name>Parameter</name>
+                <help>Specify the name of the Get/Post/Cookie parameter to use.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByParam,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Browser Cookie</title>
+            <code>cookie</code>
+            <operators>__opTextOrNumber</operators>
+            <key>
+                <name>Parameter</name>
+                <help>Specify the name of the Get/Post/Cookie parameter to use.</help>
+            </key>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByParam,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+    
+</condition>

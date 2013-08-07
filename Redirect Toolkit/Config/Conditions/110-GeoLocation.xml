@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<condition>
+    <code>geo</code>
+    <title>Redirect based on IP Location - geobytes.com</title>
+    <help>
+        Obtains Geo Location information from <a href="http://geobytes.com">geobytes.com</a>. Note that they offer up to 20 free checks per hours.
+        If you exceed this limit you have to purchase their service and fill in the username and password in Redirect Toolkit settings.
+    </help>
+    <params>
+        <param>
+            <name>Email</name>
+            <type>text</type>
+            <help></help>
+            <required>false</required>
+        </param>
+        <param>
+            <name>Password</name>
+            <type>password</type>
+            <help></help>
+            <required>false</required>
+        </param>
+    </params>
+    <properties>
+		<prop>
+            <title>Continent</title>
+            <code>continentname</code>
+            <operators>__opPickOneFromList</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params>
+					<north-america>CA,US</north-america>
+					<south-america>AR,BL,BR,CI,CO,EC,FK,FG,GY,PE,PA,NS,UY,VE</south-america>
+					<europe>AL,BG,HR,CZ,DK,EE,FO,GI,HU,LV,LI,LT,MK,MT,NO,PL,RO,SI,SE,CH,YU,GL,IS,SJ,BA,AM,AZ,BY,GE,KZ,KG,MD,TJ,TM,UA,UZ</europe>
+					<australia>AS</australia>
+					<asia>AE,AF,AM,AJ,BG,BA,BX,BT,CK,CH,KT,GG,HK,ID,IS,IN,IO,IZ,IR,JO,JA,KG,CB,KN,KS,KU,KZ,LA,LE,CE,BM,MG,MC,MV,MY,NP,MU,RP,PK,WE,QA,SA,SN,SY,TH,TI,TX,TU,TW,UZ,VM,YM</asia>
+					<africa>AO,UV,BY,BN,BC,CG,CT,CF,IV,CM,CV,DJ,AG,EG,WI,ER,ET,GB,GH,GA,GV,EK,PU,KE,CN,LI,LT,LY,MO,MA,ML,MR,MP,MI,MZ,WA,NG,NI,RE,RW,SE,SU,SH,SL,SG,SO,OD,TP,WZ,CD,TO,TS,TZ,UG,MF,SF,ZA,ZI</africa>
+				</params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Country Name</title>
+            <code>countryname</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params>
+				</params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Country Code</title>
+            <code>countrycode</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Region Name</title>
+            <code>regionname</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Region Code</title>
+            <code>regioncode</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>City Name</title>
+            <code>cityname</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        
+        <prop>
+            <title>Timezone GMT</title>
+            <code>timezonegmt</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        
+        <prop>
+            <title>Internet Domain</title>
+            <code>internetdomain</code>
+            <operators>__opText</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        
+        <prop>
+            <title>Latitude</title>
+            <code>latitude</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+        <prop>
+            <title>Longitude</title>
+            <code>longitude</code>
+            <operators>__opNumbers</operators>
+            <evaluator>
+                <type>avt.RedirectToolkit.Conditions.RedirectByGeoLocation,avt.RedirectToolkit</type>
+                <params></params>
+            </evaluator>
+        </prop>
+    </properties>
+</condition>
