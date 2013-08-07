@@ -1,0 +1,1323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Activate.Title" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="BacktoPortal.Desc" xml:space="preserve">
+    <value>Click here to return to previous page.</value>
+  </data>
+  <data name="BacktoPortal.Title" xml:space="preserve">
+    <value>Back to Portal</value>
+  </data>
+  <data name="Buy.Title" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="ClearIndex.Desc" xml:space="preserve">
+    <value>This option will delete all indexed content, so on next indexing operation the content is reindexed from scratch.</value>
+  </data>
+  <data name="ClearIndex.Title" xml:space="preserve">
+    <value>Clear Index</value>
+  </data>
+  <data name="ControlPanel.Title" xml:space="preserve">
+    <value>Control Panel</value>
+  </data>
+  <data name="CustomRules.Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="CustomRules.Desc" xml:space="preserve">
+    <value>This allows to define new rules for indexing content in the database.</value>
+  </data>
+  <data name="CustomRules.Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="CustomRules.Present" xml:space="preserve">
+    <value>&lt;b&gt;Below are all Custom Rules you have created.&lt;/b&gt;&lt;br /&gt;
+                            Note that this instance will only bring results from rules that are selected.</value>
+  </data>
+  <data name="CustomRules.ScreenDesc" xml:space="preserve">
+    <value>This section allows defining rules for indexing arbitrary content from the database...</value>
+  </data>
+  <data name="CustomRules.Title" xml:space="preserve">
+    <value>Custom Rules</value>
+  </data>
+  <data name="CustomRuleWiz.Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="CustomRuleWiz.Param.PassAs.Desc" xml:space="preserve">
+    <value>Type the name you want the value of this column to be passed as.</value>
+  </data>
+  <data name="CustomRuleWiz.Param.PassAs.Title" xml:space="preserve">
+    <value>pass as</value>
+  </data>
+  <data name="CustomRuleWiz.Prev" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="CustomRuleWiz.Step" xml:space="preserve">
+    <value>Step &lt;b&gt;{0}&lt;/b&gt; of &lt;b&gt;{1}&lt;/b&gt;</value>
+  </data>
+  <data name="CustomRuleWizDs.Desc" xml:space="preserve">
+    <value>On this screen you define the query that SearchBoost will run to get the results that will be indexed.&lt;br /&gt;
+                                    Focus/hover controls for additional help...</value>
+  </data>
+  <data name="CustomRuleWizDs.JoinTable" xml:space="preserve">
+    <value>Join Antoher Table</value>
+  </data>
+  <data name="CustomRuleWizDs.PrimaryTable.Desc" xml:space="preserve">
+    <value>Please specify main table for this datasource. Other tables below are joined with this one.</value>
+  </data>
+  <data name="CustomRuleWizDs.PrimaryTable.Title" xml:space="preserve">
+    <value>Primary Table</value>
+  </data>
+  <data name="CustomRuleWizDs.Title" xml:space="preserve">
+    <value>Data Source</value>
+  </data>
+  <data name="CustomRuleWizGen.Boost.Desc" xml:space="preserve">
+    <value>The boost determines if the results generated by this rule should rank higher.</value>
+  </data>
+  <data name="CustomRuleWizGen.Boost.Title" xml:space="preserve">
+    <value>Boost</value>
+  </data>
+  <data name="CustomRuleWizGen.ConnStr.Desc" xml:space="preserve">
+    <value>Only specify connection string if you need to connect to a different database.</value>
+  </data>
+  <data name="CustomRuleWizGen.ConnStr.Title" xml:space="preserve">
+    <value>Connection String</value>
+  </data>
+  <data name="CustomRuleWizGen.Desc" xml:space="preserve">
+    <value>Focus controls for additional help...</value>
+  </data>
+  <data name="CustomRuleWizGen.Description.Desc" xml:space="preserve">
+    <value>Optionally, input text to describe the purpose of this Search Rule.</value>
+  </data>
+  <data name="CustomRuleWizGen.Description.Title" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="CustomRuleWizGen.Title" xml:space="preserve">
+    <value>General Information</value>
+  </data>
+  <data name="CustomRuleWizGen.Title.Desc" xml:space="preserve">
+    <value>Please input an unique identfier for this Search Rule.</value>
+  </data>
+  <data name="CustomRuleWizGen.Title.Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="CustomRuleWizIdx.Desc" xml:space="preserve">
+    <value>On this screen you select which columns need to be indexed.&lt;br /&gt;
+                                    Focus/hover controls for additional help...</value>
+  </data>
+  <data name="CustomRuleWizIdx.IdCol.Desc" xml:space="preserve">
+    <value>The id column uniquely identifies a record and it's used for indexing items individually.</value>
+  </data>
+  <data name="CustomRuleWizIdx.IdCol.Title" xml:space="preserve">
+    <value>Select Id Column</value>
+  </data>
+  <data name="CustomRuleWizIdx.IndexCols.Desc" xml:space="preserve">
+    <value>Note that all columns are converted to strings when indexing happens.</value>
+  </data>
+  <data name="CustomRuleWizIdx.IndexCols.Title" xml:space="preserve">
+    <value>Select columns to index</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Desc" xml:space="preserve">
+    <value>Select to which page results generated by this rule will redirect to when clicked.</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.ModuleColumn.Desc" xml:space="preserve">
+    <value>Please select ModuleID column, it is used to redirect to original content when a link in search results is clicked.</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.ModuleColumn.Title" xml:space="preserve">
+    <value>Module ID Column</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.ModuleId.Desc" xml:space="preserve">
+    <value>All search results generated by this rule will point to the module identified by this ID (use next step to pass additional parameters in Query String).</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.ModuleId.Title" xml:space="preserve">
+    <value>I'll specify a module ID</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.TabColumn.Desc" xml:space="preserve">
+    <value>Please select TabID column, it is used to redirect to original content when a link in search results is clicked (use next step to pass additional parameters in Query String).</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.TabColumn.Title" xml:space="preserve">
+    <value>Tab ID Column</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.TabId.Desc" xml:space="preserve">
+    <value>All search results generated by this rule will point to the page identified by this ID (use next step to pass additional parameters in Query String).</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.TabId.Title" xml:space="preserve">
+    <value>I'll specify a tab ID</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Title" xml:space="preserve">
+    <value>Link results to pages by using</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Url.Desc" xml:space="preserve">
+    <value>All search results generated by this rule will point to the URL specified in this field (use next step to pass additional parameters in Query String).</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Url.Title" xml:space="preserve">
+    <value>I'll specify an URL</value>
+  </data>
+  <data name="CustomRuleWizIdx.Title" xml:space="preserve">
+    <value>Indexing Rules</value>
+  </data>
+  <data name="CustomRuleWizIdx.TitleCol.Desc" xml:space="preserve">
+    <value>The title is usually the module title that appears on first line in search results.</value>
+  </data>
+  <data name="CustomRuleWizIdx.TitleCol.Title" xml:space="preserve">
+    <value>Select Title Column</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.InnerJoin.Desc" xml:space="preserve">
+    <value>Inner Join will restrict results in primary table to those that have a match in the joined table.</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.InnerJoin.Title" xml:space="preserve">
+    <value>Inner</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.Join.AddCond" xml:space="preserve">
+    <value>Add Join Condition</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.Join.AddCustomCond" xml:space="preserve">
+    <value>Add Custom Condition</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinCond.Custom" xml:space="preserve">
+    <value>Freely input a join condition. For example: Join1.Col1 = Join4.Col7</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinCond.Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinKey.Desc" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinKey.Foreign" xml:space="preserve">
+    <value>Select column in this table to join on (usually a foreign key).</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinKey.Primary" xml:space="preserve">
+    <value>Select column in main table to join on (usually the primary key).</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinKey.Title" xml:space="preserve">
+    <value>ON</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinTable.Desc" xml:space="preserve">
+    <value>Please specify table to join.</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinTable.Title" xml:space="preserve">
+    <value>Join Table</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.OuterJoin.Desc" xml:space="preserve">
+    <value>Outer Join will also include results from primary table that don't have a match in the joined table. In this case, the joined fields will be null.</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.OuterJoin.Title" xml:space="preserve">
+    <value>Outer</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.RemoveJoin.Title" xml:space="preserve">
+    <value>Remove Join</value>
+  </data>
+  <data name="CustomRuleWizOpt.AdditionalParams.Desc" xml:space="preserve">
+    <value>You can pass additional parameters from database to search result url via Query String.</value>
+  </data>
+  <data name="CustomRuleWizOpt.AdditionalParams.Title" xml:space="preserve">
+    <value>Additional Parameters</value>
+  </data>
+  <data name="CustomRuleWizOpt.AuthorCol.Desc" xml:space="preserve">
+    <value>This is optional.</value>
+  </data>
+  <data name="CustomRuleWizOpt.AuthorCol.Title" xml:space="preserve">
+    <value>Select AuthorId Column</value>
+  </data>
+  <data name="CustomRuleWizOpt.DatePubCol.Desc" xml:space="preserve">
+    <value>If there is a Publication Date Field (often called DateCreated), please put it in here.</value>
+  </data>
+  <data name="CustomRuleWizOpt.DatePubCol.Title" xml:space="preserve">
+    <value>Select Publication Date Column</value>
+  </data>
+  <data name="CustomRuleWizOpt.Desc" xml:space="preserve">
+    <value>On this screen you can fine tune how this rule is indexed. All parameters are optional.</value>
+  </data>
+  <data name="CustomRuleWizOpt.DescCol.Desc" xml:space="preserve">
+    <value>The description is the short text that appears under each result on search page.</value>
+  </data>
+  <data name="CustomRuleWizOpt.DescCol.Title" xml:space="preserve">
+    <value>Select Description Column</value>
+  </data>
+  <data name="CustomRuleWizOpt.ManualParams.Desc" xml:space="preserve">
+    <value>Specifiy additional parameters using this pattern: param1=val1&amp;amp;param2=val2&amp;amp;...&amp;amp;paramN=valN</value>
+  </data>
+  <data name="CustomRuleWizOpt.ManualParams.Title" xml:space="preserve">
+    <value>And/Or manually provide parameters:</value>
+  </data>
+  <data name="CustomRuleWizOpt.Template.Desc" xml:space="preserve">
+    <value>Use a template to build the description. &lt;br /&gt;
+                                        Reference columns by their names like this [Field:&amp;lt;ColumnName&amp;gt;] (replace &amp;lt;ColumnName&amp;gt; with your own).&lt;br /&gt;
+                                        Note that this can also be an HTML template.</value>
+  </data>
+  <data name="CustomRuleWizOpt.Title" xml:space="preserve">
+    <value>Optional Parameters</value>
+  </data>
+  <data name="Dialog.Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Dialog.Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="DocIdx.DialogTitle" xml:space="preserve">
+    <value>Document Search Settings</value>
+  </data>
+  <data name="DocIdx.DownloadURL.Desc" xml:space="preserve">
+    <value>Document Download URL Format</value>
+  </data>
+  <data name="DocIdx.DownloadURL.FilePath.Desc" xml:space="preserve">
+    <value>SEO&amp;amp;Human Friendly, doesn't enforce security (once obtained, the link can be accessed regardless of security)
+                    &lt;div class = "grayed_desc"&gt;for example, http://site.com/Portals/0/MyFolder/MyFile.pdf&lt;/div&gt;</value>
+  </data>
+  <data name="DocIdx.DownloadURL.FilePath.Title" xml:space="preserve">
+    <value>Use file path</value>
+  </data>
+  <data name="DocIdx.DownloadURL.ScriptWithPath.Desc" xml:space="preserve">
+    <value>SEO&amp;amp;Human Friendly, enforces portal security, but the direct link can also be guessed from the URL.
+                    &lt;div class = "grayed_desc"&gt;for example, http://site.com/SearchResults.aspx?file=MyFolder/MyFile.pdf&lt;/div&gt;</value>
+  </data>
+  <data name="DocIdx.DownloadURL.ScriptWithPath.Title" xml:space="preserve">
+    <value>Download script with File Path</value>
+  </data>
+  <data name="DocIdx.DownloadURL.SriptWithFileId.Desc" xml:space="preserve">
+    <value>Hides (obfuscates) internal paths, ideal solution for enforcing security because nobody can deduce the file path from an ID.
+                    &lt;div class = "grayed_desc"&gt;for example, http://site.com/SearchResults.aspx?file=4123&lt;/div&gt;</value>
+  </data>
+  <data name="DocIdx.DownloadURL.SriptWithFileId.Title" xml:space="preserve">
+    <value>Download script with File ID</value>
+  </data>
+  <data name="DocIdx.DownloadURL.Title" xml:space="preserve">
+    <value>Download URL</value>
+  </data>
+  <data name="DocIdx.ErrUpdate" xml:space="preserve">
+    <value>Error updating Document Search Settings!&lt;br /&gt;Server response:</value>
+  </data>
+  <data name="DocIdx.FileTypes.Desc" xml:space="preserve">
+    <value>Select &lt;i&gt;File Types&lt;/i&gt; this instance should index &amp;amp; search</value>
+  </data>
+  <data name="DocIdx.FileTypes.Instructions" xml:space="preserve">
+    <value>You can configure File Indexers from &lt;i&gt;/DesktopModules/SearchBoost/Config/FileSearch.xml&lt;/i&gt;. 
+                This includes adding support for new formats, adding new extensions for existing formats or setting defaults.&lt;br /&gt;&lt;br /&gt;
+
+                Note that you can enable even more formats by &lt;b&gt;installing IFilter packages&lt;/b&gt; on your website. 
+                You can download these from the owner's website (Adobe, Microsoft, etc).&lt;br /&gt;&lt;br /&gt;
+                Please &lt;a href = "http://www.dnnsharp.com/support#opturl=%2Fsearchboost"&gt;Contact Us&lt;/a&gt; for more formats or custom search indexers...</value>
+  </data>
+  <data name="DocIdx.FileTypes.Title" xml:space="preserve">
+    <value>File Types</value>
+  </data>
+  <data name="DocIdx.Security.EnforceDnn.Desc" xml:space="preserve">
+    <value>When this option is checked Search Boost looks up folder permissions in DNN tables and only displays results from files user has access to.</value>
+  </data>
+  <data name="DocIdx.Security.EnforceDnn.Title" xml:space="preserve">
+    <value>Enforce DNN Folder Security</value>
+  </data>
+  <data name="DocIdx.Security.Title" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="DocIdx.SuccessUpdate" xml:space="preserve">
+    <value>Document Search Settings successfully updated.</value>
+  </data>
+  <data name="Documentation.Title" xml:space="preserve">
+    <value>Documentation</value>
+  </data>
+  <data name="DocumentSearch.Desc" xml:space="preserve">
+    <value>This screen allows tweaking the File Indexing engine.</value>
+  </data>
+  <data name="DocumentSearch.Title" xml:space="preserve">
+    <value>Document Search</value>
+  </data>
+  <data name="DynamicHighlighter.Desc" xml:space="preserve">
+    <value>Search Boost can highlight the search terms within search results to make content easier to locate.
+                                        Note that the highlight style can be changed from the template by modifying class "highlight".</value>
+  </data>
+  <data name="DynamicHighlighter.Title" xml:space="preserve">
+    <value>Highlight search terms in results</value>
+  </data>
+  <data name="Error.Title" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Exceptions.Title" xml:space="preserve">
+    <value>Exceptions...</value>
+  </data>
+  <data name="Filter.Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Filter.Save" xml:space="preserve">
+    <value>Save Filters</value>
+  </data>
+  <data name="Filters.Desc" xml:space="preserve">
+    <value>Filters appear next to search boxes; they're used to filter results.</value>
+  </data>
+  <data name="Filters.ScreenDesc" xml:space="preserve">
+    <value>This section allows defining filters that users can use to better target searches...</value>
+  </data>
+  <data name="Filters.Title" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="Forums.Title" xml:space="preserve">
+    <value>Forums</value>
+  </data>
+  <data name="FuzzySearch.Desc" xml:space="preserve">
+    <value>Fuzzy Search will return results that fall within the similarity percentage. 
+                                        For example, searching for &lt;i&gt;test&lt;/i&gt; will also return resuts that contain text but only if the similarity index is less than 75% (because 1 letter of 4 means 25% missmatch).</value>
+  </data>
+  <data name="FuzzySearch.Similarity100" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="FuzzySearch.SimilarityPercent" xml:space="preserve">
+    <value>Match Similarity {0}%</value>
+  </data>
+  <data name="FuzzySearch.Title" xml:space="preserve">
+    <value>Fuzzy Search</value>
+  </data>
+  <data name="GeneralSettings.DebugLogIndexing.Desc" xml:space="preserve">
+    <value>Turn on this option to have Search Boost log information when search indexing happens.&lt;br /&gt;Logs are saved under &lt;i&gt;/Portals/_default/Logs/SearchBoost&lt;/i&gt;.</value>
+  </data>
+  <data name="GeneralSettings.DebugLogIndexing.Title" xml:space="preserve">
+    <value>DEBUG: Enable Search Indexing logging</value>
+  </data>
+  <data name="GeneralSettings.DebugLogSearch.Desc" xml:space="preserve">
+    <value>Turn on this option to have Search Boost log information when search are submitted.&lt;br /&gt;Logs are saved under &lt;i&gt;Portal Home Directory/Logs/SearchBoost&lt;/i&gt;.</value>
+  </data>
+  <data name="GeneralSettings.DebugLogSearch.Title" xml:space="preserve">
+    <value>DEBUG: User Search logging</value>
+  </data>
+  <data name="GeneralSettings.DebugXml.Desc" xml:space="preserve">
+    <value>Turn on this option during development to see the XML that was used for the search results and search box XSL transformations.</value>
+  </data>
+  <data name="GeneralSettings.DebugXml.Title" xml:space="preserve">
+    <value>DEBUG: Show XML</value>
+  </data>
+  <data name="GeneralSettings.Desc" xml:space="preserve">
+    <value>Adjust these settings to get the most of you search functionalities.</value>
+  </data>
+  <data name="GeneralSettings.DialogTitle" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="GeneralSettings.DocTarget.Title" xml:space="preserve">
+    <value>Open search results that are DOCUMENTS in</value>
+  </data>
+  <data name="GeneralSettings.ErrUpdate" xml:space="preserve">
+    <value>Error updating settings!&lt;br /&gt;Server response:</value>
+  </data>
+  <data name="GeneralSettings.HideSettingsLinke.Desc" xml:space="preserve">
+    <value>Select this option to hide the Search Settings links that appears for SearchInput skin object. This is useful in cases where the manage link breaks design or prevents admins from accessing some functions. Make sure to Install Under Admin before selecting this option so you can acces the settings afterwards.</value>
+  </data>
+  <data name="GeneralSettings.HideSettingsLinke.Title" xml:space="preserve">
+    <value>Hide &lt;i&gt;Search Setting&lt;/i&gt; link for skin objects</value>
+  </data>
+  <data name="GeneralSettings.IncJQuery.Desc" xml:space="preserve">
+    <value>Search Boost loads its own copy of jQuery in order to avoid collisions. Uncheck this option to have Search Boost use existing jQuery object on the page. Re-enable this option if you run into issues.</value>
+  </data>
+  <data name="GeneralSettings.IncJQuery.Title" xml:space="preserve">
+    <value>Include Own jQuery</value>
+  </data>
+  <data name="GeneralSettings.PageTarget.Title" xml:space="preserve">
+    <value>Open search results that are PAGES in</value>
+  </data>
+  <data name="GeneralSettings.ReplaceResultsTokens.Desc" xml:space="preserve">
+    <value>When this option is on, Search Boost replaes tokens in Titles, Descriptions and URLs using My Tokens if installed, otherwise it reverts to DNN Token Replacer.</value>
+  </data>
+  <data name="GeneralSettings.ReplaceResultsTokens.Title" xml:space="preserve">
+    <value>Replace Tokens in Search Results</value>
+  </data>
+  <data name="GeneralSettings.SuccessUpdate" xml:space="preserve">
+    <value>Instance successfully updated.</value>
+  </data>
+  <data name="GeneralSettings.Title" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="Index.Desc" xml:space="preserve">
+    <value>Normally, content is not indexed immediately so it's difficult to properly test all the search instances and rules. Click here to have Search Boost reindex content.</value>
+  </data>
+  <data name="Index.Success" xml:space="preserve">
+    <value>Search Boost is indexing content. Please wait...</value>
+  </data>
+  <data name="Index.Title" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="IndexClear.Success" xml:space="preserve">
+    <value>Search Index succesfully cleared!</value>
+  </data>
+  <data name="IndexStats.CustomItemsLastIndexed" xml:space="preserve">
+    <value>Custom items indexed last time:</value>
+  </data>
+  <data name="IndexStats.Err" xml:space="preserve">
+    <value>Error getting statistics! Server response:</value>
+  </data>
+  <data name="IndexStats.FileLastIndexed" xml:space="preserve">
+    <value>Files indexed last time:</value>
+  </data>
+  <data name="IndexStats.LastAnalyzed" xml:space="preserve">
+    <value>Doc Analyzer last ran at</value>
+  </data>
+  <data name="IndexStats.LastIndexed" xml:space="preserve">
+    <value>Indexer last ran at</value>
+  </data>
+  <data name="IndexStats.ModuleLastIndexed" xml:space="preserve">
+    <value>Module entries indexed last time:</value>
+  </data>
+  <data name="IndexStats.TotalCustomItemsIndexed" xml:space="preserve">
+    <value>Total unique custom items indexed:</value>
+  </data>
+  <data name="IndexStats.TotalFilesAnalyzed" xml:space="preserve">
+    <value>Total Files Analyzed:</value>
+  </data>
+  <data name="IndexStats.TotalFilesIndexed" xml:space="preserve">
+    <value>Total unique files indexed:</value>
+  </data>
+  <data name="IndexStats.TotalModulesIndexed" xml:space="preserve">
+    <value>Total unique module entries indexed:</value>
+  </data>
+  <data name="IndexStats.TotalUpdateFiles" xml:space="preserve">
+    <value>Total New/Updated Files:</value>
+  </data>
+  <data name="Localize.EmptyText.DialogTitle" xml:space="preserve">
+    <value>Localize &lt;i&gt;Text for Empty Search box&lt;/i&gt;</value>
+  </data>
+  <data name="Localize.ErrUpdate" xml:space="preserve">
+    <value>Error updating Localization!&lt;br /&gt;Server response:</value>
+  </data>
+  <data name="Localize.UpdateSuccess" xml:space="preserve">
+    <value>Localization successfully updated.</value>
+  </data>
+  <data name="MultiTermSearch.ALL" xml:space="preserve">
+    <value>Results must contain ALL words</value>
+  </data>
+  <data name="MultiTermSearch.ANY" xml:space="preserve">
+    <value>Results must contain ANY of the words</value>
+  </data>
+  <data name="MultiTermSearch.Desc" xml:space="preserve">
+    <value>Define standard behavior when the search contains more than one word. 
+                                        Note that exact match is still possible by enclosing the words in double quotes.</value>
+  </data>
+  <data name="MultiTermSearch.EXACT" xml:space="preserve">
+    <value>Results must contain EXACT expression</value>
+  </data>
+  <data name="MultiTermSearch.Title" xml:space="preserve">
+    <value>Multi word searches</value>
+  </data>
+  <data name="NewCustomRule.Desc" xml:space="preserve">
+    <value>This allows to define new rules for indexing content in the database.</value>
+  </data>
+  <data name="NewCustomRule.Title" xml:space="preserve">
+    <value>New Search Indexing Rule</value>
+  </data>
+  <data name="OpenTarget.NamedWindow" xml:space="preserve">
+    <value>Named Window...</value>
+  </data>
+  <data name="OpenTarget.NewWindow" xml:space="preserve">
+    <value>New Window</value>
+  </data>
+  <data name="OpenTarget.SameWindow" xml:space="preserve">
+    <value>Same Window</value>
+  </data>
+  <data name="OpenTarget.TargetName" xml:space="preserve">
+    <value>Target Name</value>
+  </data>
+  <data name="Overview.GettingStarted" xml:space="preserve">
+    <value>Getting Started</value>
+  </data>
+  <data name="Overview.GettingStarted.CustomRules.Desc" xml:space="preserve">
+    <value>Indexing Search Rules allow Search Boost to index arbitrary content from the database 
+            (from custom tables or modules that don't support searching).</value>
+  </data>
+  <data name="Overview.GettingStarted.CustomRules.Title" xml:space="preserve">
+    <value>Create Custom Indexing Rule</value>
+  </data>
+  <data name="Overview.GettingStarted.SearchDocs.Desc" xml:space="preserve">
+    <value>Use the Search Target screen to narrow search results to specific portals, pages, modules or portal folders.
+            From this screen you also select the Custom Indexing Rules that relate to this instance.</value>
+  </data>
+  <data name="Overview.GettingStarted.SearchDocs.Title" xml:space="preserve">
+    <value>Search Documents (PDFs, Word Docx, etc)</value>
+  </data>
+  <data name="Overview.GettingStarted.Target.Desc" xml:space="preserve">
+    <value>Search Boost is capable of indexing files for which it has an IFilter package installed. 
+            After you setup the IFilters make sure to also select the folders in the Search Target Screen.</value>
+  </data>
+  <data name="Overview.GettingStarted.Target.Title" xml:space="preserve">
+    <value>Define Where to Search</value>
+  </data>
+  <data name="Overview.GettingStarted.Tools.Desc" xml:space="preserve">
+    <value>Use these tools to ensure content is most recent quickly and determine if your searches work as expected.</value>
+  </data>
+  <data name="Overview.GettingStarted.Tweak.Desc" xml:space="preserve">
+    <value>Use the General Setting properties to tweak the compatibility settings and also enable DEBUG mode that will display on the front-end the XML used in the XSL transformation.</value>
+  </data>
+  <data name="Overview.GettingStarted.Tweak.Title" xml:space="preserve">
+    <value>Tweak and Debug</value>
+  </data>
+  <data name="Overview.Title" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="PhraseSlop.Desc" xml:space="preserve">
+    <value>The slop defines how close to each other the words from the search phrase need to be in order for it to be considered a match.
+                                        For example, searching for "quick fox" will match text "the quick brown fox" only when the slop is greater than or equal to 1 because the "brown" word is in between.</value>
+  </data>
+  <data name="PhraseSlop.Title" xml:space="preserve">
+    <value>Phrase Slop</value>
+  </data>
+  <data name="PortalFilter.AllPortals" xml:space="preserve">
+    <value>All Portals</value>
+  </data>
+  <data name="PortalFilter.Choose" xml:space="preserve">
+    <value>Let me choose...</value>
+  </data>
+  <data name="PortalFilter.Desc" xml:space="preserve">
+    <value>Have this option checked to show a dropdown with portals so users can filter searches to individual portals.</value>
+  </data>
+  <data name="PortalFilter.NoHost" xml:space="preserve">
+    <value>Portal filter only available for Super User accounts...</value>
+  </data>
+  <data name="PortalFilter.SelectTitle" xml:space="preserve">
+    <value>Which portals to display?</value>
+  </data>
+  <data name="PortalFilter.Title" xml:space="preserve">
+    <value>Display Portal Filter</value>
+  </data>
+  <data name="PortalFilter.Warning" xml:space="preserve">
+    <value>Make sure the portals exposed with this filter are setup under Search Target...</value>
+  </data>
+  <data name="SearchBoost.Extreme" xml:space="preserve">
+    <value>Extreme Boost</value>
+  </data>
+  <data name="SearchBoost.High" xml:space="preserve">
+    <value>High Boost</value>
+  </data>
+  <data name="SearchBoost.Moderate" xml:space="preserve">
+    <value>Moderate Boost</value>
+  </data>
+  <data name="SearchBoost.NoBoost" xml:space="preserve">
+    <value>No Boost</value>
+  </data>
+  <data name="SearchBoost.VeryHigh" xml:space="preserve">
+    <value>Very High Boost</value>
+  </data>
+  <data name="SearchDesc.Desc" xml:space="preserve">
+    <value>Check this option to have Search Boost also return results that contain the keywords in descriptions.&lt;br /&gt;
+                                        The boost let's you determine how results should be ranked if the search matches this field.</value>
+  </data>
+  <data name="SearchDesc.Title" xml:space="preserve">
+    <value>Also search Descriptions</value>
+  </data>
+  <data name="SearchEngine.Save" xml:space="preserve">
+    <value>Save Settings</value>
+  </data>
+  <data name="SearchEngine.ScreenDesc" xml:space="preserve">
+    <value>Tweak the Search Boost indexing engine that comes with Search Boost version 2...</value>
+  </data>
+  <data name="SearchEngine.Title" xml:space="preserve">
+    <value>Search Engine (2.0)</value>
+  </data>
+  <data name="SearchFolderNames.Desc" xml:space="preserve">
+    <value>Check this option to have Search Boost also return results that contain the keywords in folder names.&lt;br /&gt;
+                                        The boost let's you determine how results should be ranked if the search matches this field.</value>
+  </data>
+  <data name="SearchFolderNames.Title" xml:space="preserve">
+    <value>Also search Folder Names</value>
+  </data>
+  <data name="SearchPageTitles.Desc" xml:space="preserve">
+    <value>Check this option to have Search Boost also return results that contain the keywords in page titles.&lt;br /&gt;
+                                        The boost let's you determine how results should be ranked if the search matches this field.</value>
+  </data>
+  <data name="SearchPageTitles.Title" xml:space="preserve">
+    <value>Also search Page Titles</value>
+  </data>
+  <data name="SearchTarget.Desc" xml:space="preserve">
+    <value>Use this screen to instruct Search Boost what to search.</value>
+  </data>
+  <data name="SearchTarget.ScreenDesc" xml:space="preserve">
+    <value>This screen allows selecting specific pages and folders to bring search results for, so different Search Boost instances can be configured to bring different results.
+                                Login as SuperUser to define search targets across multiple portals...</value>
+  </data>
+  <data name="SearchTarget.Title" xml:space="preserve">
+    <value>Search Target</value>
+  </data>
+  <data name="SearchTarget.TreeInstructions" xml:space="preserve">
+    <value>Select &lt;b&gt;Pages&lt;/b&gt; and &lt;b&gt;Directories&lt;/b&gt; this SearchBoost Instance should bring results from.</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.ActivePage" xml:space="preserve">
+    <value>Results from active page</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.ActivePageAndChildren" xml:space="preserve">
+    <value>Results from active page and all child pages</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.ChildrenOfActivePage" xml:space="preserve">
+    <value>Results from children of active page</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Desc" xml:space="preserve">
+    <value>This filter is applied dynamically based on active page. 
+                                    Relevant when same search input box (same ModuleId or same Skin Object) appears on more than one page.</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Level1OfActiveBranch" xml:space="preserve">
+    <value>Results starting from level 1 item of active branch</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Level2OfActiveBranch" xml:space="preserve">
+    <value>Results starting from level 2 item of active branch</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Level3OfActiveBranch" xml:space="preserve">
+    <value>Results starting from level 3 item of active branch</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.NoFilter" xml:space="preserve">
+    <value>Don't Filter (display all results)</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.RootOfActiveBranch" xml:space="preserve">
+    <value>Results starting from ROOT item of active branch</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Title" xml:space="preserve">
+    <value>Further filter search results to...</value>
+  </data>
+  <data name="SearchTargetExceptFolders.Desc" xml:space="preserve">
+    <value>Put one entry per line; each entry can be a substring of a folder or file name or a regular expression (the format is /regex expression/)</value>
+  </data>
+  <data name="SearchTargetExceptFolders.Title" xml:space="preserve">
+    <value>Folders...</value>
+  </data>
+  <data name="SearchTargetExceptModules.Desc" xml:space="preserve">
+    <value>Put one entry per line; entry can be a number (Module ID), a substring of the module title or a regular expression (the format is /regex expression/)</value>
+  </data>
+  <data name="SearchTargetExceptModules.Title" xml:space="preserve">
+    <value>Modules...</value>
+  </data>
+  <data name="SearchTargetExceptTabs.Desc" xml:space="preserve">
+    <value>Put one entry per line; entry can be a number (Tab ID), a substring of the title or name or a regular expression (the format is /regex expression/)</value>
+  </data>
+  <data name="SearchTargetExceptTabs.Title" xml:space="preserve">
+    <value>Tabs...</value>
+  </data>
+  <data name="SearchTargetSave.Title" xml:space="preserve">
+    <value>Save Search Target</value>
+  </data>
+  <data name="SearchTargetSource.Title" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="SearchTitles.Desc" xml:space="preserve">
+    <value>Check this option to have Search Boost also return results that contain the keywords in titles.&lt;br /&gt;
+                                        The boost let's you determine how results should be ranked if the search matches this field.</value>
+  </data>
+  <data name="SearchTitles.Title" xml:space="preserve">
+    <value>Also search Titles</value>
+  </data>
+  <data name="Success.Title" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="SwitchInstance.DeleteConfirm" xml:space="preserve">
+    <value>Are you sure you want to delete this instance data?\n\nDelete an instance if it's no longer used or if you want to reset all data associated with it.</value>
+  </data>
+  <data name="SwitchInstance.DeleteSuccess" xml:space="preserve">
+    <value>Instance data successfully deleted.</value>
+  </data>
+  <data name="SwitchInstance.Desc" xml:space="preserve">
+    <value>Click here to open a different Search instance.</value>
+  </data>
+  <data name="SwitchInstance.DialogTitle" xml:space="preserve">
+    <value>Select Search Boost Instance</value>
+  </data>
+  <data name="SwitchInstance.ErrDelete" xml:space="preserve">
+    <value>Error deleting instance data!&lt;br /&gt;Server response:</value>
+  </data>
+  <data name="SwitchInstance.ErrGetList" xml:space="preserve">
+    <value>Failed to retrieve list of instances; internal error:</value>
+  </data>
+  <data name="SwitchInstance.Loading" xml:space="preserve">
+    <value>Loading... Please wait...</value>
+  </data>
+  <data name="SwitchInstance.Required" xml:space="preserve">
+    <value>Please select an instance first...</value>
+  </data>
+  <data name="SwitchInstance.Reset" xml:space="preserve">
+    <value>Reset Instance Data</value>
+  </data>
+  <data name="SwitchInstance.Switch" xml:space="preserve">
+    <value>Switch</value>
+  </data>
+  <data name="SwitchInstance.Title" xml:space="preserve">
+    <value>Switch Instance</value>
+  </data>
+  <data name="TestSearch.Desc" xml:space="preserve">
+    <value>Quickly test your search instances and rules with this simple and fast tool.</value>
+  </data>
+  <data name="TestSearch.Input" xml:space="preserve">
+    <value>Input your search</value>
+  </data>
+  <data name="TestSearch.Title" xml:space="preserve">
+    <value>Test Search</value>
+  </data>
+  <data name="TestSearch.Warning" xml:space="preserve">
+    <value>If you don't get expected results, reindex content by clicking the button in the toolbar or going into Host / Search Admin.</value>
+  </data>
+  <data name="UiEmptyText.Desc" xml:space="preserve">
+    <value>This text will appear in SearchBoost Input text box when there is no input. Focusing the search box will cause the text to disappear so user can input search terms.</value>
+  </data>
+  <data name="UiEmptyText.Title" xml:space="preserve">
+    <value>Text for Empty Search box</value>
+  </data>
+  <data name="UiEmptyTextDefault.Desc" xml:space="preserve">
+    <value>Leave fields below empty to have Search Boost fallback to this text.</value>
+  </data>
+  <data name="UiEmptyTextDefault.Title" xml:space="preserve">
+    <value>Default (Fallback) Text</value>
+  </data>
+  <data name="UiInputTemplate.Desc" xml:space="preserve">
+    <value>Please select the template that will be used to render the search input box.</value>
+  </data>
+  <data name="UiInputTemplate.Title" xml:space="preserve">
+    <value>Template for Search Input Box</value>
+  </data>
+  <data name="UiMaxDesc.Desc" xml:space="preserve">
+    <value>Use this to adjust how big the description text can be on the result page, it may look odd if some descriptions are very long while others are very short. Search Boost will append '...' at the end of the descriptions that are stripped.</value>
+  </data>
+  <data name="UiMaxDesc.Title" xml:space="preserve">
+    <value>Maximum Description Length</value>
+  </data>
+  <data name="UiPageSize.Desc" xml:space="preserve">
+    <value>This option determines how many search results are displayed per page. Provide multiple values, one per line, to allow to user to switch to different sizes. The first value in the list is the intial page size.</value>
+  </data>
+  <data name="UiPageSize.Title" xml:space="preserve">
+    <value>Results Per Page</value>
+  </data>
+  <data name="UiParamName.Desc" xml:space="preserve">
+    <value>Search terms are delivered to results page via GET. This option allows you to customize the name of the Query String parameter, so you can integrate with other results module instead that expect a different parameter in Query String.</value>
+  </data>
+  <data name="UiParamName.Title" xml:space="preserve">
+    <value>Name of Query String Param</value>
+  </data>
+  <data name="UiResultsPage.Desc" xml:space="preserve">
+    <value>This is the page containing a SearchBoost Results module that will receive the input and retrieve the results.</value>
+  </data>
+  <data name="UiResultsPage.Title" xml:space="preserve">
+    <value>Results Page</value>
+  </data>
+  <data name="UiResultsPageManual.Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="UiResultsPageManual.Desc" xml:space="preserve">
+    <value>Alternatively, you can manually set the results page. This is especially usefull when integrating with a Search Results module other than SearchBoost Results.</value>
+  </data>
+  <data name="UiResultsPageManual.ErrRequired" xml:space="preserve">
+    <value>Please specify results page. All pages that have avt.SearchBoost.Results modules are listed here.</value>
+  </data>
+  <data name="UiResultsPageManual.Title" xml:space="preserve">
+    <value>or type TabId</value>
+  </data>
+  <data name="UiResultsTemplate.Desc" xml:space="preserve">
+    <value>Please select the template that will be used to render results.</value>
+  </data>
+  <data name="UiResultsTemplate.Title" xml:space="preserve">
+    <value>Template for Search Results</value>
+  </data>
+  <data name="UiSave.Title" xml:space="preserve">
+    <value>Save UI Settings</value>
+  </data>
+  <data name="UiSettings.Desc" xml:space="preserve">
+    <value>Adjust these to better match appearance of your portal.</value>
+  </data>
+  <data name="UiSettings.ScreenDesc" xml:space="preserve">
+    <value>These settings relate to both search input box and results page...</value>
+  </data>
+  <data name="UiSettings.Title" xml:space="preserve">
+    <value>UI Settings</value>
+  </data>
+  <data name="UiStripResultsHtml.Desc" xml:space="preserve">
+    <value>When this option is on, Search Boost strips HTML code such as links from descriptions displayed for each item on the results page.</value>
+  </data>
+  <data name="UiStripResultsHtml.Title" xml:space="preserve">
+    <value>Strip HTML from descriptions on Results Page</value>
+  </data>
+  <data name="AddUrl.Title" xml:space="preserve">
+    <value>Add URLs...</value>
+  </data>
+  <data name="BoostRecentDocuments.Desc" xml:space="preserve">
+    <value>Use this setting to control if newer documents should be considered more relevant and therefore rank higher within results.</value>
+  </data>
+  <data name="BoostRecentDocuments.Title" xml:space="preserve">
+    <value>Boost Recent Documents</value>
+  </data>
+  <data name="BoostRecentModuleContent.Desc" xml:space="preserve">
+    <value>Use this setting to control if newer content from modules should be considered more relevant and therefore rank higher within results.</value>
+  </data>
+  <data name="BoostRecentModuleContent.Title" xml:space="preserve">
+    <value>Boost Recent Module Content</value>
+  </data>
+  <data name="CustomRuleWizDs.Where.Desc" xml:space="preserve">
+    <value>Specify the WHERE clausis for the SQL query. This fields supports My Tokens.</value>
+  </data>
+  <data name="CustomRuleWizDs.Where.Title" xml:space="preserve">
+    <value>Where Condition</value>
+  </data>
+  <data name="General.LoadingPleaseWait" xml:space="preserve">
+    <value>Loading... Please wait...</value>
+  </data>
+  <data name="IndexStats.TotalFoldersAnalyzed" xml:space="preserve">
+    <value>Total Folders Analyzed:</value>
+  </data>
+  <data name="SearchUrls.Desc" xml:space="preserve">
+    <value>In this screen you can specify additional URLs that Search Bosot can crawl to extract content. The pages don't have to be on same website. If the URL points to a sitemap or RSS Feed, Search Boost will automatically detect that and parse all pages.</value>
+  </data>
+  <data name="SearchUrls.DialogTitle" xml:space="preserve">
+    <value>Search URLs</value>
+  </data>
+  <data name="CustomRuleWizDs.ManualSQL.Desc" xml:space="preserve">
+    <value>Input your select query that returns all relevant columns - the ones you want to index and also special columns such as date published, author id, descriptions and anything else you will find relevant for the next steps of the wizard. Also, make sure your query returns distinct columns.</value>
+  </data>
+  <data name="CustomRuleWizDs.ManualSQL.Title" xml:space="preserve">
+    <value>Input Query</value>
+  </data>
+  <data name="CustomRuleWizGen.AdvQuery.Title" xml:space="preserve">
+    <value>Let me write the query (advanced users)</value>
+  </data>
+  <data name="SortResults.By.DatePublished" xml:space="preserve">
+    <value>By Date Published, Newest at the top</value>
+  </data>
+  <data name="SortResults.By.Relevance" xml:space="preserve">
+    <value>By Relevance</value>
+  </data>
+  <data name="SortResults.By.Title" xml:space="preserve">
+    <value>By Title, Alphabetically</value>
+  </data>
+  <data name="SortResults.By.PageName" xml:space="preserve">
+    <value>By Page Name, Alphabetically</value>
+  </data>
+  <data name="SortResults.By.ContainerPath" xml:space="preserve">
+    <value>By Page/Folder Path, Alphabetically</value>
+  </data>
+  <data name="SortResults.Desc" xml:space="preserve">
+    <value>Select how results should be sorted; notice the default is by relevance which takes into account various criteria such as the number the search terms appear, where they appear within the result, how many times they appear and so on.</value>
+  </data>
+  <data name="SortResults.Title" xml:space="preserve">
+    <value>Sort Results</value>
+  </data>
+  <data name="UsePostWhenOnSamePage.Desc" xml:space="preserve">
+    <value>Use this option to maintain page state when a search is submitted and the results are displayed on same page.</value>
+  </data>
+  <data name="UsePostWhenOnSamePage.Title" xml:space="preserve">
+    <value>Use POST when input box and search results are on same page</value>
+  </data>
+  <data name="UiParamNamePage.Desc" xml:space="preserve">
+    <value>Activate page is transported to results page via Query String. This option allows you to customize the name of the parameter, so you can integrate with other results module instead that expect a different parameter name in Query String.</value>
+  </data>
+  <data name="UiParamNamePage.Title" xml:space="preserve">
+    <value>Name of Query String Param for Page Index</value>
+  </data>
+  <data name="DocIdx.DownloadURL.CustomScript.Desc" xml:space="preserve">
+    <value>Use your custom aspx script to deliver files.
+                    &lt;div class = "grayed_desc"&gt;for example, http://site.com/&lt;b&gt;MyDownloadsScript.aspx&lt;/b&gt;?file=MyFolder/MyFile.pdf&lt;/div&gt;</value>
+  </data>
+  <data name="DocIdx.DownloadURL.CustomScript.Title" xml:space="preserve">
+    <value>Custom Download Script</value>
+  </data>
+  <data name="SocialSharing.Desc" xml:space="preserve">
+    <value>Enable this option to have social sharing controls enabled for each search results.</value>
+  </data>
+  <data name="SocialSharing.Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="SocialSharing.Facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="SocialSharing.GooglePlusOne" xml:space="preserve">
+    <value>Google +1</value>
+  </data>
+  <data name="SocialSharing.More" xml:space="preserve">
+    <value>More...</value>
+  </data>
+  <data name="SocialSharing.ShowCount" xml:space="preserve">
+    <value>Also Show Count</value>
+  </data>
+  <data name="SocialSharing.ShowGloalCount" xml:space="preserve">
+    <value>Show Total Sharing Count</value>
+  </data>
+  <data name="SocialSharing.Title" xml:space="preserve">
+    <value>Social Sharing</value>
+  </data>
+  <data name="SocialSharing.Twitter" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="SuggestionCount.Desc" xml:space="preserve">
+    <value>When searches return 0 results Search Boost can analyze the index and return simillar terms that would actually return results.</value>
+  </data>
+  <data name="SuggestionCount.Title" xml:space="preserve">
+    <value>Number of Suggestions</value>
+  </data>
+  <data name="UiPageLinksCount.Desc" xml:space="preserve">
+    <value>This option determines how many page links are displayed at the bottom of the results.</value>
+  </data>
+  <data name="UiPageLinksCount.Title" xml:space="preserve">
+    <value>Number of Page Links</value>
+  </data>
+  <data name="MoreLikeThis.Desc" xml:space="preserve">
+    <value>When this option is enabled, each result has a "More Like This" link that when clicked returns simillar results based on selected number of common terms.</value>
+  </data>
+  <data name="MoreLikeThis.Disabled" xml:space="preserve">
+    <value>disabled</value>
+  </data>
+  <data name="MoreLikeThis.NCommonWords" xml:space="preserve">
+    <value>based on words that appear minimum {0} times in source doc</value>
+  </data>
+  <data name="MoreLikeThis.Title" xml:space="preserve">
+    <value>Enable More Like This</value>
+  </data>
+  <data name="IgnoreAccents.Desc" xml:space="preserve">
+    <value>Enable this option to have Search Boost ignore accents so all word are searchable using standard latin characters. This setting is global (for all instances).</value>
+  </data>
+  <data name="IgnoreAccents.Title" xml:space="preserve">
+    <value>Ignore Accents</value>
+  </data>
+  <data name="StopWords.Desc" xml:space="preserve">
+    <value>Specify one word per line to build a list of words which should be ignored from indexing and searching (exclude words such as "and", "or" and so on). This setting is global (for all instances).</value>
+  </data>
+  <data name="StopWords.Title" xml:space="preserve">
+    <value>Stop Words</value>
+  </data>
+  <data name="AutocompleteSuggestionCount.Desc" xml:space="preserve">
+    <value>Select the number of options the autocomplete feature should display at a maximum. The options are built from the content that is already indexed.</value>
+  </data>
+  <data name="AutocompleteSuggestionCount.Title" xml:space="preserve">
+    <value>Autocomplete Options Count</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.UrlColumn.Title" xml:space="preserve">
+    <value>URL Column</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.UrlColumn.Desc" xml:space="preserve">
+    <value>Each result will point to the url specified by this database field. Use in conjunction with Advanced Query to build the URL programatically from database fields and predetermined data.</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Url.DescTokens" xml:space="preserve">
+    <value>This field supports My Tokens.</value>
+  </data>
+  <data name="WildCardSearch.Desc" xml:space="preserve">
+    <value>The smallest part Search Boost normally searches is the word. Enable this option to have Search Boost also match the input that appears as part of words. For example, searching for &lt;i&gt;*st&lt;/i&gt; will return results containing words that end in &lt;i&gt;st&lt;/i&gt; such as &lt;i&gt;boost&lt;/i&gt;. The wild card character can appear at end or inside of search terms, it can't be the first character. By choosing the implicite option users no longer have to type the asterisx character, it will be appended automatically by Search Boost at the end of search terms.</value>
+  </data>
+  <data name="WildCardSearch.Disabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="WildCardSearch.Enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="WildCardSearch.Implicitely" xml:space="preserve">
+    <value>Implicitly</value>
+  </data>
+  <data name="WildCardSearch.Title" xml:space="preserve">
+    <value>WildCard(*) Search</value>
+  </data>
+  <data name="SwitchInstance.NoInstance" xml:space="preserve">
+    <value>Add Search Boost input and results modules or skin objects to your portal before you can manage them!&lt;br/&gt;&lt;br/&gt;Read our &lt;a href="http://search-boost.avatar-soft.ro/home/getting-started" target="_blank"&gt;Getting Started Guide&lt;/a&gt; for more info...</value>
+  </data>
+  <data name="CustomRuleWizOpt.CategoryNames.Desc" xml:space="preserve">
+    <value>Specify list of category names, one per line; specify subcategories by using this notation: CategoryName/SubcategoryName/Subsubcategory/etc - any depth is allowed</value>
+  </data>
+  <data name="CustomRuleWizOpt.CategorySource.Desc" xml:space="preserve">
+    <value>The category is used in faceted search, to filter down results by their categories and subcategories.</value>
+  </data>
+  <data name="CustomRuleWizOpt.CategorySource.Title" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CustomRuleWizOpt.ManualData.Desc" xml:space="preserve">
+    <value>Specifiy additional data using this pattern: param1=val1&amp;amp;param2=val2&amp;amp;...&amp;amp;paramN=valN</value>
+  </data>
+  <data name="CustomRuleWizOpt.ManualData.Title" xml:space="preserve">
+    <value>Manual Data</value>
+  </data>
+  <data name="CustomRuleWizOpt.XslParams.Desc" xml:space="preserve">
+    <value>Select additional data. These are parameters that you can use in the XSL template. You can access these from the result node as &amp;lt;xsl:value-of select="data/field[@name='somekey']"&amp;gt;&amp;lt;/xsl:value-of&amp;gt;.Also, you can filter by this parameters in the search results by appending sbc-(name)=(value) to the URL.</value>
+  </data>
+  <data name="CustomRuleWizOpt.XslParams.Title" xml:space="preserve">
+    <value>Custom Data</value>
+  </data>
+  <data name="SearchContent.Desc" xml:space="preserve">
+    <value>If this option is disabled, Search Boost no longers matches keywords in the content. Use this to create for example a 'search titles only' function.</value>
+  </data>
+  <data name="SearchContent.Title" xml:space="preserve">
+    <value>Search Content</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckDeleted.Desc" xml:space="preserve">
+    <value>Turn off this option to improve performances when you know that your documents will never get deleted from disk.</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckDeleted.Title" xml:space="preserve">
+    <value>Check for Deleted Documents</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckNew.Desc" xml:space="preserve">
+    <value>Turn off this option if you know that no new files will be added to your site. This will result in improved performances.</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckNew.Title" xml:space="preserve">
+    <value>Check for New Files</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckUpdated.Desc" xml:space="preserve">
+    <value>If you know that documents will not ge modified then turn off this option to improve performances of the Documents Analyzer Service.</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckUpdated.Title" xml:space="preserve">
+    <value>Check for Updated Files</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.Desc" xml:space="preserve">
+    <value>The Doc Analyzer scans folder to determine which files need to be pushed to the indexing service.</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.Title" xml:space="preserve">
+    <value>Doc Analyzer</value>
+  </data>
+  <data name="CustomRuleWizOpt.IsDeletedCol.Desc" xml:space="preserve">
+    <value>Use this column to instrcut Search Boost when entries are logically deleted so they shouldn't appear in results. If Date Published is also set, this column is critical to ensure that deleted rows are dropped from the index.</value>
+  </data>
+  <data name="CustomRuleWizOpt.IsDeletedCol.Title" xml:space="preserve">
+    <value>Is Deleted Column</value>
+  </data>
+  <data name="GeneralSettings.Analyzer.Desc" xml:space="preserve">
+    <value>The analyzer is used to determine what defines words, how to handle punctuations, accents, different charsets, etc. After you change the analyzer a Clear Index is required otherwie the results will get inconsistent.</value>
+  </data>
+  <data name="GeneralSettings.Analyzer.Title" xml:space="preserve">
+    <value>Analyzer</value>
+  </data>
+  <data name="GeneralSettings.PreventAutoConfig.Desc" xml:space="preserve">
+    <value>Normally, Search Boost will set itself as the default search provider in web.config and also it will stop the scheduled task that run the standard search provider. Enable this option if you want to manage that yourself, making it possible to run both the standard provider and the Search Boost provider and the same time.</value>
+  </data>
+  <data name="GeneralSettings.PreventAutoConfig.Title" xml:space="preserve">
+    <value>Prevent Search Boost auto updating configuration</value>
+  </data>
+  <data name="SearchTargetExceptModuleType.Desc" xml:space="preserve">
+    <value>This option allows ignoring modules by type. Only modules that support ISearchable are displayed in the list.</value>
+  </data>
+  <data name="SearchTargetExceptModuleType.Title" xml:space="preserve">
+    <value>Extension Types...</value>
+  </data>
+  <data name="SearchTargetExceptModuleTypeLabel.Title" xml:space="preserve">
+    <value>Select which extensions to ignore:</value>
+  </data>
+  <data name="SortResultsNoTerms.Desc" xml:space="preserve">
+    <value>This determines the sort of the search results when no search terms have been provided (for example, when only filters determine the results)</value>
+  </data>
+  <data name="SortResultsNoTerms.Title" xml:space="preserve">
+    <value>Sort when no search terms</value>
+  </data>
+  <data name="ModuleTitlesMode.Desc" xml:space="preserve">
+    <value>Determines which title Search Boost should use to display results that come from modules. Module Title means Search Boost will always use the title of the module regardless of what ISearchable is saying; Page Title works the same only it uses the page title (or if not specified it uses the page name)</value>
+  </data>
+  <data name="ModuleTitlesMode.ModuleTitle" xml:space="preserve">
+    <value>Module Title</value>
+  </data>
+  <data name="ModuleTitlesMode.ModuleTitleWhenEmpty" xml:space="preserve">
+    <value>Module Title when title is missing</value>
+  </data>
+  <data name="ModuleTitlesMode.PageTitle" xml:space="preserve">
+    <value>Page Title</value>
+  </data>
+  <data name="ModuleTitlesMode.PageTitleWhenEmpty" xml:space="preserve">
+    <value>Page Title when title is missing</value>
+  </data>
+  <data name="ModuleTitlesMode.Title" xml:space="preserve">
+    <value>Title for Module Results</value>
+  </data>
+  <data name="MergeModules.Desc" xml:space="preserve">
+    <value>Use this option to instruct Search Boost to merge content that comes from module son the same page to prevent duplicate results. Note that if this option is enabled it's recommnded that you use the Page Title option for displaying result titles.</value>
+  </data>
+  <data name="MergeModules.MergeByPageAndQuery" xml:space="preserve">
+    <value>Merge by page and query string</value>
+  </data>
+  <data name="MergeModules.NoMerge" xml:space="preserve">
+    <value>Do not merge</value>
+  </data>
+  <data name="MergeModules.Title" xml:space="preserve">
+    <value>Merge Module Content</value>
+  </data>
+  <data name="Reports.ScreenDesc" xml:space="preserve">
+    <value>This screen provides information about how people are using the search. Use this information to tweak searches or track popular content.</value>
+  </data>
+  <data name="Reports.Title" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Reports.SearchCount" xml:space="preserve">
+    <value>{0} searches</value>
+  </data>
+  <data name="Reports.Title.LatestSearches" xml:space="preserve">
+    <value>Latest Searches</value>
+  </data>
+  <data name="Reports.Title.PopularSearches" xml:space="preserve">
+    <value>Popular Searches in last 30 days</value>
+  </data>
+  <data name="Reports.TotalResults" xml:space="preserve">
+    <value>{0} results</value>
+  </data>
+  <data name="ModuleData.Boost.Desc" xml:space="preserve">
+    <value>Determines how high results coming from this module will rank.</value>
+  </data>
+  <data name="ModuleData.Boost.Title" xml:space="preserve">
+    <value>Boost</value>
+  </data>
+  <data name="ModuleData.Categories.Desc" xml:space="preserve">
+    <value>Categories are used for faceted search. Input one category per line. Subcategories are supported with syntax Category/SubCategory/SubSubCategory/etc.</value>
+  </data>
+  <data name="ModuleData.Categories.Title" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="ModuleData.Fields.Desc" xml:space="preserve">
+    <value>Attach additional fields to this module. Fields are used for filtering results or for building custom display for results. Input one &lt;i&gt;param1=val1&lt;/i&gt; pair per line.</value>
+  </data>
+  <data name="ModuleData.Fields.Title" xml:space="preserve">
+    <value>Additional Fields</value>
+  </data>
+  <data name="SortResults.By.Random" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="WordSplitters.Desc" xml:space="preserve">
+    <value>These options determine how the text is split into words.</value>
+  </data>
+  <data name="WordSplitters.Hyphen.Title" xml:space="preserve">
+    <value>Split at Hyphens</value>
+  </data>
+  <data name="WordSplitters.Title" xml:space="preserve">
+    <value>Word Splitting Characters</value>
+  </data>
+  <data name="Stemming.Desc" xml:space="preserve">
+    <value>Stemming is the process of reducing the word to a base form. For example, stemming will make "search", "searches", "seaching", "searched" identical, so a search for any will bring the same results. Stemming only works for English words and requires Search Boost Analyzer in General Settings.</value>
+  </data>
+  <data name="Stemming.Title" xml:space="preserve">
+    <value>Use Stemming (English Only)</value>
+  </data>
+  <data name="AllowUserSort.Desc" xml:space="preserve">
+    <value>Enable this option to allow users to override the sorting of results at search time.</value>
+  </data>
+  <data name="AllowUserSort.Title" xml:space="preserve">
+    <value>Allow User Sort</value>
+  </data>
+  <data name="WildCardSearch.Warning" xml:space="preserve">
+    <value>Warning! Wildcard search is not compatible with the Highlighter or Stem Filter.</value>
+  </data>
+  <data name="Filters.Content.Title" xml:space="preserve">
+    <value>Content Filters</value>
+  </data>
+  <data name="Filters.Facets.DnnModuleTags" xml:space="preserve">
+    <value>Use DNN module tags as facets</value>
+  </data>
+  <data name="Filters.Facets.DnnPageTags" xml:space="preserve">
+    <value>Use DNN page tags as facets</value>
+  </data>
+  <data name="Filters.Facets.Title" xml:space="preserve">
+    <value>Facets</value>
+  </data>
+  <data name="Error.FileAccessDenied" xml:space="preserve">
+    <value>You don't have permissions to access the requested file.</value>
+  </data>
+  <data name="PatchSkin.Desc" xml:space="preserve">
+    <value>Click this button to patch all skins for this portal. If current user is Super User, then host skins will also be patched. You will be redirected back to the site after the skin is patched.</value>
+  </data>
+  <data name="PatchSkin.Success" xml:space="preserve">
+    <value>DNN skins successfully patched.</value>
+  </data>
+  <data name="PatchSkin.Title" xml:space="preserve">
+    <value>Path DNN Skins</value>
+  </data>
+  <data name="MergeModules.MergeByPage" xml:space="preserve">
+    <value>Merge by page</value>
+  </data>
+</root>

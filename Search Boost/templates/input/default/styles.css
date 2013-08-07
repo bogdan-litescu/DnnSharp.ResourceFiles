@@ -1,0 +1,28 @@
+
+.sbInp_Default {
+    
+}
+.sbInp_Default .searchBox {
+    width: 200px;
+}
+
+.sbInp_Default .searchBoxEmpty {
+    color: #727272;
+    font-style: italic;
+}
+
+.sbInp_Default .searchBtn {
+    background: transparent url(icon_search_16px.gif) no-repeat scroll 3px center;
+    padding: 3px 2px 2px 20px;    
+}
+
+.sbInp_Default .searchManageBtn {
+    background: transparent url(icon_hostsettings_16px.gif) no-repeat scroll 3px center;
+    padding: 3px 2px 2px 24px;    
+}
+
+.sbInp_Default .portalFilter, .sbInp_Default .sbcontent-filter {
+    width: 190px;
+    margin: 4px 0 0 0;
+}
+

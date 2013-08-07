@@ -1,0 +1,21 @@
+ModuleIndexerExt
+
+DNN Search interface is limiting. For example it doesn't provide capability to module providers to specify security per search item. 
+We added this feature to Search Boost especially to allow handling this situations. 
+Additional data about a module will be fetched by Search Boost through separate queries and linked to the same search item.
+
+.defaults.xml contains the default module extensions. Do not change this file as it will get overwritten on upgrades. 
+Contact us if you want to share your extensions with the rest of the worlds and we'll include it in the defaults.
+Otherwise, create your own xml files simillar to .defaults.xml that contain the nodes you want to override.
+
+Valid tokens to use inside queries are:
+
+{databaseOwner}     = DotNetNuke.Common.Utilities.Config.GetDataBaseOwner()
+{objectQualifier}   = DotNetNuke.Common.Utilities.Config.GetObjectQualifer()
+{searchKey}         = searchItem.SearchKey
+{guid}              = searchItem.GUID
+{title}             = searchItem.Title
+{author}            = searchItem.Author (User Id)
+{pubDate}           = searchItem.PubDate (DateTime)
+{moduleId}          = searchItem.ModuleId
+{description}       = searchItem.Description

@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Activate.Title" xml:space="preserve">
+    <value>Activeren</value>
+  </data>
+  <data name="BacktoPortal.Desc" xml:space="preserve">
+    <value>Klik hier om terug te keren naar de vorige pagina.</value>
+  </data>
+  <data name="BacktoPortal.Title" xml:space="preserve">
+    <value>Terug naar Portaal</value>
+  </data>
+  <data name="Buy.Title" xml:space="preserve">
+    <value>Kopen</value>
+  </data>
+  <data name="ClearIndex.Desc" xml:space="preserve">
+    <value>Deze optie zal alle geïndexeerde inhoud verwijderen. Bij de volgende indexering bewerking zal de inhoud wordt geherindexeerd vanaf het begin.</value>
+  </data>
+  <data name="ClearIndex.Title" xml:space="preserve">
+    <value>Index Wissen</value>
+  </data>
+  <data name="ControlPanel.Title" xml:space="preserve">
+    <value>Control Paneel</value>
+  </data>
+  <data name="CustomRules.Delete" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="CustomRules.Desc" xml:space="preserve">
+    <value>Hierdoor kunnen nieuwe regels voor indexering van de inhoud in de database worden gedefinieerd.</value>
+  </data>
+  <data name="CustomRules.Edit" xml:space="preserve">
+    <value>Wijzigen</value>
+  </data>
+  <data name="CustomRules.Present" xml:space="preserve">
+    <value>&lt;b&gt;Hieronder vindt u alle Aangepaste Regels die u hebt gemaakt.&lt;/b&gt;&lt;br /&gt;
+                            Merk op dat dit geval alleen resultaten uit regels die zijn geselecteerd zal voorbrengen.</value>
+  </data>
+  <data name="CustomRules.ScreenDesc" xml:space="preserve">
+    <value>Deze sectie laat het definiëren van regels voor het indexeren van willekeurige inhoud uit de database toe...</value>
+  </data>
+  <data name="CustomRules.Title" xml:space="preserve">
+    <value>Aangepaste Regels</value>
+  </data>
+  <data name="CustomRuleWiz.Next" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
+  <data name="CustomRuleWiz.Param.PassAs.Desc" xml:space="preserve">
+    <value>Typ de naam die u wilt dat als de waarde van deze kolom moet worden doorgegeven. Bijvoorbeeld, de parameter kan verzonden worden als http://domain.com?&lt;i&gt;param1&lt;/i&gt;=&amp;amp;lt;values from db&amp;amp;gt;</value>
+  </data>
+  <data name="CustomRuleWiz.Param.PassAs.Title" xml:space="preserve">
+    <value>doorgeven als</value>
+  </data>
+  <data name="CustomRuleWiz.Prev" xml:space="preserve">
+    <value>Vorige</value>
+  </data>
+  <data name="CustomRuleWiz.Step" xml:space="preserve">
+    <value>Stap &lt;b&gt;{0}&lt;/b&gt; of &lt;b&gt;{1}&lt;/b&gt;</value>
+  </data>
+  <data name="CustomRuleWizDs.Desc" xml:space="preserve">
+    <value>Op dit scherm definieert u de query die SearchBoost zal draaien om de resultaten te verkrijgen die zullen worden geïndexeerd.&lt;br /&gt;
+                                    Focus/aanwijzen controles voor aanvullende hulp...</value>
+  </data>
+  <data name="CustomRuleWizDs.JoinTable" xml:space="preserve">
+    <value>Wordt Lid van een Andere Tabel</value>
+  </data>
+  <data name="CustomRuleWizDs.PrimaryTable.Desc" xml:space="preserve">
+    <value>Specificeer a.u.b. een hoofdtabel voor deze gegevensbron. Andere tabellen hieronder zijn aangesloten met deze.</value>
+  </data>
+  <data name="CustomRuleWizDs.PrimaryTable.Title" xml:space="preserve">
+    <value>Primaire Tabel</value>
+  </data>
+  <data name="CustomRuleWizDs.Title" xml:space="preserve">
+    <value>Gegevensbron</value>
+  </data>
+  <data name="CustomRuleWizGen.Boost.Desc" xml:space="preserve">
+    <value>De boost bepaalt of de resultaten die door deze regel zijn gegenereerd een hogere rang moeten krijgen.</value>
+  </data>
+  <data name="CustomRuleWizGen.Boost.Title" xml:space="preserve">
+    <value>Boost</value>
+  </data>
+  <data name="CustomRuleWizGen.ConnStr.Desc" xml:space="preserve">
+    <value>Specificeer alleen een verbindingsreeks als u verbinding moet maken naar een andere database.</value>
+  </data>
+  <data name="CustomRuleWizGen.ConnStr.Title" xml:space="preserve">
+    <value>Verbindingsreeks</value>
+  </data>
+  <data name="CustomRuleWizGen.Desc" xml:space="preserve">
+    <value>Focus controles voor aanvullende hulp ...</value>
+  </data>
+  <data name="CustomRuleWizGen.Description.Desc" xml:space="preserve">
+    <value>Vul eventueel tekst in om het doel van dit Zoekresultaat te omschrijven.</value>
+  </data>
+  <data name="CustomRuleWizGen.Description.Title" xml:space="preserve">
+    <value>Omschrijving</value>
+  </data>
+  <data name="CustomRuleWizGen.Title" xml:space="preserve">
+    <value>Algemene Informatie</value>
+  </data>
+  <data name="CustomRuleWizGen.Title.Desc" xml:space="preserve">
+    <value>Vul a.u.b. een unieke identificator in voor dit Zoekresultaat.</value>
+  </data>
+  <data name="CustomRuleWizGen.Title.Title" xml:space="preserve">
+    <value>Titel</value>
+  </data>
+  <data name="CustomRuleWizIdx.Desc" xml:space="preserve">
+    <value>In dit scherm kunt u selecteren welke kolommen moeten worden geïndexeerd.&lt;br /&gt;
+                                    Focus/aanwijzen controles voor aanvullende hulp...</value>
+  </data>
+  <data name="CustomRuleWizIdx.IdCol.Desc" xml:space="preserve">
+    <value>De id kolom is een unieke identificatie van een record en het wordt gebruikt voor het afzonderlijk indexeren van artikelen.</value>
+  </data>
+  <data name="CustomRuleWizIdx.IdCol.Title" xml:space="preserve">
+    <value>Selecteer Id Kolom</value>
+  </data>
+  <data name="CustomRuleWizIdx.IndexCols.Desc" xml:space="preserve">
+    <value>Merk op dat alle kolommen worden omgezet in tekenreeksen bij het indexeren.</value>
+  </data>
+  <data name="CustomRuleWizIdx.IndexCols.Title" xml:space="preserve">
+    <value>Selecteer kolommen om te indexeren</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Desc" xml:space="preserve">
+    <value>Selecteer naar welke gegenereerde pagina door deze regel wordt doorgewezen wanneer aangeklikt.</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.ModuleColumn.Desc" xml:space="preserve">
+    <value>Selecteer a.u.b. ModuleID kolom. Wordt gebruikt om door te verwijzen naar de originele inhoud wanneer een link in de zoekresultaten wordt aangeklikt.</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.ModuleColumn.Title" xml:space="preserve">
+    <value>Module ID Kolom</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.ModuleId.Desc" xml:space="preserve">
+    <value>Alle zoekresultaten gegenereerd door deze regel zullen wijzen op de module geïdentificeerd door deze ID (gebruik de volgende stap om aanvullende parameters door te geven in Query Tekenreeks).</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.ModuleId.Title" xml:space="preserve">
+    <value>Ik specificeer een module ID</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.TabColumn.Desc" xml:space="preserve">
+    <value>Selecteer a.u.b. TabID kolom. Wordt gebruikt om door te verwijzen naar de originele inhoud wanneer een link in de zoekresultaten wordt aangeklikt (gebruik de volgende stap om aanvullende parameters door te geven in Query Tekenreeks).</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.TabColumn.Title" xml:space="preserve">
+    <value>Tab ID Kolom</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.TabId.Desc" xml:space="preserve">
+    <value>Alle zoekresultaten gegenereerd door deze regel zullen wijzen op de pagina geïdentificeerd door deze ID (gebruik de volgende stap om aanvullende parameters door te geven in Query Tekenreeks).</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.TabId.Title" xml:space="preserve">
+    <value>Ik specificeer een tab ID</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Title" xml:space="preserve">
+    <value>Link resultaten naar pagina's door het gebruiken van</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Url.Desc" xml:space="preserve">
+    <value>Alle zoekresultaten gegenereerd door deze regel zullen wijzen op de URL gespecificeerd in dit veld (gebruik de volgende stap om aanvullende parameters door te geven in Query Tekenreeks).</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Url.Title" xml:space="preserve">
+    <value>Ik specificeer een URL</value>
+  </data>
+  <data name="CustomRuleWizIdx.Title" xml:space="preserve">
+    <value>Indexing Regels</value>
+  </data>
+  <data name="CustomRuleWizIdx.TitleCol.Desc" xml:space="preserve">
+    <value>De titel is meestal de moduletitel die verschijnt op de eerste regel in de zoekresultaten.</value>
+  </data>
+  <data name="CustomRuleWizIdx.TitleCol.Title" xml:space="preserve">
+    <value>Selecteer Titelkolom</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.InnerJoin.Desc" xml:space="preserve">
+    <value>Inner Join zal resultaten in de primaire tabel beperken aan diegenen die een match in de samengevoegde tabel hebben.</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.InnerJoin.Title" xml:space="preserve">
+    <value>Inner</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.Join.AddCond" xml:space="preserve">
+    <value>Samengevoegde Conditie Toevoegen</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.Join.AddCustomCond" xml:space="preserve">
+    <value>Aangepaste Conditie Toevoegen</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinCond.Custom" xml:space="preserve">
+    <value>Vrij invoeren van een samengevoegde conditie. Bijvoorbeeld: Join1.Col1 = Join4.Col7</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinCond.Remove" xml:space="preserve">
+    <value>Verwijderen</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinKey.Desc" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinKey.Foreign" xml:space="preserve">
+    <value>Selecteer een kolom in dit tabel om aan te sluiten aan (meestal een refererende toets).</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinKey.Primary" xml:space="preserve">
+    <value>Selecteer een kolom in de hoofdtabel om aan te sluiten (meestal de primaire toets).</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinKey.Title" xml:space="preserve">
+    <value>AAN</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinTable.Desc" xml:space="preserve">
+    <value>Specificeer a.u.b. tabel om aan te sluiten.</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.JoinTable.Title" xml:space="preserve">
+    <value>Wordt Lid van Tabel</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.OuterJoin.Desc" xml:space="preserve">
+    <value>Outer Join zal resultaten in de primaire tabel bevatten die geen match in de samengevoegde tabel hebben. In dit geval zullen de samengevoegde velden nul zijn.</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.OuterJoin.Title" xml:space="preserve">
+    <value>Outer</value>
+  </data>
+  <data name="CustomRuleWizJoinTpl.RemoveJoin.Title" xml:space="preserve">
+    <value>Verwijder Samenvoegen</value>
+  </data>
+  <data name="CustomRuleWizOpt.AdditionalParams.Desc" xml:space="preserve">
+    <value>U kunt aanvullende parameters uit de database naar zoekresultaat url via Query Tekenreeks passeren.</value>
+  </data>
+  <data name="CustomRuleWizOpt.AdditionalParams.Title" xml:space="preserve">
+    <value>Aanvullende Parameters</value>
+  </data>
+  <data name="CustomRuleWizOpt.AuthorCol.Desc" xml:space="preserve">
+    <value>Dit is optioneel.</value>
+  </data>
+  <data name="CustomRuleWizOpt.AuthorCol.Title" xml:space="preserve">
+    <value>Selecteer Authorld Kolom</value>
+  </data>
+  <data name="CustomRuleWizOpt.DatePubCol.Desc" xml:space="preserve">
+    <value>Als er een Publicatiedatumveld is (vaak DatumAangemaakt genoemd), stop het a.u.b. hierin.</value>
+  </data>
+  <data name="CustomRuleWizOpt.DatePubCol.Title" xml:space="preserve">
+    <value>Selecteer Publicatiedatumkolom</value>
+  </data>
+  <data name="CustomRuleWizOpt.Desc" xml:space="preserve">
+    <value>Op dit scherm kunt u fijn bijwerken hoe deze regel is geïndexeerd. Alle parameters zijn optioneel.</value>
+  </data>
+  <data name="CustomRuleWizOpt.DescCol.Desc" xml:space="preserve">
+    <value>De omschrijving is de korte tekst die verschijnt onder elk resultaat op de zoekpagina.</value>
+  </data>
+  <data name="CustomRuleWizOpt.DescCol.Title" xml:space="preserve">
+    <value>Selecteer Omschrijving Kolom</value>
+  </data>
+  <data name="CustomRuleWizOpt.ManualParams.Desc" xml:space="preserve">
+    <value>Specificeer aanvullende parameters die dit patroon gebruiken: param1=val1&amp;amp;param2=val2&amp;amp;...&amp;amp;paramN=valN</value>
+  </data>
+  <data name="CustomRuleWizOpt.ManualParams.Title" xml:space="preserve">
+    <value>En/Of manueel verstrekken parameters:</value>
+  </data>
+  <data name="CustomRuleWizOpt.Template.Desc" xml:space="preserve">
+    <value>Gebruik een sjabloon om een omschrijving te bouwen. &lt;br /&gt;
+                                        Refereer kolommen bij hun namen zoals dit [Field:&amp;lt;ColumnName&amp;gt;] (vervang &amp;lt;ColumnName&amp;gt; met uw eigen).&lt;br /&gt;
+                                        Merk op dat dit ook een HTML sjabloon kan zijn.</value>
+  </data>
+  <data name="CustomRuleWizOpt.Title" xml:space="preserve">
+    <value>Optionele Parameters</value>
+  </data>
+  <data name="Dialog.Cancel" xml:space="preserve">
+    <value>Annuleren</value>
+  </data>
+  <data name="Dialog.Save" xml:space="preserve">
+    <value>Opslaan</value>
+  </data>
+  <data name="DocIdx.DialogTitle" xml:space="preserve">
+    <value>Document Zoekinstellingen</value>
+  </data>
+  <data name="DocIdx.DownloadURL.Desc" xml:space="preserve">
+    <value>Document Download URL Opmaak</value>
+  </data>
+  <data name="DocIdx.DownloadURL.FilePath.Desc" xml:space="preserve">
+    <value>SEO &amp; Mensvriendelijk, dwingt geen beveiliging af (eenmaal verkregen, kan de koppeling onafhankelijk van de veiligheid worden geopend)
+                    &lt;div klasse = &quot;grayed_desc&quot;&gt;bijvoorbeeld, http://site.com/Portalen/0/MijnFolder/MijnBestand.pdf&lt;/div&gt;</value>
+  </data>
+  <data name="DocIdx.DownloadURL.FilePath.Title" xml:space="preserve">
+    <value>Gebruik bestand pad</value>
+  </data>
+  <data name="DocIdx.DownloadURL.ScriptWithPath.Desc" xml:space="preserve">
+    <value>SEO&amp;amp;Mensvriendelijk, dwingt portaal beveiliging, maar de directe koppeling kan ook worden geraden van de URL.
+                    &lt;div klasse = &quot;grayed_desc&quot;&gt;bijvoorbeeld, http://site.com/ZoekResultaten.aspx?bestand=MijnFolder/MijnBestand.pdf&lt;/div&gt;</value>
+  </data>
+  <data name="DocIdx.DownloadURL.ScriptWithPath.Title" xml:space="preserve">
+    <value>Download script met Betand Pad</value>
+  </data>
+  <data name="DocIdx.DownloadURL.SriptWithFileId.Desc" xml:space="preserve">
+    <value>Verstopt (verduistert) interne paden, ideale oplossing voor de handhaving van de veiligheid, omdat niemand het bestandspad kan af leiden van een ID.
+                    &lt;div klasse = &quot;grayed_desc&quot;&gt;bijvoorbeeld, http://site.com/ZoekResultaten.aspx?file=4123&lt;/div&gt;</value>
+  </data>
+  <data name="DocIdx.DownloadURL.SriptWithFileId.Title" xml:space="preserve">
+    <value>Download script met Bestand ID</value>
+  </data>
+  <data name="DocIdx.DownloadURL.Title" xml:space="preserve">
+    <value>Download URL</value>
+  </data>
+  <data name="DocIdx.ErrUpdate" xml:space="preserve">
+    <value>Fout bijwerken Document Zoekinstellingen!&lt;br /&gt;Server reactie:</value>
+  </data>
+  <data name="DocIdx.FileTypes.Desc" xml:space="preserve">
+    <value>Selecteer &lt;i&gt;Bestandtypes&lt;/i&gt; dit exemplaar moet index &amp;amp; zoeken</value>
+  </data>
+  <data name="DocIdx.FileTypes.Instructions" xml:space="preserve">
+    <value>U kunt Bestand Indexers configuren van &lt;i&gt;/DesktopModules/SearchBoost/Config/FileSearch.xml&lt;/i&gt;. 
+                Dit omvat het toevoegen van ondersteuning voor nieuwe opmaakprofielen, het toevoegen van nieuwe uitbreidingen voor bestaande opmaakprofielen of het instellen van standaardwaarden.&lt;br /&gt; &lt;br /&gt;
+
+                Merk op dat u nog meer opmaakprofielen mogelijk kunt maken door &lt;b&gt;installing IFilter packages&lt;/b&gt; op uw website. 
+                U kunt deze downloaden van de website van de eigenaar (Adobe, Microsoft, etc.).&lt;br /&gt; &lt;br /&gt;
+                A.u.b &lt;a href = &quot;http://www.dnnsharp.com/Support/Forums/tabid/99/Default.aspx&quot;&gt;Contact Ons&lt;/a&gt; voor meer opmaakprofielen of aangepaste zoek indexers...</value>
+  </data>
+  <data name="DocIdx.FileTypes.Title" xml:space="preserve">
+    <value>Bestandtypes</value>
+  </data>
+  <data name="DocIdx.Security.EnforceDnn.Desc" xml:space="preserve">
+    <value>Als deze optie is ingeschakeld zoekt Zoekboost mapmachtigingen op in DNN tabellen en geeft alleen de resultaten van bestanden weer waar een gebruiker toegang tot heeft.</value>
+  </data>
+  <data name="DocIdx.Security.EnforceDnn.Title" xml:space="preserve">
+    <value>Afdwingen DNN Map Veiligheid</value>
+  </data>
+  <data name="DocIdx.Security.Title" xml:space="preserve">
+    <value>Beveiliging</value>
+  </data>
+  <data name="DocIdx.SuccessUpdate" xml:space="preserve">
+    <value>Document Zoekinstellingen succesvol bijgewerkt.</value>
+  </data>
+  <data name="Documentation.Title" xml:space="preserve">
+    <value>Documentatie</value>
+  </data>
+  <data name="DocumentSearch.Desc" xml:space="preserve">
+    <value>Dit scherm staat tweaking toe in het bestand indexering programma.</value>
+  </data>
+  <data name="DocumentSearch.Title" xml:space="preserve">
+    <value>Document Zoeken</value>
+  </data>
+  <data name="DynamicHighlighter.Desc" xml:space="preserve">
+    <value>Zoekboost kan de zoektermen markeren binnen zoekresultaten om de inhoud makkelijker te lokaliseren.
+                                        Merk op dat de gemarkeerde stijl veranderd kan worden van het sjabloon door klas ''gemarkeerd'' te wijzigen.&quot;.</value>
+  </data>
+  <data name="DynamicHighlighter.Title" xml:space="preserve">
+    <value>Markeer zoektermen in resultaten</value>
+  </data>
+  <data name="Error.Title" xml:space="preserve">
+    <value>Foutmelding</value>
+  </data>
+  <data name="Exceptions.Title" xml:space="preserve">
+    <value>Verwachtingen...</value>
+  </data>
+  <data name="Filter.Reset" xml:space="preserve">
+    <value>Opnieuw instellen</value>
+  </data>
+  <data name="Filter.Save" xml:space="preserve">
+    <value>Bewaar Filters</value>
+  </data>
+  <data name="Filters.Desc" xml:space="preserve">
+    <value>Filter verschijnt naast zoekvakken; ze zijn gewend om resultaten te filteren.</value>
+  </data>
+  <data name="Filters.ScreenDesc" xml:space="preserve">
+    <value>Deze sectie laat het definiëren van filters toe dat gebruikers kunnen gebruiken om doelzoekopdrachten te verbeteren...</value>
+  </data>
+  <data name="Filters.Title" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="Forums.Title" xml:space="preserve">
+    <value>Forums</value>
+  </data>
+  <data name="FuzzySearch.Desc" xml:space="preserve">
+    <value>Fuzzy Zoeken zal resultaten laten terugkeren die vallen binnen de gelijkenis percentage. 
+                                        Bijvoorbeeld, zoeken naar &lt;i&gt;test&lt;/i&gt; zal ook resultaten laten terugkeren die tekst bevatten, maar alleen als de gelijkenisindex kleiner is dan 75% (omdat 1 brief of 4 betekend 25% missmatch).</value>
+  </data>
+  <data name="FuzzySearch.Similarity100" xml:space="preserve">
+    <value>Uitgeschakeld</value>
+  </data>
+  <data name="FuzzySearch.SimilarityPercent" xml:space="preserve">
+    <value>Overeenkomst Gelijkenis {0}%</value>
+  </data>
+  <data name="FuzzySearch.Title" xml:space="preserve">
+    <value>Fuzzy Zoeken</value>
+  </data>
+  <data name="GeneralSettings.DebugLogIndexing.Desc" xml:space="preserve">
+    <value>Schakel deze optie in om Zoekboost informatie te laten loggen wanneer zoekopdracht indexering gebeurt.&lt;br /&gt; Logs worden opgeslagen onder &lt;i&gt;/ Portals/_default/Logs/SearchBoost&lt;/i&gt;.</value>
+  </data>
+  <data name="GeneralSettings.DebugLogIndexing.Title" xml:space="preserve">
+    <value>DEBUG: Schakel Zoekindexering logging in</value>
+  </data>
+  <data name="GeneralSettings.DebugLogSearch.Desc" xml:space="preserve">
+    <value>Schakel deze optie in om Zoekboost informatie te laten loggen wanneer zoekopdrachten zijn ingediend.&lt;br /&gt;Logs worden opgeslagen onder &lt;i&gt;Portal Home Directory/Logs/SearchBoost&lt;/i&gt;.</value>
+  </data>
+  <data name="GeneralSettings.DebugLogSearch.Title" xml:space="preserve">
+    <value>DEBUG: Gebruiker Zoekopdracht logging</value>
+  </data>
+  <data name="GeneralSettings.DebugXml.Desc" xml:space="preserve">
+    <value>Schakel deze optie in tijdens de ontwikkeling om de XML te zien die gebruikt is voor de zoekresultaten en zoekvak XSL transformaties. </value>
+  </data>
+  <data name="GeneralSettings.DebugXml.Title" xml:space="preserve">
+    <value>DEBUG: Programma XML</value>
+  </data>
+  <data name="GeneralSettings.Desc" xml:space="preserve">
+    <value>Pas deze instellingen aan om de meeste zoekfunctionaliteiten te verkrijgen.</value>
+  </data>
+  <data name="GeneralSettings.DialogTitle" xml:space="preserve">
+    <value>Algemene instellingen</value>
+  </data>
+  <data name="GeneralSettings.DocTarget.Title" xml:space="preserve">
+    <value>Open zoekresultaten dat DOCUMENTEN zijn in</value>
+  </data>
+  <data name="GeneralSettings.ErrUpdate" xml:space="preserve">
+    <value>Error bijwerken instellingen!&lt;br /&gt;Server reactie:</value>
+  </data>
+  <data name="GeneralSettings.HideSettingsLinke.Desc" xml:space="preserve">
+    <value>Selecteer deze optie om zoekinstellingen links te verbergen die verschijnen voor ZoekInput skin object. Dit is nuttig in gevallen waar de beheerde link het ontwerp breekt of voorkomt dat admins toegang krijgen tot sommige functies. Zorg ervoor dat u installeert onder Admin voordat u deze optie selecteert, zodat u achteraf toegang heeft tot de instellingen.</value>
+  </data>
+  <data name="GeneralSettings.HideSettingsLinke.Title" xml:space="preserve">
+    <value>Verberg &lt;i&gt;Zoekinstelling&lt;/i&gt; link voor weergave objecten</value>
+  </data>
+  <data name="GeneralSettings.IncJQuery.Desc" xml:space="preserve">
+    <value>Zoekboost laad zijn eigen kopie van jQuery om botsingen te vermijden. Deselecteer deze optie om Searchboost een bestaand jQuery object te laten gebruiken op deze pagina. Schakel deze optie opnieuw in als u problemen tegenkomt.</value>
+  </data>
+  <data name="GeneralSettings.IncJQuery.Title" xml:space="preserve">
+    <value>Meenemen eigen jQuery</value>
+  </data>
+  <data name="GeneralSettings.PageTarget.Title" xml:space="preserve">
+    <value>Open zoekresultaten dat PAGINA'S zijn in</value>
+  </data>
+  <data name="GeneralSettings.ReplaceResultsTokens.Desc" xml:space="preserve">
+    <value>Als deze optie is ingeschakeld, vervangt Zoekboost tokens in Titels, Beschrijvingen en URL's met behulp van Mijn Tokens als geïnstalleerd, anders keert het terug naar DNN Token Vervanger.</value>
+  </data>
+  <data name="GeneralSettings.ReplaceResultsTokens.Title" xml:space="preserve">
+    <value>Vervang Tokens in Zoekresultaten</value>
+  </data>
+  <data name="GeneralSettings.SuccessUpdate" xml:space="preserve">
+    <value>Exemplaar succesvol bijgewerkt.</value>
+  </data>
+  <data name="GeneralSettings.Title" xml:space="preserve">
+    <value>Algemene instellingen</value>
+  </data>
+  <data name="Index.Desc" xml:space="preserve">
+    <value>Normaal, inhoud is niet direct geïndexeerd dus het is moeilijk om goed alle zoekgevallen en regels te testen. Klik hier om Zoekboost de inhoud opnieuw te laten indexeren.</value>
+  </data>
+  <data name="Index.Success" xml:space="preserve">
+    <value>Searchboost is de inhoud aan het indexeren. Eén momentje graag...</value>
+  </data>
+  <data name="Index.Title" xml:space="preserve">
+    <value>Index</value>
+  </data>
+  <data name="IndexClear.Success" xml:space="preserve">
+    <value>Zoekindex succesvol gewist!</value>
+  </data>
+  <data name="IndexStats.CustomItemsLastIndexed" xml:space="preserve">
+    <value>Aangepaste items laatste keer geïndexeerd:</value>
+  </data>
+  <data name="IndexStats.Err" xml:space="preserve">
+    <value>Fout bij het verkrijgen van statistieken! Server reactie:</value>
+  </data>
+  <data name="IndexStats.FileLastIndexed" xml:space="preserve">
+    <value>Bestanden geïndexeerd laatste keer:</value>
+  </data>
+  <data name="IndexStats.LastAnalyzed" xml:space="preserve">
+    <value>Doc Analysator draaide het laatste op</value>
+  </data>
+  <data name="IndexStats.LastIndexed" xml:space="preserve">
+    <value>Indexer draaide het laatst op</value>
+  </data>
+  <data name="IndexStats.ModuleLastIndexed" xml:space="preserve">
+    <value>Module inzendingen laatste keer geïndexeerd:</value>
+  </data>
+  <data name="IndexStats.TotalCustomItemsIndexed" xml:space="preserve">
+    <value>Totale unieke aangepaste items geïndexeerd:</value>
+  </data>
+  <data name="IndexStats.TotalFilesAnalyzed" xml:space="preserve">
+    <value>Totale Bestande Geanalyseerd:</value>
+  </data>
+  <data name="IndexStats.TotalFilesIndexed" xml:space="preserve">
+    <value>Totale unieke bestanden geïndexeerd:</value>
+  </data>
+  <data name="IndexStats.TotalModulesIndexed" xml:space="preserve">
+    <value>Totale unieke module inzendingen geïndexeerd:</value>
+  </data>
+  <data name="IndexStats.TotalUpdateFiles" xml:space="preserve">
+    <value>Totale Nieuwe/Bijgewerkte Bestanden:</value>
+  </data>
+  <data name="Localize.EmptyText.DialogTitle" xml:space="preserve">
+    <value>Lokaliseren &lt;i&gt;Tekst voor Leeg Zoekvak&lt;/i&gt;</value>
+  </data>
+  <data name="Localize.ErrUpdate" xml:space="preserve">
+    <value>Fout Bijwerken Lokalisatie!&lt;br /&gt;Server reactie:</value>
+  </data>
+  <data name="Localize.UpdateSuccess" xml:space="preserve">
+    <value>Lokalisatie succesvol bijgewerkt.</value>
+  </data>
+  <data name="MultiTermSearch.ALL" xml:space="preserve">
+    <value>Resultaten moeten ALLE woorden bevatten</value>
+  </data>
+  <data name="MultiTermSearch.ANY" xml:space="preserve">
+    <value>Resultaten moeten IEDER woord bevatten</value>
+  </data>
+  <data name="MultiTermSearch.Desc" xml:space="preserve">
+    <value>Definieer standaard gedrag als de zoekopdracht meer dan één woord bevat. 
+                                        Merk op dat exacte match nog steeds mogelijk is door de woorden bij te voegen in dubbele quotes.</value>
+  </data>
+  <data name="MultiTermSearch.EXACT" xml:space="preserve">
+    <value>Resultaten moeten EXACTE expressie bevatten</value>
+  </data>
+  <data name="MultiTermSearch.Title" xml:space="preserve">
+    <value>Multi woord zoekopdrachten</value>
+  </data>
+  <data name="NewCustomRule.Desc" xml:space="preserve">
+    <value>Hierdoor kunnen nieuwe regels voor indexering van de inhoud in de database worden gedefinieerd.</value>
+  </data>
+  <data name="NewCustomRule.Title" xml:space="preserve">
+    <value>Nieuwe Zoekindexering Regel</value>
+  </data>
+  <data name="OpenTarget.NamedWindow" xml:space="preserve">
+    <value>Genaamd Venster...</value>
+  </data>
+  <data name="OpenTarget.NewWindow" xml:space="preserve">
+    <value>Nieuw Venster</value>
+  </data>
+  <data name="OpenTarget.SameWindow" xml:space="preserve">
+    <value>Zelfde Venster</value>
+  </data>
+  <data name="OpenTarget.TargetName" xml:space="preserve">
+    <value>Doelnaam</value>
+  </data>
+  <data name="Overview.GettingStarted" xml:space="preserve">
+    <value>Aan de slag</value>
+  </data>
+  <data name="Overview.GettingStarted.CustomRules.Desc" xml:space="preserve">
+    <value>Indexering Zoekregels staan Zoekboost toe om willekeurig de inhoud van de database te indexeren. 
+            (van aangepaste tabellen of modules die geen zoekopdrachten steunen).</value>
+  </data>
+  <data name="Overview.GettingStarted.CustomRules.Title" xml:space="preserve">
+    <value>Maak Aangepaste Indexeringregel Aan</value>
+  </data>
+  <data name="Overview.GettingStarted.SearchDocs.Desc" xml:space="preserve">
+    <value>Gebruik het Zoek Doelscherm om zoekresultaten te beperken naar specifieke portalen, pagina's, modules of portaal mappen.
+            Via dit scherm kunt u ook de Aangepaste Indexeringregels die relateren naar dit exemplaar selecteren.</value>
+  </data>
+  <data name="Overview.GettingStarted.SearchDocs.Title" xml:space="preserve">
+    <value>Zoek Documenten (PDFs, Word Docx, etc)</value>
+  </data>
+  <data name="Overview.GettingStarted.Target.Desc" xml:space="preserve">
+    <value>Zoekboost is in staat om bestanden te indexeren waarvoor het een geïnstalleerd IFilter pakket heeft. 
+            Nadat u de IFilters hebt geïnstalleerd zorg ervoor dat u ook de mappen in het Zoek Doelscherm selecteert.</value>
+  </data>
+  <data name="Overview.GettingStarted.Target.Title" xml:space="preserve">
+    <value>Definieer Waar te Zoeken</value>
+  </data>
+  <data name="Overview.GettingStarted.Tools.Desc" xml:space="preserve">
+    <value>Gebruik deze instrumenten om ervoor te zorgen dat de inhoud de meest recente is en bepaal of uw zoekopdrachten werk zijn als verwacht.</value>
+  </data>
+  <data name="Overview.GettingStarted.Tweak.Desc" xml:space="preserve">
+    <value>Gebruik de Algemene Instelling eigenschappen om de compatibiliteit instellingen te tweaken en ook de DEBUG mode in te schakelen die wordt weergegeven op de front-end van de XML gebruikt in de XSL-transformatie.</value>
+  </data>
+  <data name="Overview.GettingStarted.Tweak.Title" xml:space="preserve">
+    <value>Tweak en Debug</value>
+  </data>
+  <data name="Overview.Title" xml:space="preserve">
+    <value>Overzicht</value>
+  </data>
+  <data name="PhraseSlop.Desc" xml:space="preserve">
+    <value>De slop bepaalt hoe dicht bij elkaar de woorden uit de zoekterm moeten zijn om te kunnen worden beschouwd als een match.
+                                        Bijvoorbeeld, zoeken naar &quot;snelle vos&quot; zal de tekst matchen &quot;de snelle bruine vos&quot; alleen wanneer de slop groter is dan of gelijk is aan 1, omdat het &quot;bruin&quot; woord ertussen staat.</value>
+  </data>
+  <data name="PhraseSlop.Title" xml:space="preserve">
+    <value>Zin Slop</value>
+  </data>
+  <data name="PortalFilter.AllPortals" xml:space="preserve">
+    <value>Alle Portalen</value>
+  </data>
+  <data name="PortalFilter.Choose" xml:space="preserve">
+    <value>Laat mij kiezen...</value>
+  </data>
+  <data name="PortalFilter.Desc" xml:space="preserve">
+    <value>Vink deze optie aan om een ​​dropdown met portalen te tonen, zodat gebruikers zoekopdrachten kunnen filteren naar individuele portalen.</value>
+  </data>
+  <data name="PortalFilter.NoHost" xml:space="preserve">
+    <value>Portaal filter alleen beschikbaar voor Super Gebruiker accounts...</value>
+  </data>
+  <data name="PortalFilter.SelectTitle" xml:space="preserve">
+    <value>Welke Portaal om weer te geven?</value>
+  </data>
+  <data name="PortalFilter.Title" xml:space="preserve">
+    <value>Weergeven Portaal Filter</value>
+  </data>
+  <data name="PortalFilter.Warning" xml:space="preserve">
+    <value>Zorg ervoor dat de portalen blootgesteld worden met deze filter zijn installatie onder Doelzoekopdracht...</value>
+  </data>
+  <data name="SearchBoost.Extreme" xml:space="preserve">
+    <value>Extreme Boost</value>
+  </data>
+  <data name="SearchBoost.High" xml:space="preserve">
+    <value>Hoge Boost</value>
+  </data>
+  <data name="SearchBoost.Moderate" xml:space="preserve">
+    <value>Matige Boost</value>
+  </data>
+  <data name="SearchBoost.NoBoost" xml:space="preserve">
+    <value>Geen Boost</value>
+  </data>
+  <data name="SearchBoost.VeryHigh" xml:space="preserve">
+    <value>Hele Hoge Boost</value>
+  </data>
+  <data name="SearchDesc.Desc" xml:space="preserve">
+    <value>Selecteer deze optie zodat Zoekboost ook kan terugkeren naar resultaten die trefwoorden bevatten in de beschrijvingen.&lt;br /&gt;
+                                        De boost laat u bepalen hoe resultaten gerangschikt moeten worden als de zoekopdrachten overeenkomen met dit veld.</value>
+  </data>
+  <data name="SearchDesc.Title" xml:space="preserve">
+    <value>Ook Zoekbeschrijvingen</value>
+  </data>
+  <data name="SearchEngine.Save" xml:space="preserve">
+    <value>Instellingen Opslaan</value>
+  </data>
+  <data name="SearchEngine.ScreenDesc" xml:space="preserve">
+    <value>Tweak het Zoekboost indexering programma dat komt met Zoekboost versie 2...</value>
+  </data>
+  <data name="SearchEngine.Title" xml:space="preserve">
+    <value>Zoekmachine (2.0)</value>
+  </data>
+  <data name="SearchFolderNames.Desc" xml:space="preserve">
+    <value>Selecteer deze optie zodat Zoekboost ook kan terugkeren naar resultaten die trefwoorden bevatten in de mapnamen.&lt;br /&gt;
+                                        De boost laat u bepalen hoe resultaten gerangschikt moeten worden als de zoekopdrachten overeenkomen met dit veld.</value>
+  </data>
+  <data name="SearchFolderNames.Title" xml:space="preserve">
+    <value>Zoek ook Mapnamen</value>
+  </data>
+  <data name="SearchPageTitles.Desc" xml:space="preserve">
+    <value>Selecteer deze optie zodat Zoekboost ook kan terugkeren naar resultaten die trefwoorden bevatten in de paginatitels.&lt;br /&gt;
+                                        De boost laat u bepalen hoe resultaten gerangschikt moeten worden als de zoekopdrachten overeenkomen met dit veld.</value>
+  </data>
+  <data name="SearchPageTitles.Title" xml:space="preserve">
+    <value>Zoek ook Paginatitels</value>
+  </data>
+  <data name="SearchTarget.Desc" xml:space="preserve">
+    <value>Gebruik dit scherm om Zoekboost te instrueren wat te zoeken.</value>
+  </data>
+  <data name="SearchTarget.ScreenDesc" xml:space="preserve">
+    <value>Dit scherm staat het selecteren van specifieke pagina's en mappen toe om zoekresultaten naar voren te brengen, zodat verschillende Zoekboost exemplaren kunnen worden geconfigureerd om verschillende resultaten naar voren te brengen.
+                                Meld aan als SuperGebruiker om te zoekdoelen te definiëren over meerdere portalen...</value>
+  </data>
+  <data name="SearchTarget.Title" xml:space="preserve">
+    <value>Zoekdoel</value>
+  </data>
+  <data name="SearchTarget.TreeInstructions" xml:space="preserve">
+    <value>Selecteer &lt;b&gt;Pagina's&lt;/b&gt; en &lt;b&gt;Directories&lt;/b&gt; dit Zoekboost exemplaar zou resultaten brengen van.</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.ActivePage" xml:space="preserve">
+    <value>Resultaten van actieve pagina</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.ActivePageAndChildren" xml:space="preserve">
+    <value>Resultaten van actieve pagina en alle onderliggende pagina's</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.ChildrenOfActivePage" xml:space="preserve">
+    <value>Resultaten van onderliggende pagina of actieve pagina</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Desc" xml:space="preserve">
+    <value>Deze filter is dynamisch toegepast gebaseerd op de actieve pagina. 
+                                    Relevant wanneer dezelfde zoekopdracht invoervak ​​(zelfde ModuleId of zelfde Skin Object) voorkomt op meer dan één pagina.</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Level1OfActiveBranch" xml:space="preserve">
+    <value>Resultaten starten van niveau 1 item of actieve branche</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Level2OfActiveBranch" xml:space="preserve">
+    <value>Resultaten starten van niveau 2 item of actieve branche</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Level3OfActiveBranch" xml:space="preserve">
+    <value>Resultaten starten van niveau 1 item of actieve branche</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.NoFilter" xml:space="preserve">
+    <value>Filter Niet (weergeef alle resultaten)</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.RootOfActiveBranch" xml:space="preserve">
+    <value>Resultaten starten van HOOFDMAP item of actieve branche</value>
+  </data>
+  <data name="SearchTargetDynamicFilter.Title" xml:space="preserve">
+    <value>Verder filter zoekresultaten naar...</value>
+  </data>
+  <data name="SearchTargetExceptFolders.Desc" xml:space="preserve">
+    <value>Eén invoer per regel; elke invoer kan een substring van een map of bestandsnaam zijn of een reguliere expressie (het formaat is /regex expressie/)</value>
+  </data>
+  <data name="SearchTargetExceptFolders.Title" xml:space="preserve">
+    <value>Mappen...</value>
+  </data>
+  <data name="SearchTargetExceptModules.Desc" xml:space="preserve">
+    <value>Eén invoer per regel; invoer kan een nummer (Module ID), een substring of de moduletitel zijn of een reguliere expressie (het formaat is /regex expressie/)</value>
+  </data>
+  <data name="SearchTargetExceptModules.Title" xml:space="preserve">
+    <value>Modules...</value>
+  </data>
+  <data name="SearchTargetExceptTabs.Desc" xml:space="preserve">
+    <value>Eén invoer per regel; invoer kan een nummer (Tabblad ID), een substring van de titel of naam zijn of een reguliere expressie (het formaat is /regex expressie/)</value>
+  </data>
+  <data name="SearchTargetExceptTabs.Title" xml:space="preserve">
+    <value>Tabbladen...</value>
+  </data>
+  <data name="SearchTargetSave.Title" xml:space="preserve">
+    <value>Zoekdoel Opslaan</value>
+  </data>
+  <data name="SearchTargetSource.Title" xml:space="preserve">
+    <value>Bron</value>
+  </data>
+  <data name="SearchTitles.Desc" xml:space="preserve">
+    <value>Selecteer deze optie zodat Zoekboost ook kan terugkeren naar resultaten die trefwoorden bevatten in de titels.&lt;br /&gt;
+                                        De boost laat u bepalen hoe resultaten gerangschikt moeten worden als de zoekopdrachten overeenkomen met dit veld.</value>
+  </data>
+  <data name="SearchTitles.Title" xml:space="preserve">
+    <value>Zoek ook Titels</value>
+  </data>
+  <data name="Success.Title" xml:space="preserve">
+    <value>Geslaagd</value>
+  </data>
+  <data name="SwitchInstance.DeleteConfirm" xml:space="preserve">
+    <value>Weet u zeker dat u dit exemplaar data wilt verwijderen?\n\nVerwijder een instantie als het niet meer wordt gebruikt, of als u alle gegevens die ermee geassocieerd worden wilt resetten.</value>
+  </data>
+  <data name="SwitchInstance.DeleteSuccess" xml:space="preserve">
+    <value>Exemplaar data succesvol verwijderd.</value>
+  </data>
+  <data name="SwitchInstance.Desc" xml:space="preserve">
+    <value>Klik hier om een ander Zoekexemplaar te openen.</value>
+  </data>
+  <data name="SwitchInstance.DialogTitle" xml:space="preserve">
+    <value>Selecteer Zoekboost Exemplaar</value>
+  </data>
+  <data name="SwitchInstance.ErrDelete" xml:space="preserve">
+    <value>Fout bij het verwijderen exemplaardata!&lt;br /&gt;Server reactie:</value>
+  </data>
+  <data name="SwitchInstance.ErrGetList" xml:space="preserve">
+    <value>Gefaald om de lijst van instanties op te halen; interne fout:</value>
+  </data>
+  <data name="SwitchInstance.Loading" xml:space="preserve">
+    <value>Wordt geladen... Eén momentje graag...</value>
+  </data>
+  <data name="SwitchInstance.Required" xml:space="preserve">
+    <value>Selecteer a.u.b. eerst een exemplaar...</value>
+  </data>
+  <data name="SwitchInstance.Reset" xml:space="preserve">
+    <value>Reset Exemplaardata</value>
+  </data>
+  <data name="SwitchInstance.Switch" xml:space="preserve">
+    <value>Wissel</value>
+  </data>
+  <data name="SwitchInstance.Title" xml:space="preserve">
+    <value>Wissel Exemplaar</value>
+  </data>
+  <data name="TestSearch.Desc" xml:space="preserve">
+    <value>Test snel uw zoekexemplaren en regels met dit simpel en snel hulpprogramma.</value>
+  </data>
+  <data name="TestSearch.Input" xml:space="preserve">
+    <value>Voer uw zoekopdrachten in</value>
+  </data>
+  <data name="TestSearch.Title" xml:space="preserve">
+    <value>Test Zoeken</value>
+  </data>
+  <data name="TestSearch.Warning" xml:space="preserve">
+    <value>Als u geen verwachte resultaten krijgt, indexeer de inhoud door te klikken op de knop in de werkbalk of in te gaan op Host / Zoek Admin.</value>
+  </data>
+  <data name="UiEmptyText.Desc" xml:space="preserve">
+    <value>Deze tekst verschijnt in SearchBoost Input tekstvak als er geen input is. Scherpstellen van het zoekvak zal veroorzaken dat de tekst verdwijnt zodat de gebruiker zoektermen kan invoeren.</value>
+  </data>
+  <data name="UiEmptyText.Title" xml:space="preserve">
+    <value>Tekst voor Leeg Tekstvak</value>
+  </data>
+  <data name="UiEmptyTextDefault.Desc" xml:space="preserve">
+    <value>Laat velden hieronder leeg om Zoekboost terug te laten vallen naar deze tekst.</value>
+  </data>
+  <data name="UiEmptyTextDefault.Title" xml:space="preserve">
+    <value>Standaardinstelling (Terugval) Tekst</value>
+  </data>
+  <data name="UiInputTemplate.Desc" xml:space="preserve">
+    <value>Selecteer a.u.b.het sjabloon dat wordt gebruikt om het zoeken invoervak weer te geven.</value>
+  </data>
+  <data name="UiInputTemplate.Title" xml:space="preserve">
+    <value>Sjabloon voor Zoek Invoervak</value>
+  </data>
+  <data name="UiMaxDesc.Desc" xml:space="preserve">
+    <value>Gebruik dit om de grootte van de beschrijvende tekst aan te passen op de resultatenpagina, het kan er vreemd uitzien als sommige beschrijvingen zeer lang zijn, terwijl anderen zeer kort zijn. Zoekboost zal toevoegen '...' aan het einde van de beschrijvingen die zijn ontdaan.</value>
+  </data>
+  <data name="UiMaxDesc.Title" xml:space="preserve">
+    <value>Maximum Omschrijving Tijdsduur</value>
+  </data>
+  <data name="UiPageSize.Desc" xml:space="preserve">
+    <value>Deze optie bepaald hoeveel zoekresultaten zijn weergegeven per pagina. Zorgt voor meervoudige waarden, één per regel, om gebruiker toe te staan om te switchen naar verschillende maten. De eerste waarde in de lijst is de initiële pagina grootte.</value>
+  </data>
+  <data name="UiPageSize.Title" xml:space="preserve">
+    <value>Resultaten Per Pagina</value>
+  </data>
+  <data name="UiParamName.Desc" xml:space="preserve">
+    <value>Zoektermen zijn afgeleverd aan resultaten pagina via GET. Deze optie staat toe dat u de naam van de Query Tekenreeks parameter kunt aanpassen, dus u kunt integreren met andere resultaten module in plaats daarvan een andere parameter in Query Tekenreeks kunt verwachten.</value>
+  </data>
+  <data name="UiParamName.Title" xml:space="preserve">
+    <value>Naam van Query String Param</value>
+  </data>
+  <data name="UiResultsPage.Desc" xml:space="preserve">
+    <value>Dit is de pagina die een SearchBoost Resultaten module bevat, die de input ontvangt en de resultaten ophaalt.</value>
+  </data>
+  <data name="UiResultsPage.Title" xml:space="preserve">
+    <value>Resultatenpagina</value>
+  </data>
+  <data name="UiResultsPageManual.Clear" xml:space="preserve">
+    <value>Verwijder</value>
+  </data>
+  <data name="UiResultsPageManual.Desc" xml:space="preserve">
+    <value>Als alternatief kunt u manueel de resultatenpagina instellen. Dit is vooral handig bij het integreren met een Zoekresultaten module anders dan Zoekboost resultaten.</value>
+  </data>
+  <data name="UiResultsPageManual.ErrRequired" xml:space="preserve">
+    <value>Alstublieft specificeer resultatenpagina</value>
+  </data>
+  <data name="UiResultsPageManual.Title" xml:space="preserve">
+    <value>Of type TabId</value>
+  </data>
+  <data name="UiResultsTemplate.Desc" xml:space="preserve">
+    <value>Selecteer alstublieft het sjabloon dat zal worden gebruikt om resultaten toe te voegen.</value>
+  </data>
+  <data name="UiResultsTemplate.Title" xml:space="preserve">
+    <value>Sjabloon voor Zoekresultaten</value>
+  </data>
+  <data name="UiSave.Title" xml:space="preserve">
+    <value>Bewaar UI Instellingen</value>
+  </data>
+  <data name="UiSettings.Desc" xml:space="preserve">
+    <value>Pas deze aan een betere match uiterlijk van uw portal.</value>
+  </data>
+  <data name="UiSettings.ScreenDesc" xml:space="preserve">
+    <value>Deze instellingen relateren aan beide zoekinvoervak en resultatenpagina...</value>
+  </data>
+  <data name="UiSettings.Title" xml:space="preserve">
+    <value>UI Instellingen</value>
+  </data>
+  <data name="UiStripResultsHtml.Desc" xml:space="preserve">
+    <value>Als deze optie is ingeschakeld, ontdoet Zoekboost HTML-code, zoals koppelingen van beschrijvingen weergegeven voor elk item op de resultatenpagina.</value>
+  </data>
+  <data name="UiStripResultsHtml.Title" xml:space="preserve">
+    <value>HTML ontdoen van beschrijvingen op Resultatenpagina</value>
+  </data>
+  <data name="AddUrl.Title" xml:space="preserve">
+    <value>Voeg URLs toe...</value>
+  </data>
+  <data name="BoostRecentDocuments.Desc" xml:space="preserve">
+    <value>Gebruik deze instelling om te regelen of er nieuwere documenten dienen te worden beschouwd als meer relevant en dus een hogere rang moeten hebben binnen de resultaten.</value>
+  </data>
+  <data name="BoostRecentDocuments.Title" xml:space="preserve">
+    <value>Boost Recente Documenten</value>
+  </data>
+  <data name="BoostRecentModuleContent.Desc" xml:space="preserve">
+    <value>Gebruik deze instelling om te regelen of er nieuwere inhoud van modules dienen te worden beschouwd als meer relevant en dus een hogere rang moeten hebben binnen de resultaten.</value>
+  </data>
+  <data name="BoostRecentModuleContent.Title" xml:space="preserve">
+    <value>Boost Recente Module Inhoud</value>
+  </data>
+  <data name="CustomRuleWizDs.Where.Desc" xml:space="preserve">
+    <value>Specificeer de WAAR clausis voor de SQL-query. Deze velden ondersteunen Mijn Tokens.</value>
+  </data>
+  <data name="CustomRuleWizDs.Where.Title" xml:space="preserve">
+    <value>Waar Conditie</value>
+  </data>
+  <data name="General.LoadingPleaseWait" xml:space="preserve">
+    <value>Wordt geladen... Eén momentje graag...</value>
+  </data>
+  <data name="IndexStats.TotalFoldersAnalyzed" xml:space="preserve">
+    <value>Totale Mappen Geanalyseerd:</value>
+  </data>
+  <data name="SearchUrls.Desc" xml:space="preserve">
+    <value>In dit scherm kunt u aanvullende URL's specificeren dat Zoekboost kan crawlen naar uitpakken inhoud. De pagina's hoeven niet op dezelfde website te zijn. Als de URL verwijst naar een sitemap of RSS-Feed, zal Zoekboost dat automatisch detecteren en alle pagina's parseren.</value>
+  </data>
+  <data name="SearchUrls.DialogTitle" xml:space="preserve">
+    <value>Zoek URL's</value>
+  </data>
+  <data name="CustomRuleWizDs.ManualSQL.Desc" xml:space="preserve">
+    <value>Voer uw select query in die alle relevante kolommen terugbrengt - degene die u wilt indexeren en ook speciale kolommen zoals datum gepubliceerd, auteur id, beschrijvingen en al het overige wat u relevant voor de volgende stappen van de wizard. Zorg ook voor uw query terugkeringen onderscheiden kolommen.</value>
+  </data>
+  <data name="CustomRuleWizDs.ManualSQL.Title" xml:space="preserve">
+    <value>Invoer Query</value>
+  </data>
+  <data name="CustomRuleWizGen.AdvQuery.Title" xml:space="preserve">
+    <value>Laat mij de query (geavanceerde gebruikers) schrijven</value>
+  </data>
+  <data name="SortResults.By.DatePublished" xml:space="preserve">
+    <value>Op Datum Gepubliceerd, Nieuwste bovenaan</value>
+  </data>
+  <data name="SortResults.By.Relevance" xml:space="preserve">
+    <value>Op Relevantie</value>
+  </data>
+  <data name="SortResults.By.Title" xml:space="preserve">
+    <value>Op Titel, Alfabetisch</value>
+  </data>
+  <data name="SortResults.By.PageName" xml:space="preserve">
+    <value>Op Paginanaam, Alfabetisch</value>
+  </data>
+  <data name="SortResults.By.ContainerPath" xml:space="preserve">
+    <value>Op Pagina/Map Path, Alfabetisch</value>
+  </data>
+  <data name="SortResults.Desc" xml:space="preserve">
+    <value>Selecteer hoe de resultaten moeten worden gesorteerd; merk op dat de standaard op relevantie is die rekening houdt met verschillende criteria zoals het aantal zoektermen dat verschijnt, waar ze verschijnen in het resultaat, hoe vaak ze verschijnen en ga zo maar door.</value>
+  </data>
+  <data name="SortResults.Title" xml:space="preserve">
+    <value>Sorteer Resultaten</value>
+  </data>
+  <data name="UsePostWhenOnSamePage.Desc" xml:space="preserve">
+    <value>Gebruik deze optie om paginastatus te behouden wanneer een zoekopdracht wordt ingediend en de resultaten worden weergegeven op dezelfde pagina.</value>
+  </data>
+  <data name="UsePostWhenOnSamePage.Title" xml:space="preserve">
+    <value>Gebruik POST bij het invoervak en de zoekresultaten zijn op dezelfde pagina</value>
+  </data>
+  <data name="UiParamNamePage.Desc" xml:space="preserve">
+    <value>Activeer pagina is getransporteerd naar resultatenpagina via Query Tekenreeks. Met deze optie kunt u de naam van de paramater aanpassen, zodat u kunt integreren met andere resultaten in plaats daarvan verwacht een andere parameter naam in Query Tekenreeks.</value>
+  </data>
+  <data name="UiParamNamePage.Title" xml:space="preserve">
+    <value>Naam van Query Tekenreeks Param voor Pagina Index</value>
+  </data>
+  <data name="DocIdx.DownloadURL.CustomScript.Desc" xml:space="preserve">
+    <value>Gebruik uw aangepaste aspx script om bestanden te leveren.
+                    &lt;div klasse = &quot;grayed_desc&quot;&gt;bijvoorbeeld, http://site.com/&lt;b&gt;MijnDownloadsScript.aspx&lt;/b&gt;?bestand=MijnFolder/MijnBestand.pdf&lt;/div&gt;</value>
+  </data>
+  <data name="DocIdx.DownloadURL.CustomScript.Title" xml:space="preserve">
+    <value>Aangepast Download Script</value>
+  </data>
+  <data name="SocialSharing.Desc" xml:space="preserve">
+    <value>Schakel deze optie in om sociaal delen controles ingeschakeld te hebben voor elke zoekresultaat.</value>
+  </data>
+  <data name="SocialSharing.Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="SocialSharing.Facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="SocialSharing.GooglePlusOne" xml:space="preserve">
+    <value>Google +1</value>
+  </data>
+  <data name="SocialSharing.More" xml:space="preserve">
+    <value>Meer...</value>
+  </data>
+  <data name="SocialSharing.ShowCount" xml:space="preserve">
+    <value>Toon Ook Aantal</value>
+  </data>
+  <data name="SocialSharing.ShowGloalCount" xml:space="preserve">
+    <value>Toon Totale Delen Aantal</value>
+  </data>
+  <data name="SocialSharing.Title" xml:space="preserve">
+    <value>Sociaal Delen</value>
+  </data>
+  <data name="SocialSharing.Twitter" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="SuggestionCount.Desc" xml:space="preserve">
+    <value>Wanneer zoekopdrachten 0 resultaten opleveren kan Zoekboost de index analyseren en gelijke termen die wel resultaten zouden opleveren terugkeren.</value>
+  </data>
+  <data name="SuggestionCount.Title" xml:space="preserve">
+    <value>Nummer van Suggesties</value>
+  </data>
+  <data name="UiPageLinksCount.Desc" xml:space="preserve">
+    <value>Deze optie bepaald hoeveel pagina links worden weergegeven op het einde van de resultaten.</value>
+  </data>
+  <data name="UiPageLinksCount.Title" xml:space="preserve">
+    <value>Aantal Paginalinks</value>
+  </data>
+  <data name="MoreLikeThis.Desc" xml:space="preserve">
+    <value>Als deze optie is ingeschakeld, heeft elke resultaat een &quot;Meer Zoals Dit&quot; link die wanneer erop geklikt wordt gelijke resultaten op basis van het geselecteerde aantal veelgebruikte termen terugkeert.</value>
+  </data>
+  <data name="MoreLikeThis.Disabled" xml:space="preserve">
+    <value>uitgeschakeld</value>
+  </data>
+  <data name="MoreLikeThis.NCommonWords" xml:space="preserve">
+    <value>Gebaseerd op woorden die minimaal {0} keer verschijnen in bron doc</value>
+  </data>
+  <data name="MoreLikeThis.Title" xml:space="preserve">
+    <value>Schakel uit Meer Zoals DitEnable More Like This</value>
+  </data>
+  <data name="IgnoreAccents.Desc" xml:space="preserve">
+    <value>Schakel deze optie uit om Zoekboost de accenten te laten negeren dus alle woorden zijn zoekbaar met standaard Latijnse karakters. Deze instelling is globaal (voor alle gevallen).</value>
+  </data>
+  <data name="IgnoreAccents.Title" xml:space="preserve">
+    <value>Negeer Accenten</value>
+  </data>
+  <data name="StopWords.Desc" xml:space="preserve">
+    <value>Specificeer 'één woord per regel om een lijst van woorden te bouwen die genegeerd moeten worden door indexeren and zoeken (sluit woorden zoals &quot;en&quot;, &quot;of&quot; en enzovoorts uit). Deze instelling is globaal (voor alle gevallen).</value>
+  </data>
+  <data name="StopWords.Title" xml:space="preserve">
+    <value>Stop Woorden</value>
+  </data>
+  <data name="AutocompleteSuggestionCount.Desc" xml:space="preserve">
+    <value>Selecteer het aantal opties die de automatisch invullen functie maximaal moet weergeven. Deze opties zijn gebouwd van de inhoud die al is geïndexeerd.</value>
+  </data>
+  <data name="AutocompleteSuggestionCount.Title" xml:space="preserve">
+    <value>Automatisch Telling Opties</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.UrlColumn.Title" xml:space="preserve">
+    <value>URL Kolom</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.UrlColumn.Desc" xml:space="preserve">
+    <value>Elke resultaat zal verwijzen naar de url gespecificeerd door dit database veld. Gebruik in samenwerking met Geavanceerde Query om de URL programmatisch op te bouwen uit de database velden en vooraf bepaalde gegevens.</value>
+  </data>
+  <data name="CustomRuleWizIdx.LinkResults.Url.DescTokens" xml:space="preserve">
+    <value>Dit veld ondersteunt Mijn Tokens.</value>
+  </data>
+  <data name="WildCardSearch.Desc" xml:space="preserve">
+    <value>Het kleinste deel dat Zoekboost zoekt is normaal het woord. Schakel deze optie in om Zoekboost de invoer die verschijnt als een deel van woorden ook te laten matchen. Bijvoorbeeld, zoekopdracht voor &lt;i&gt;*st&lt;/i&gt; zal terugkeren met woorden die eindigen op &lt;i&gt;st&lt;/i&gt; zoals &lt;i&gt;boost&lt;/i&gt;. Het wilde kaart letterteken kan verschijnen aan het eind of in de zoektermen, het kan niet het eerste letterteken zijn. Door te kiezen voor de impliciete optie hoeven de gebruikers niet langer het asterisx teken te typen, het zal automatisch worden toegevoegd door Zoekboost aan het eind van zoektermen.</value>
+  </data>
+  <data name="WildCardSearch.Disabled" xml:space="preserve">
+    <value>Uitgeschakeld</value>
+  </data>
+  <data name="WildCardSearch.Enabled" xml:space="preserve">
+    <value>Ingeschakeld</value>
+  </data>
+  <data name="WildCardSearch.Implicitely" xml:space="preserve">
+    <value>Impliciet</value>
+  </data>
+  <data name="WildCardSearch.Title" xml:space="preserve">
+    <value>Jokerteken(*) Zoekopdracht</value>
+  </data>
+  <data name="SwitchInstance.NoInstance" xml:space="preserve">
+    <value>Voeg Zoekboost invoer en resultatenmodules of weergave objecten toe aan uw portaal voordat u ze kunt beheren!&lt;br/&gt;&lt;br/&gt;Lees onze &lt;a href=&quot;http://search-boost.avatar-soft.ro/home/getting-started&quot; target=&quot;_blank&quot;&gt;Aan de Slag Gids&lt;/a&gt; voor meer informatie....</value>
+  </data>
+  <data name="CustomRuleWizOpt.CategoryNames.Desc" xml:space="preserve">
+    <value>Specificeer de lijst van categorienamen, één per regel; specificeer subcategorieën met behulp van deze notatie:CategorieNaam/SubcategorieNaam/Subsubcategorie/etc - elke diepte is toegestaan</value>
+  </data>
+  <data name="CustomRuleWizOpt.CategorySource.Desc" xml:space="preserve">
+    <value>De categorie wordt gebruikt in facetten zoekopdrachten, om beneden resultaten door hun categorieën en subcategorieën te filteren.</value>
+  </data>
+  <data name="CustomRuleWizOpt.CategorySource.Title" xml:space="preserve">
+    <value>Categorie</value>
+  </data>
+  <data name="CustomRuleWizOpt.ManualData.Desc" xml:space="preserve">
+    <value>Specificeer aanvullende gegevens met behulp van dit patroon: param1=val1&amp;amp;param2=val2&amp;amp;...&amp;amp;paramN=valN</value>
+  </data>
+  <data name="CustomRuleWizOpt.ManualData.Title" xml:space="preserve">
+    <value>Manueel Gegevens</value>
+  </data>
+  <data name="CustomRuleWizOpt.XslParams.Desc" xml:space="preserve">
+    <value>Selecteer aanvullende data. Dit zijn parameters die u kunt gebruiken in de XSL-sjabloon. U kunt toegang krijgen tot deze uit het resultaat node als &lt;xsl:waarde-of selecteer=&quot;data/veld[@name='sommigetoetsen']&quot;&gt; &lt;/ xsl: waarde-of&gt;. Ook kunt u filteren op deze parameters in de zoekresultaten door het toevoegen van SBC-(naam) = (waarde) aan de URL.</value>
+  </data>
+  <data name="CustomRuleWizOpt.XslParams.Title" xml:space="preserve">
+    <value>Aangepaste Gegevens</value>
+  </data>
+  <data name="SearchContent.Desc" xml:space="preserve">
+    <value>Als deze optie is uitgeschakeld, matcht Zoekboost niet langer sleutelwoorden in de inhoud. Gebruik dit bijvoorbeeld om een 'zoek alleen titels' functie aan te maken.</value>
+  </data>
+  <data name="SearchContent.Title" xml:space="preserve">
+    <value>Zoekinhoud</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckDeleted.Desc" xml:space="preserve">
+    <value>Schakel deze optie uit om de prestaties te verbeteren wanneer u weet dat uw documenten nooit worden verwijderd van de schijf.</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckDeleted.Title" xml:space="preserve">
+    <value>Controleer voor Verwijderde Documenten</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckNew.Desc" xml:space="preserve">
+    <value>Schakel deze optie uit als u weet dat er geen nieuwe bestanden worden toegevoegd aan uw site. Dit zal resulteren in verbeterde prestaties.</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckNew.Title" xml:space="preserve">
+    <value>Controleer voor Nieuwe Bestanden</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckUpdated.Desc" xml:space="preserve">
+    <value>Als u weet dat documenten niet zullen worden gemodificeerd schakel dan deze optie uit om de prestaties van de Documenten Analysator Dienst te verbeteren.</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.CheckUpdated.Title" xml:space="preserve">
+    <value>Controleer voor Bijgewerkte Bestanden</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.Desc" xml:space="preserve">
+    <value>De Doc Analysator scant de map om te bepalen welke bestanden moeten worden geduwd naar de Indexing-service.</value>
+  </data>
+  <data name="DocIdx.DocAnalyzer.Title" xml:space="preserve">
+    <value>Doc Analysator</value>
+  </data>
+  <data name="CustomRuleWizOpt.IsDeletedCol.Desc" xml:space="preserve">
+    <value>Gebruik deze kolom om Zoekboost te instrueren bij het logisch verwijderen van invoeren, zodat ze niet worden weergegeven in de resultaten. Als Publicatiedatum ook is ingesteld, is deze kolom is van cruciaal belang om ervoor te zorgen dat de verwijderde rijen worden gedropt uit de index.</value>
+  </data>
+  <data name="CustomRuleWizOpt.IsDeletedCol.Title" xml:space="preserve">
+    <value>Is Verwijderde Kolom</value>
+  </data>
+  <data name="GeneralSettings.Analyzer.Desc" xml:space="preserve">
+    <value>De analysator wordt gebruikt om te bepalen wat woorden definieert, hoe om te gaan met leestekens, accenten, verschillende tekensets, enz. Nadat u de analysator hebt veranderd is een Verwijder Index nodig, omdat anders de resultaten inconsistent worden.</value>
+  </data>
+  <data name="GeneralSettings.Analyzer.Title" xml:space="preserve">
+    <value>Analysator</value>
+  </data>
+  <data name="GeneralSettings.PreventAutoConfig.Desc" xml:space="preserve">
+    <value>Normaal gesproken zal Zoekboost zichzelf instellen als de standaard zoekmachine in web.config en ook zal het de geplande taak stoppen die de standaard zoekmachine draaide. Schakel deze optie in als u deze zelf wilt beheren, waardoor het mogelijk is om zowel de standaard provider als de Zoekboost provider allebei op hetzelfde tijdstip te laten draaien.</value>
+  </data>
+  <data name="GeneralSettings.PreventAutoConfig.Title" xml:space="preserve">
+    <value>Voorkom Zoekboost automatisch bijwerken configuratie</value>
+  </data>
+  <data name="SearchTargetExceptModuleType.Desc" xml:space="preserve">
+    <value>Met deze optie kunt u modules per type negeren. Alleen modules die ISearchable ondersteunen worden weergegeven in de lijst.</value>
+  </data>
+  <data name="SearchTargetExceptModuleType.Title" xml:space="preserve">
+    <value>Extensie Types...</value>
+  </data>
+  <data name="SearchTargetExceptModuleTypeLabel.Title" xml:space="preserve">
+    <value>Selecteer welke extensies om te negeren:</value>
+  </data>
+  <data name="SortResultsNoTerms.Desc" xml:space="preserve">
+    <value>Dit bepaald het soort van de zoekresultaten wanneer geen zoektermen verstrekt (bijvoorbeeld, wanneer alleen filters de resultaten bepalen)</value>
+  </data>
+  <data name="SortResultsNoTerms.Title" xml:space="preserve">
+    <value>Sorteer wanneer er geen zoektermen zijn</value>
+  </data>
+  <data name="ModuleTitlesMode.Desc" xml:space="preserve">
+    <value>Bepaalt welke titel Zoekboost moet gebruiken om resultaten die afkomstig zijn uit modules weer te geven. Moduletitel betekent dat Zoekboost altijd de titel van de module zal gebruiken, ongeacht wat ISearchable zegt; Paginatitel werkt hetzelfde alleen het maakt gebruik van de paginatitel (of indien niet opgegeven maakt het gebruik van de paginanaam)</value>
+  </data>
+  <data name="ModuleTitlesMode.ModuleTitle" xml:space="preserve">
+    <value>Module Titel</value>
+  </data>
+  <data name="ModuleTitlesMode.ModuleTitleWhenEmpty" xml:space="preserve">
+    <value>Moduletitel wanneer de titel ontbreekt</value>
+  </data>
+  <data name="ModuleTitlesMode.PageTitle" xml:space="preserve">
+    <value>Titel Pagina</value>
+  </data>
+  <data name="ModuleTitlesMode.PageTitleWhenEmpty" xml:space="preserve">
+    <value>Paginatitel wanneer de titel ontbreekt</value>
+  </data>
+  <data name="ModuleTitlesMode.Title" xml:space="preserve">
+    <value>Titel voor Moduleresultaten</value>
+  </data>
+  <data name="MergeModules.Desc" xml:space="preserve">
+    <value>Gebruik deze optie om Zoekboost de opdracht te geven de inhoud die afkomstig is van modulezoon samen te voegen naar dezelfde pagina om dubbele resultaten te voorkomen. Merk op dat als deze optie is ingeschakeld het wordt aangeraden om de Paginatiteloptie te gebruiken om de resultatentitels weer te geven.</value>
+  </data>
+  <data name="MergeModules.MergeByPageAndQuery" xml:space="preserve">
+    <value>Samenvoegen per pagina en query tekenreeks</value>
+  </data>
+  <data name="MergeModules.NoMerge" xml:space="preserve">
+    <value>Niet samenvoegen</value>
+  </data>
+  <data name="MergeModules.Title" xml:space="preserve">
+    <value>Moduleinhoud Samenvoegen</value>
+  </data>
+  <data name="Reports.ScreenDesc" xml:space="preserve">
+    <value>Dit scherm geeft informatie over hoe mensen de zoekfunctie gebruiken. Gebruik deze informatie om zoekopdrachten te tweaken of populaire inhoud bij te houden.</value>
+  </data>
+  <data name="Reports.Title" xml:space="preserve">
+    <value>Rapporten</value>
+  </data>
+  <data name="Reports.SearchCount" xml:space="preserve">
+    <value>{0} Zoekopdrachten</value>
+  </data>
+  <data name="Reports.Title.LatestSearches" xml:space="preserve">
+    <value>Laatste Zoekopdrachten</value>
+  </data>
+  <data name="Reports.Title.PopularSearches" xml:space="preserve">
+    <value>Populaire Zoekopdrachten in de laatste 30 dagen</value>
+  </data>
+  <data name="Reports.TotalResults" xml:space="preserve">
+    <value>{0} resultaten</value>
+  </data>
+  <data name="ModuleData.Boost.Desc" xml:space="preserve">
+    <value>Bepaald hoe hoog resultaten van deze module zullen rangschikken.</value>
+  </data>
+  <data name="ModuleData.Boost.Title" xml:space="preserve">
+    <value>Boost</value>
+  </data>
+  <data name="ModuleData.Categories.Desc" xml:space="preserve">
+    <value>Categorieën worden gebruikt voor gefacetteerde zoekopdracht. Voer één categorie per regel in. Subcategorieën worden ondersteunt met syntax Categorie/SubCategorie/SubSubCategorie/etc.</value>
+  </data>
+  <data name="ModuleData.Categories.Title" xml:space="preserve">
+    <value>Categorieën</value>
+  </data>
+  <data name="ModuleData.Fields.Desc" xml:space="preserve">
+    <value>Voeg aanvullende velden bij aan deze module. Velden worden gebruikt om resultaten te filteren of om aangepaste weergaves voor resultaten te bouwen. Voer één &lt;i&gt;param1=val1&lt;/i&gt; koppel per regel in.</value>
+  </data>
+  <data name="ModuleData.Fields.Title" xml:space="preserve">
+    <value>Aanvullende Velden</value>
+  </data>
+  <data name="SortResults.By.Random" xml:space="preserve">
+    <value>Willekeurig</value>
+  </data>
+  <data name="WordSplitters.Desc" xml:space="preserve">
+    <value>Deze opties bepalen hoe de tekst is verdeeld in woorden.</value>
+  </data>
+  <data name="WordSplitters.Hyphen.Title" xml:space="preserve">
+    <value>Deelt bij het streepje streepje '-'</value>
+  </data>
+  <data name="WordSplitters.Title" xml:space="preserve">
+    <value>Woord Splitsende Tekens</value>
+  </data>
+  <data name="Stemming.Desc" xml:space="preserve">
+    <value>Stamgebruik is het proces van het reduceren van het woord naar een basisvorm. Bijvoorbeeld, stamgebruik zal &quot;zoekopdracht&quot;, &quot;zoekopdrachten&quot;, &quot;zoeken&quot;, &quot;gezocht&quot; identiek maken, dus een zoekopdracht naar één zal dezelfde resultaten opleveren. Stamgebruik werkt alleen voor Engelse woorden en vereist Zoekboost Analysator in Algemene Instellingen.</value>
+  </data>
+  <data name="Stemming.Title" xml:space="preserve">
+    <value>Gebruik Stamgebruik (Alleen Engels)</value>
+  </data>
+  <data name="AllowUserSort.Desc" xml:space="preserve">
+    <value>Schakel deze optie in om gebruikers toe te staan de sortering van de resultaten te overschrijven bij zoektijd.</value>
+  </data>
+  <data name="AllowUserSort.Title" xml:space="preserve">
+    <value>Sta Gebruiker Sorteer Toe</value>
+  </data>
+  <data name="WildCardSearch.Warning" xml:space="preserve">
+    <value>Waarschuwing! Jokertekens zoekopdrachten is niet compatibel met de markeerstift.</value>
+  </data>
+</root>

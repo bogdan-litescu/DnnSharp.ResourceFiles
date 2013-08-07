@@ -1,0 +1,96 @@
+
+.sbInp_IconHoverOrange {
+    
+}
+
+.sbInp_IconHoverOrange  .sbSimpleBox {
+    position: absolute;
+    margin: -31px 0 0 0;
+    width: 245px;
+}
+
+.sbInp_IconHoverOrange  .sbSimpleBoxTitle {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 4px 10px 4px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #fafafa;
+    background: transparent url(bgTitle.png) repeat-x scroll left center;
+}
+
+.sbInp_IconHoverOrange  .sbIconHover {
+    background: transparent url(iconHover.png) no-repeat scroll left center;
+    width: 31px;
+    height: 31px;
+    margin: 0 0 0 4px;
+}
+
+
+.sbInp_IconHoverOrange  .sbSimpleBoxTitleIcon {
+    background: transparent url(iconHover.png) no-repeat scroll left center;
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    margin: 0 0 0 4px;
+}
+
+.sbInp_IconHoverOrange  .sbSimpleBoxContent {
+    padding: 16px;
+    background-color: #e2e2e2;
+    border: 1px solid #929292;
+}
+
+.sbInp_IconHoverOrange .sbBarStart {
+    background: transparent url(bgBarStart.png) no-repeat scroll left center;
+    float: right;
+    margin: 12px 0 0 0;
+}
+
+.sbInp_IconHoverOrange .sbBarEnd {
+    background: transparent url(bgBarEnd.png) no-repeat scroll right center;
+}
+
+.sbInp_IconHoverOrange .sbBarInner {
+    background: transparent url(bgBarInner.png) repeat-x scroll left center;
+    height: 27px;
+    margin: 0px 10px;
+}
+
+
+.sbInp_IconHoverOrange .searchBox {
+    width: 200px;
+    padding: 4px;
+    border: 1px solid #929292;
+    background-color: #fafafa;
+    color: #212121;
+    letter-spacing: 1px;
+}
+
+.sbInp_IconHoverOrange .searchBoxEmpty {
+    color: #727272;
+    font-style: italic;
+}
+
+.sbInp_IconHoverOrange .searchBtn {
+    background: url("btnSearch.png") no-repeat scroll left center transparent;
+    color: white;
+    display: block;
+    font-weight: bold;
+    height: 22px;
+    padding: 5px 6px 0 27px;
+    font-size: 13px;
+    outline: 0;
+}
+
+.sbInp_IconHoverOrange .searchManageBtn {
+    background: transparent url(icon_hostsettings_16px.gif) no-repeat scroll 3px center;
+    padding: 3px 2px 2px 24px;    
+    color: #424242;
+}
+
+.sbInp_IconHoverOrange .portalFilter {
+    width: 200px;
+    margin: 4px 0 0 0;
+}
+

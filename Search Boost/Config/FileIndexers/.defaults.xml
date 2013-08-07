@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<filesearch>
+    
+    <indexer>
+        <title>PDF Files</title>
+        <default>true</default>
+        <extensions>
+            <ext>pdf</ext>
+        </extensions>
+        <type>avt.SearchBoost.Core.FileIndexing.IFilterFileIndexer, avt.SearchBoost.Core</type>
+		<!-- <fallback_type>avt.SearchBoost.FileIndexing.PdfIndexerWithPdfBox, avt.SearchBoost.PdfIndexerWithPdfBox</fallback_type> -->
+    </indexer>
+	    
+    <indexer>
+        <title>Word Documents</title>
+        <default>true</default>
+        <extensions>
+            <ext>docx</ext>
+        </extensions>
+        <type>avt.SearchBoost.Core.FileIndexing.IFilterFileIndexer, avt.SearchBoost.Core</type>
+		<fallback_type>avt.SearchBoost.Core.FileIndexing.DocIndexer, avt.SearchBoost.Core</fallback_type>
+    </indexer>
+
+    <indexer>
+      <title>Word 97-2003 Documents</title>
+      <default>true</default>
+      <extensions>
+        <ext>doc</ext>
+      </extensions>
+      <type>avt.SearchBoost.Core.FileIndexing.IFilterFileIndexer, avt.SearchBoost.Core</type>
+    </indexer>
+
+    <indexer>
+        <title>Excel Documents</title>
+        <default>false</default>
+        <extensions>
+          <ext>xlsx</ext>
+		  <ext>xlsm</ext>
+        </extensions>
+        <type>avt.SearchBoost.Core.FileIndexing.IFilterFileIndexer, avt.SearchBoost.Core</type>
+    </indexer>
+
+    <indexer>
+        <title>Excel 97-2003 Documents</title>
+        <default>false</default>
+        <extensions>
+          <ext>xls</ext>
+        </extensions>
+        <type>avt.SearchBoost.Core.FileIndexing.IFilterFileIndexer, avt.SearchBoost.Core</type>
+    </indexer>
+
+    <indexer>
+        <title>Powerpoint Documents</title>
+        <default>false</default>
+        <extensions>
+          <ext>pptx</ext>
+        </extensions>
+        <type>avt.SearchBoost.Core.FileIndexing.IFilterFileIndexer, avt.SearchBoost.Core</type>
+    </indexer>
+
+    <indexer>
+        <title>Powerpoint 97-2003 Documents</title>
+        <default>false</default>
+        <extensions>
+          <ext>ppt</ext>
+        </extensions>
+        <type>avt.SearchBoost.Core.FileIndexing.IFilterFileIndexer, avt.SearchBoost.Core</type>
+    </indexer>
+    
+    <indexer>
+        <title>Plain Text Files</title>
+        <default>false</default>
+        <extensions>
+            <ext>txt</ext>
+        </extensions>
+        <type>avt.SearchBoost.Core.FileIndexing.PlainTextIndexer, avt.SearchBoost.Core</type>
+    </indexer>
+    
+    <indexer>
+        <title>HTML Files</title>
+        <default>false</default>
+        <extensions>
+            <ext>html</ext>
+            <ext>htm</ext>
+        </extensions>
+        <type>avt.SearchBoost.Core.FileIndexing.HtmlIndexer, avt.SearchBoost.Core</type>
+    </indexer>
+    
+</filesearch>
+

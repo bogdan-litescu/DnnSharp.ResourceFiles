@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<filesearch>
+
+    <analyzer>
+        <!-- Title is like an ID, make sure it's unique -->
+        <title>Standard File Analyzer</title>
+        <type>avt.SearchBoost.Core.DocAnalyzer.FolderAnalyzer, avt.SearchBoost.Core</type>
+        <default>true</default>
+    </analyzer>
+
+    <analyzer>
+        <!-- Title is like an ID, make sure it's unique -->
+        <title>Ignore logs</title>
+        <match>
+            <path>/Logs</path>
+        </match>
+        <type>avt.SearchBoost.Core.DocAnalyzer.IgnoreFolderAnalyzer, avt.SearchBoost.Core</type>
+    </analyzer>
+
+    <analyzer>
+        <!-- Title is like an ID, make sure it's unique -->
+        <title>Ignore cache</title>
+        <match>
+            <path>/Cache</path>
+        </match>
+        <type>avt.SearchBoost.Core.DocAnalyzer.IgnoreFolderAnalyzer, avt.SearchBoost.Core</type>
+    </analyzer>
+
+    <analyzer>
+        <!-- Title is like an ID, make sure it's unique -->
+        <title>Ignore templates</title>
+        <match>
+            <path>/Templates</path>
+        </match>
+        <type>avt.SearchBoost.Core.DocAnalyzer.IgnoreFolderAnalyzer, avt.SearchBoost.Core</type>
+    </analyzer>
+    
+    <analyzer>
+        <!-- Title is like an ID, make sure it's unique -->
+        <title>DMX File Analyzer</title>
+        <match>
+            <path>/DMX</path>
+            <sql>
+                <![CDATA[
+                IF EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{dbOwner}[{objQualifier}DMX_Entries]') AND type in (N'U'))
+                    SELECT 1
+                ELSE
+                    SELECT 0
+            ]]>
+            </sql>
+        </match>
+        <sql-docs>
+            <![CDATA[
+                SELECT e.EntryId as Id, e.Owner as AuthorId, 
+                    l.LastModified, 
+                    e.Title, 'DMX/' + e.Entry as RelativePath, 
+                    (CASE WHEN e.Deleted = 1 OR e.EntryId != e.LastVersionId THEN 1 ELSE 0 END) as IsDeleted,
+                    (CASE 
+                        WHEN e.EntryType = 'File.Adobe.Acrobat' THEN 'pdf'
+                        WHEN e.EntryType = 'File.Microsoft.Word' THEN 'doc'
+                        WHEN e.EntryType = 'File.Microsoft.WordX' THEN 'docx'
+                        -- more extensions here
+                    END) as FileType
+                FROM {dbOwner}[{objQualifier}DMX_Entries] e
+                INNER JOIN {dbOwner}[{objQualifier}DMX_Entries] l ON e.LastVersionId = l.EntryId
+                WHERE e.IsApproved = 1 AND e.PortalId = {PortalId} and l.LastModified > {LastIndexTime}
+            ]]>
+        </sql-docs>
+        <sql-permissions-roles>
+            <![CDATA[
+                SELECT
+                    (CASE
+                        WHEN ep.RoleId >= 0 then r.RoleName
+                        WHEN ep.RoleId = -1 then 'All Users'
+                        WHEN ep.RoleID = -3 then 'Unauthenticated Users'
+                    END) as RoleName
+                FROM {dbOwner}[{objQualifier}DMX_EntryPermissions] ep
+                inner join {dbOwner}[{objQualifier}DMX_Permissions] p on ep.PermissionId = p.PermissionId and p.PermissionKey='VIEW'
+                left join {dbOwner}[{objQualifier}Roles] r on ep.RoleId = r.RoleID
+                WHERE EntryId = {Id}
+            ]]>
+        </sql-permissions-roles>
+        <url>
+            {TabUrl}?Command=Core_Download&amp;EntryId={Id}
+        </url>
+        <type>avt.SearchBoost.Core.DocAnalyzer.DbControlledFolderAnalyzer, avt.SearchBoost.Core</type>
+    </analyzer>
+
+</filesearch>
+

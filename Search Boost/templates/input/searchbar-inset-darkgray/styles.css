@@ -1,0 +1,72 @@
+
+.sbInp_BarInsetDarkGray {
+    
+}
+
+.sbInp_BarInsetDarkGray .sbBarStart {
+    background: transparent url(bgBarStart.png) no-repeat scroll left center;
+    float: left;
+}
+
+.sbInp_BarInsetDarkGray .sbBarEnd {
+    background: transparent url(bgBarEnd.png) no-repeat scroll right center;
+}
+
+.sbInp_BarInsetDarkGray .sbBarInner {
+    background: transparent url(bgBarInner.png) repeat-x scroll left center;
+    height: 47px;
+    margin: 4px 10px;
+}
+
+
+.sbInp_BarInsetDarkGray .sbInputStart {
+    background: transparent url(bgInputStart.png) no-repeat scroll left center;
+    float: left;
+    margin: 9px 0 0 4px;
+}
+
+.sbInp_BarInsetDarkGray .sbInputEnd {
+    background: transparent url(bgInputEnd.png) no-repeat scroll right center;
+}
+
+.sbInp_BarInsetDarkGray .sbInputInner {
+    background: transparent url(bgInputInner.png) repeat-x scroll left center;
+    height: 27px;
+    margin: 0px 8px 0 28px;
+}
+
+
+.sbInp_BarInsetDarkGray .searchBox {
+    width: 200px;
+    padding: 6px 0 2px 0;
+    border-width: 0px;
+    background-color: transparent;
+    color: #212121;
+    letter-spacing: 1px;
+}
+
+.sbInp_BarInsetDarkGray .searchBoxEmpty {
+    color: #727272;
+    font-style: italic;
+}
+
+.sbInp_BarInsetDarkGray .searchBtn {
+    background: transparent url(btnSearch.png) no-repeat scroll center center;
+    display: block;
+    width: 31px;
+    height: 31px;
+    float: left;
+    margin: 8px 0 0 8px;
+}
+
+.sbInp_BarInsetDarkGray .searchManageBtn {
+    background: transparent url(icon_hostsettings_16px.gif) no-repeat scroll 3px center;
+    padding: 3px 2px 2px 24px;    
+    color: white;
+}
+
+.sbInp_BarInsetDarkGray .portalFilter {
+    width: 190px;
+    margin: 4px 0 0 0;
+}
+

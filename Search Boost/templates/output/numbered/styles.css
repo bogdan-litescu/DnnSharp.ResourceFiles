@@ -1,0 +1,98 @@
+
+.sb-numbered {
+    font-family: Verdana;
+    font-size: 13px;
+}
+.sb-numbered .avtsb_title_big{
+    font-size: 13px;
+    color: #075992;
+    /*background-color:#EAEAEA;*/
+    padding: 5px;
+    text-align :left;
+}
+
+.sb-numbered .avtsb_comment{
+    font-size: 9px;
+    color: #0a3451;
+    /*background-color:#EAEAEA;*/
+    padding: 5px;
+    text-align :right;
+}
+.sb-numbered .avtsb_result {
+    margin-bottom: 10px;
+    font-family: Verdana;
+    font-size: 13px;
+    text-align :left;
+    /*margin-left: 24px;*/
+}
+
+.sb-numbered .avtsb_desc {
+    font-size: 13px;
+    color: #525252;
+    text-align :left;
+    
+}
+
+.sb-numbered .avtsb_title:link, .sb-numbered .avtsb_title:visited {
+  color :#4A829C;
+  font-weight: bold;
+  text-align :left;
+}
+
+.sb-numbered .avtsb_title:hover, .sb-numbered .avtsb_title:active {
+ color :#4A829C;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align :left;
+}
+
+
+.sb-numbered .avtsb_url {
+  color: #0E774A; 
+  font-size: 11px;
+  text-decoration: none;
+  text-align :left;
+}
+
+
+.sb-numbered .avtsb_pager {
+    margin-bottom: 10px;
+    background-color: #eaeaea;
+    border: 1px solid #dadada;
+    text-align :left;
+}
+
+.sb-numbered .avtsbSelPage {
+    margin: 3px;
+    font-weight: bold;
+}
+
+.sb-numbered .avtsbPageLink:link, .sb-numbered .avtsbPageLink:visited {
+    margin: 3px;
+}
+
+.sb-numbered .avtsbPageLink:hover, .sb-numbered .avtsbPageLink:active {
+
+}
+
+.sb-numbered .highlight {
+	background-color: #aaffaa !important;
+	background-image: none !important;
+}
+
+.sb-numbered .sb-results {
+	margin: 18px 0 0 0;
+    list-style-position: inside 
+}
+
+.sb-numbered .sb-pnlcurrentfacets {
+	margin: 5px;
+}
+
+.sb-numbered .sb-pnlfacets {
+	margin: 5px;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}

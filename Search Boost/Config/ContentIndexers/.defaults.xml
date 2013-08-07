@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<indexers>
+  <indexer>
+	<title>DNN Modules Indexer</title>
+    <type>avt.SearchBoost.Core.Indexing.SbIndexer_Modules, avt.SearchBoost.Core</type>
+  </indexer>
+  <indexer>
+	<title>DNN Tabs Indexer</title>
+    <type>avt.SearchBoost.Core.Indexing.SbIndexer_Tabs, avt.SearchBoost.Core</type>
+  </indexer>
+  <indexer>
+	<title>Portal Documents Indexer</title>
+    <type>avt.SearchBoost.Core.Indexing.SbIndexer_Files, avt.SearchBoost.Core</type>
+  </indexer>
+  <indexer>
+	<title>Custom Database Rules Indexer</title>
+    <type>avt.SearchBoost.Core.Indexing.SbIndexer_Rules, avt.SearchBoost.Core</type>
+  </indexer>
+  <indexer>
+	<title>URL Crawler</title>
+    <type>avt.SearchBoost.Core.Indexing.SbIndexer_Urls, avt.SearchBoost.Core</type>
+  </indexer>
+</indexers>

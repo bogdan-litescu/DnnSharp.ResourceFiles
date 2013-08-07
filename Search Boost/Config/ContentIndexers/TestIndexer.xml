@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<indexers>
+  <indexer>
+	<title>Test Indexer</title>
+    <type>avt.SearchBoost.TestPlugin.TestIndexer, avt.SearchBoost.TestPlugin</type>
+  </indexer>
+</indexers>

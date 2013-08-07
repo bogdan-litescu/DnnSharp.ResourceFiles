@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<analyzers>
+  <analyzer>
+    <title>CJK Analyzer</title>
+    <desc>Analyzer for Chinese, Japanese, and Korean, which indexes bigrams (overlapping groups of two adjacent Han characters).</desc>
+    <type>Lucene.Net.Analysis.CJK.CJKAnalyzer, Lucene.Net.Analyzers</type>
+  </analyzer>
+</analyzers>

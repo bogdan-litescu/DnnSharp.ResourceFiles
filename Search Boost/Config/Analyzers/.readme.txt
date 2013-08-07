@@ -1,0 +1,21 @@
+This folder configures the various Content Indexers that are used by Search Boost to get relevant content. 
+A content indexer is basically a plugin that reads content from a source (such as database, files, etc) and makes it
+available for Search Boost to index.
+
+Normally you don't need to change the configuration in this folder unless you want to add your own plugins to gather content from 
+new sources. In this case, create a new XML file simillar to .defaults.xml in terms of structure.
+
+To implement a custom indexing plugin, reference  avt.SearchBoost.Core.dll in your project and
+implement avt.SearchBoost.Core.Indexing.ISearchBoostIndexer interface.
+
+Then, create a new XML file in this folder and add your type like in the example below.
+
+<?xml version="1.0" encoding="utf-8"?>
+<indexers>
+    
+    <indexer>
+        <type>My.Indexer, My.Assembly</type>
+    </indexer>
+	
+</indexers>
+

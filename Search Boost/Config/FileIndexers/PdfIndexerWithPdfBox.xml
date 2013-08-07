@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<filesearch>
+
+    <indexer>
+        <title>PDF Files</title>
+        <default>true</default>
+        <extensions>
+            <ext>pdf</ext>
+        </extensions>
+        <type>avt.SearchBoost.FileIndexing.PdfIndexerWithPdfBox, avt.SearchBoost.PdfIndexerWithPdfBox</type>
+    </indexer>
+
+</filesearch>

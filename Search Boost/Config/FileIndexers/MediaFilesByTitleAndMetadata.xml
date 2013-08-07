@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<filesearch>
+    
+    <indexer>
+        <title>Tiles Only (and metadata XML)</title>
+        <default>false</default>
+        <extensions>
+            <ext>mp3</ext>
+			<ext>mpg</ext>
+			<ext>avi</ext>
+        </extensions>
+        <type>avt.SearchBoost.Core.FileIndexing.TitlesAndMetadata, avt.SearchBoost.Core</type>
+    </indexer>
+	
+</filesearch>

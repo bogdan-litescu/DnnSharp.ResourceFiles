@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extensions>
+
+    <module>
+
+        <!-- This is the key of the module -->
+        <name>DNNArticle</name>
+
+        <!-- The security query should return a list of role names, where each row can be also a list of rolenames separated by ; -->
+        <security>
+            <sqlrule>
+                DECLARE @roles nvarchar(MAX)
+                Select @roles = ViewRoles FROM {databaseOwner}[{objectQualifier}ZLDNN_DNNArticle] Where ItemId = {searchKey}
+                IF @roles Is NULL
+                    Select ViewRoles FROM {databaseOwner}[{objectQualifier}ZLDNN_DNNArticleCategory] Where ItemId IN
+                        (Select CategoryId from {databaseOwner}[{objectQualifier}ZLDNN_DNNArticleAssignedCategories] Where ArticleID ={searchKey})
+                ELSE
+                    Select @roles
+            </sqlrule>
+        </security>
+
+        <!-- Write rules to skip some items from indexing. If the query returns 1 or more rows the it's skipped. -->
+        <skip>
+            <!--each sqlrule return boolean (could be 0 for false and != 0 for true)-->
+            <sqlrule>
+                Select Count(*) FROM {databaseOwner}[{objectQualifier}ZLDNN_DNNArticle] Where ItemId = {searchKey} AND (IsApproved = 0 OR IsApproved IS NULL)
+            </sqlrule>
+        </skip>
+
+        <!--categories are used for faceted search-->
+        <categories>
+            <!--each sqlrule returns string or list of strings-->
+            <sqlrule>
+                select cat.Title from {databaseOwner}[{objectQualifier}ZLDNN_DNNArticleCategory] cat
+                inner join {databaseOwner}[{objectQualifier}ZLDNN_DNNArticleAssignedCategories] artcat on artcat.CategoryID = cat.ItemID
+                where artcat.ArticleID={searchKey}
+            </sqlrule>
+        </categories>
+
+    </module>
+
+</extensions>

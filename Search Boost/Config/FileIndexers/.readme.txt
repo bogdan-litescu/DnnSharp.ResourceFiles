@@ -1,0 +1,25 @@
+This folder configures the FILE indexers that Search Boost diplays in the admin console for users to enable.
+An indexer is basically an association created between one or more file extensions and a class that implements IFileIndexing.
+This means you can extend Search Boost to index new file types by creating your own class that 
+implements IFileIndexing (link to avt.SearchBoost.Core.dll) and then add it to an xml file simillar to ".default.xml".
+Whenever you change this files, if changes are not instantly visible in the amdin console (which should happen automatically), 
+please restart the application.
+
+.defaults.xml contains the default indexers. Do not change this file as it will get overwritten on upgrades. 
+Instead, create your own xml files simillar to .defaults.xml that contain the nodes you want to override.
+
+For example, to add your own indexer for extension xlsx, create a new XML file, say MyIndexer.xml that looks like this:
+
+<?xml version="1.0" encoding="utf-8"?>
+<filesearch>
+    
+    <indexer>
+        <title>Excel Documents</title>
+        <default>false</default>
+        <extensions>
+          <ext>xlsx</ext>
+        </extensions>
+        <type>My.Indexer, My.Assembly</type>
+    </indexer>
+	
+</filesearch>

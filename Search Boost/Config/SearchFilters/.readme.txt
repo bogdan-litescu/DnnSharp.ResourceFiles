@@ -1,0 +1,4 @@
+This folder configures custom Search Filters.
+These are dropdowns that appears next to a searchbox to allow users to apply additional filters to the search.
+The filters are handled on the backend, all that the user sees is a drodpown with items. 
+Behind each item there can be a list of filters.

@@ -1,0 +1,39 @@
+
+.sbInp_Default {
+    
+}
+.sbInp_Default .searchBox {
+    padding: 7px;
+    margin-bottom: 8px;
+    width: 185px;
+}
+
+.sbInp_Default .searchBoxEmpty {
+    color: #727272;
+    font-style: italic;
+}
+
+.sbInp_Default .searchBtn {
+    background: transparent url(btnSearch.png) no-repeat scroll 3px center;
+    padding: 18px;
+    margin-left: -32px;    
+}
+
+.sbInp_Default .searchManageBtn {
+    background: transparent url(manage-icn.png) no-repeat scroll right center;
+    padding: 8px 11px;    
+    border-left: 2px solid #ccc;
+}
+
+.sbInp_Default .portalFilter, .sbInp_Default .sbcontent-filter {
+    width: 190px;
+    margin: 4px 0 0 0;
+}
+
+
+/* DNN 6 fix */
+#Header .sbInp {
+    float: right;
+    width: 240px;
+    margin-top: 10px;
+}

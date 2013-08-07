@@ -1,0 +1,23 @@
+This folder configures the document analyzers that Search Boost uses to determine which files to index.
+The default indexer looks at the files in the portal root folders and indexes everything according to configuration.
+But sometimes the logic for these files resides somewhere else, for example in the database.
+Search Boost allows you to define custom analyzers that are triggered by a path.
+In the existing configuration, the "/dmx" path will trigger the DbControlledFolderAnalyzer which takes some of the meta from the database.
+
+.defaults.xml contains the default analyzers. Do not change this file as it will get overwritten on upgrades. 
+Instead, create your own xml files simillar to .defaults.xml that contain the nodes you want to override.
+
+For example, to add your own analyzer to ignore a /temp folder like this:
+
+<?xml version="1.0" encoding="utf-8"?>
+<filesearch>
+    
+    <analyzer>
+        <title>Ignore my temp folder</title> <!-- Title is like an ID, make sure it's unique -->
+        <match>
+            <path>/temp</path>
+        </match>
+        <type>avt.SearchBoost.Core.DocAnalyzer.IgnoreFolderAnalyzer, avt.SearchBoost.Core</type>
+    </analyzer>
+	
+</filesearch>

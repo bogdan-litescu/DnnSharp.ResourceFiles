@@ -1,0 +1,73 @@
+
+.sbInp_BarFlatBlack {
+    
+}
+
+.sbInp_BarFlatBlack .sbBarStart {
+    background: transparent url(bgBarStart.png) no-repeat scroll left center;
+    float: left;
+    margin-left: 2px;
+}
+
+.sbInp_BarFlatBlack .sbBarEnd {
+    background: transparent url(bgBarEnd.png) no-repeat scroll right center;
+}
+
+.sbInp_BarFlatBlack .sbBarInner {
+    background: transparent url(bgBarInner.png) repeat-x scroll left center;
+    height: 27px;
+    margin: 0px 10px;
+}
+
+
+.sbInp_BarFlatBlack .sbInputStart {
+    background: transparent url(bgInputStart.png) no-repeat scroll left center;
+    float: left;
+}
+
+.sbInp_BarFlatBlack .sbInputEnd {
+    background: transparent url(bgInputEnd.png) no-repeat scroll right center;
+}
+
+.sbInp_BarFlatBlack .sbInputInner {
+    background: transparent url(bgInputInner.png) repeat-x scroll left center;
+    height: 27px;
+    margin: 0px 8px 0 8px;
+}
+
+
+.sbInp_BarFlatBlack .searchBox {
+    width: 200px;
+    padding: 6px 0 2px 0;
+    border-width: 0px;
+    background-color: transparent;
+    color: #212121;
+    letter-spacing: 1px;
+}
+
+.sbInp_BarFlatBlack .searchBoxEmpty {
+    color: #727272;
+    font-style: italic;
+}
+
+.sbInp_BarFlatBlack .searchBtn {
+    background: url("btnSearch.png") no-repeat scroll left center transparent;
+    color: white;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 0px 6px 0 27px;
+    line-height: 26px;
+}
+
+.sbInp_BarFlatBlack .searchManageBtn {
+    background: transparent url(icon_hostsettings_16px.gif) no-repeat scroll 3px center;
+    padding: 3px 2px 2px 24px;    
+    color: white;
+}
+
+.sbInp_BarFlatBlack .portalFilter {
+    width: 190px;
+    margin: 4px 0 0 0;
+}
+

@@ -1,0 +1,78 @@
+
+.sbInp_BoxSimpleBlack {
+    
+}
+
+.sbInp_BoxSimpleBlack  .sbSimpleBox {
+    border: 1px solid #e2e2e2;
+    width: 245px;
+}
+
+.sbInp_BoxSimpleBlack  .sbSimpleBoxTitle {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 4px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial;
+    color: #fafafa;
+    background: transparent url(bgTitle.png) repeat-x scroll left center;
+}
+
+.sbInp_BoxSimpleBlack  .sbSimpleBoxContent {
+    padding: 16px;
+    background-color: #212121;
+}
+
+.sbInp_BoxSimpleBlack .sbBarStart {
+    background: transparent url(bgBarStart.png) no-repeat scroll left center;
+    float: right;
+    margin: 12px 0 0 0;
+}
+
+.sbInp_BoxSimpleBlack .sbBarEnd {
+    background: transparent url(bgBarEnd.png) no-repeat scroll right center;
+}
+
+.sbInp_BoxSimpleBlack .sbBarInner {
+    background: transparent url(bgBarInner.png) repeat-x scroll left center;
+    height: 27px;
+    margin: 0px 10px;
+}
+
+
+.sbInp_BoxSimpleBlack .searchBox {
+    width: 200px;
+    padding: 4px;
+    border: 1px solid #929292;
+    background-color: #fafafa;
+    color: #212121;
+    letter-spacing: 1px;
+}
+
+.sbInp_BoxSimpleBlack .searchBoxEmpty {
+    color: #727272;
+    font-style: italic;
+}
+
+.sbInp_BoxSimpleBlack .searchBtn {
+    background: url("btnSearch.png") no-repeat scroll left center transparent;
+    color: white;
+    display: block;
+    font-weight: bold;
+    height: 22px;
+    padding: 5px 6px 0 27px;
+    font-size: 13px;
+    outline: 0;
+}
+
+.sbInp_BoxSimpleBlack .searchManageBtn {
+    background: transparent url(icon_hostsettings_16px.gif) no-repeat scroll 3px center;
+    padding: 3px 2px 2px 24px;    
+    color: white;
+}
+
+.sbInp_BoxSimpleBlack .portalFilter {
+    width: 200px;
+    margin: 4px 0 0 0;
+}
+

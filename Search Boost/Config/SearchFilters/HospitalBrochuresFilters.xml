@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<filters>
+	<searchfilter>
+		<title>MCA Folder Filter</title>
+		<key>ffldmca</key>
+		<items>
+			<type>avt.SearchBoost.Core.Filters.SubfoldersFilter, avt.SearchBoost.Core</type>
+			<params>
+				<parentfolder>
+					<portalid>1</portalid>
+					<relpath>brochures/MCA</relpath>
+				</parentfolder>
+			</params>
+		</items>
+		<noselection>-- Select section --</noselection>
+	</searchfilter>
+	<searchfilter>
+		<title>Gemini Folder Filter</title>
+		<key>ffldgemini</key>
+		<items>
+			<type>avt.SearchBoost.Core.Filters.SubfoldersFilter, avt.SearchBoost.Core</type>
+			<params>
+				<parentfolder>
+					<portalid>1</portalid>
+					<relpath>brochures/Gemini</relpath>
+				</parentfolder>
+			</params>
+		</items>
+		<noselection>-- Select section --</noselection>
+	</searchfilter>
+</filters>

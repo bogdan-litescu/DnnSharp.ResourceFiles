@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<analyzers>
+  <analyzer>
+    <title>Search Boost Analyzer</title>
+    <desc>Variation of the standard analyzer that best handles accents, stop words and punctuation.</desc>
+    <type>avt.SearchBoost.Core.Indexing.SbAnalyzer, avt.SearchBoost.Core</type>
+  </analyzer>
+  <analyzer>
+    <title>Standard Analyzer</title>
+    <desc>This is the standard analyzer from Lucene.</desc>
+    <type>Lucene.Net.Analysis.Standard.StandardAnalyzer, Lucene.Net</type>
+  </analyzer>
+</analyzers>

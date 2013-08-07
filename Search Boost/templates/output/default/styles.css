@@ -1,0 +1,97 @@
+
+.avtsbDefault {
+    font-family: Verdana;
+    font-size: 13px;
+}
+.avtsbDefault .avtsb_title_big{
+    font-size: 13px;
+    color: #075992;
+    /*background-color:#EAEAEA;*/
+    padding: 5px;
+    text-align :left;
+}
+
+.avtsbDefault .avtsb_comment{
+    font-size: 9px;
+    color: #0a3451;
+    /*background-color:#EAEAEA;*/
+    padding: 5px;
+    text-align :right;
+}
+.avtsbDefault .avtsb_result {
+    margin-bottom: 10px;
+    font-family: Verdana;
+    font-size: 13px;
+    text-align :left;
+}
+
+.avtsbDefault .avtsb_desc {
+    font-size: 13px;
+    color: #525252;
+    text-align :left;
+    
+}
+
+.avtsbDefault .avtsb_title:link, .avtsbDefault .avtsb_title:visited {
+  color :#4A829C;
+  font-weight: bold;
+  text-align :left;
+}
+
+.avtsbDefault .avtsb_title:hover, .avtsbDefault .avtsb_title:active {
+ color :#4A829C;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align :left;
+}
+
+
+.avtsbDefault .avtsb_url {
+  color: #0E774A; 
+  font-size: 11px;
+  text-decoration: none;
+  text-align :left;
+}
+
+
+.avtsbDefault .avtsb_pager {
+    margin-bottom: 10px;
+    background-color: #eaeaea;
+    border: 1px solid #dadada;
+    text-align :left;
+}
+
+.avtsbDefault .avtsbSelPage {
+    margin: 3px;
+    font-weight: bold;
+}
+
+.avtsbDefault .avtsbPageLink:link, .avtsbDefault .avtsbPageLink:visited {
+    margin: 3px;
+}
+
+.avtsbDefault .avtsbPageLink:hover, .avtsbDefault .avtsbPageLink:active {
+
+}
+
+.avtsbDefault .highlight {
+	background-color: #aaffaa !important;
+	background-image: none !important;
+}
+
+.avtsbDefault .sb-results {
+	margin: 18px 0 0 0;
+}
+
+.avtsbDefault .sb-pnlcurrentfacets {
+	margin: 5px;
+}
+
+.avtsbDefault .sb-pnlfacets {
+	margin: 5px;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
